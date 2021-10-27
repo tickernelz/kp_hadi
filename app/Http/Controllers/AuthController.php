@@ -37,10 +37,10 @@ class AuthController extends Controller
     public function login(LoginRequest $request)
     {
         if (!Auth::attempt([
-            'email' => $request->email,
+            'username' => $request->username,
             'password' => $request->password
         ])) {
-            throw new Exception('Wrong email or password.');
+            throw new Exception('Salah Username dan Password.');
         }
     }
 
