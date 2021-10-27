@@ -11,7 +11,7 @@ class TopMenu
      * List of top menu items.
      *
      * @param Request $request
-     * @return Response
+     * @return array[]
      */
     public static function menu()
     {
