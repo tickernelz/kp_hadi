@@ -104,17 +104,14 @@
 {{--    </div>--}}
     <!-- END: Notifications -->
     <!-- BEGIN: Account Menu -->
-    <div class="intro-x dropdown w-8 h-8">
-        <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in" role="button"
+    <div class="intro-x dropdown">
+        <div class="dropdown-toggle text-center" role="button"
              aria-expanded="false">
-            <img alt="Foto Profil" src="{{ asset('dist/images/' . $fakers[9]['photos'][0]) }}">
+            <div class="font-medium">{{ \App\Http\Controllers\DataUserController::getNama() }}</div>
+{{--            <img alt="Foto Profil" src="{{ asset('dist/images/' . $fakers[9]['photos'][0]) }}">--}}
         </div>
         <div class="dropdown-menu w-56">
             <div class="dropdown-menu__content box dark:bg-dark-6">
-                <div class="p-4 border-b border-black border-opacity-5 dark:border-dark-3">
-                    <div class="font-medium">{{ \App\Http\Controllers\DataUserController::getNama() }}</div>
-                    <div class="text-xs text-gray-600 mt-0.5 dark:text-gray-600">{{ \App\Http\Controllers\DataUserController::getUsername() }}</div>
-                </div>
                 <div class="p-2">
                     <a href=""
                        class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-dark-3 rounded-md">

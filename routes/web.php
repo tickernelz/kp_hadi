@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\HomeController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\PageController;
 use App\Http\Controllers\DarkModeController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,14 +20,24 @@ use App\Http\Controllers\DarkModeController;
 
 Route::get('dark-mode-switcher', [DarkModeController::class, 'switch'])->name('dark-mode-switcher');
 
-Route::middleware('loggedin')->group(function() {
+Route::middleware('loggedin')->group(function () {
     Route::get('login', [AuthController::class, 'loginView'])->name('login-view');
     Route::post('login', [AuthController::class, 'login'])->name('login');
     Route::get('register', [AuthController::class, 'registerView'])->name('register-view');
     Route::post('register', [AuthController::class, 'register'])->name('register');
 });
 
-Route::middleware('auth')->group(function() {
+Route::middleware('auth')->group(function () {
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/', [HomeController::class, 'index'])->name('beranda');
+    Route::middleware('can:kelola user')->group(function () {
+        Route::get('kelola-user', [UserController::class, 'index'])->name('kelola.user');
+        Route::get('kelola-user/tambah', [UserController::class, 'indextambah'])->name('kelola.user.tambah');
+        Route::post('kelola-user/tambah/post', [UserController::class, 'tambah'])->name('kelola.user.tambah.post');
+        Route::get('kelola-user/edit/{id}', [UserController::class, 'indexedit'])->name('kelola.user.edit');
+        Route::post('kelola-user/edit/{id}/post', [UserController::class, 'edit'])->name('kelola.user.edit.post');
+        Route::get('kelola-user/hapus/{id}', [UserController::class, 'hapus'])->name('kelola.user.hapus');
+        Route::post('kelola-user/cekusername', [UserController::class, 'cekusername'])->name('kelola.user.tambah.cekusername');
+        Route::post('kelola-user/edit/{id}/cekusername', [UserController::class, 'cekusernameedit'])->name('kelola.user.edit.cekusername');
+    });
 });

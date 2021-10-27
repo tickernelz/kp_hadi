@@ -3,7 +3,6 @@
 namespace App\Main;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class SideMenu
 {
@@ -24,6 +23,28 @@ class SideMenu
                 'title' => 'Dashboard'
             ],
             'devider',
+            'kelola-user' => [
+                'icon' => 'users',
+                'title' => 'Kelola User',
+                'params' => [
+                ],
+                'sub_menu' => [
+                    'list' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.user',
+                        'params' => [
+                        ],
+                        'title' => 'Kelola User'
+                    ],
+                    'tambah' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.user.tambah',
+                        'params' => [
+                        ],
+                        'title' => 'Tambah User'
+                    ],
+                ],
+            ],
 //            'crud' => [
 //                'icon' => 'edit',
 //                'title' => 'Crud',
