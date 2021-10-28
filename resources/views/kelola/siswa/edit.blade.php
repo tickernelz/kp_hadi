@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
-@push('judul', 'Tambah User')
-@push('breadcrumb', 'Tambah User')
+@push('judul', 'Edit User')
+@push('breadcrumb', 'Edit User')
 
 @section('subcontent')
 
@@ -12,7 +12,7 @@
                 <div class="modal-body p-0">
                     <div class="p-5 text-center">
                         <i data-feather="check-circle" class="w-16 h-16 text-theme-20 mx-auto mt-3"></i>
-                        <div class="text-3xl mt-5">Data Berhasil Disimpan!</div>
+                        <div class="text-3xl mt-5">Data Berhasil Diperbarui!</div>
                     </div>
                     <div class="px-5 pb-8 text-center">
                         <button type="button" data-dismiss="modal" class="btn btn-outline-secondary w-24 mr-1">Tutup
@@ -31,38 +31,49 @@
         <div class="intro-y col-span-12 lg:col-span-6">
             <!-- BEGIN: Form Layout -->
             <div class="intro-y box p-5">
-                <form name="tambah-user" id="tambah-user" method="post" action="javascript:void(0)">
+                <form name="user" id="user" method="post" action="javascript:void(0)">
                     @csrf
                     <div class="mt-3">
                         <div>
+                            <label for="nis" class="form-label">NIS</label>
+                            <input id="nis" name="nis" value="{{ $data->nis }}" type="number" class="form-control w-full mb-3">
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div>
                             <label for="nama" class="form-label">Nama</label>
-                            <input id="nama" name="nama" type="text" class="form-control w-full mb-3">
+                            <input id="nama" name="nama" value="{{ $data->user->nama }}" type="text"
+                                   class="form-control w-full mb-3">
                         </div>
                     </div>
                     <div class="mt-3">
                         <div>
                             <label for="username" class="form-label">Username</label>
-                            <input id="username" name="username" type="text" class="form-control w-full mb-3">
+                            <input id="username" name="username" value="{{ $data->user->username }}" type="text"
+                                   class="form-control w-full mb-3">
                         </div>
                     </div>
-                    <div class="mt-3">
-                        <label for="level" class="form-label">Level</label>
-                        <select data-placeholder="Pilih Level User" name="level" class="tom-select w-full mb-3"
-                                id="level">
-                            <option value="{{ Crypt::encrypt('Super Admin') }}">Super Admin</option>
-                            <option value="{{ Crypt::encrypt('Admin') }}">Admin</option>
-                            <option value="{{ Crypt::encrypt('Wali Kelas') }}">Wali Kelas</option>
+                    <div class="mt-3 mb-3">
+                        <label for="kelas" class="form-label">Kelas</label>
+                        <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3"
+                                id="kelas">
+                            @foreach($data_kelas as $list)
+                                <option @if ($list->id == $data->kelas_id)
+                                        selected="selected"
+                                        @endif value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="mt-3">
                         <div>
                             <label for="password" class="form-label">Password</label>
-                            <input id="password" type="password" name="password" class="form-control w-full mb-3">
+                            <input id="password" type="password" name="password" value="{{$data->user->password}}"
+                                   class="form-control w-full mb-3">
                         </div>
                     </div>
                     <div class="text-right mt-5">
                         <button type="button" class="btn btn-outline-secondary w-24 mr-1" onclick="
-                            window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.user') }}'
+                            window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.siswa') }}'
                             ">Kembali
                         </button>
                         <button type="submit" id="submit" class="btn btn-primary w-24">Simpan</button>
@@ -75,16 +86,13 @@
 @endsection
 @section('script')
     <script>
-        if ($("#tambah-user").length > 0) {
-            $("#tambah-user").validate({
+        if ($("#user").length > 0) {
+            $("#user").validate({
                 rules: {
-                    nama: {
-                        required: true,
-                    },
-                    username: {
+                    nis: {
                         required: true,
                         remote: {
-                            url: "{{route('kelola.user.tambah.cekusername')}}",
+                            url: "{{ Request::url() }}/ceknis",
                             type: "post",
                             data: {
                                 _token: function () {
@@ -93,7 +101,22 @@
                             }
                         }
                     },
-                    level: {
+                    nama: {
+                        required: true,
+                    },
+                    username: {
+                        required: true,
+                        remote: {
+                            url: "{{ Request::url() }}/cekusername",
+                            type: "post",
+                            data: {
+                                _token: function () {
+                                    return "{{csrf_token()}}"
+                                }
+                            }
+                        }
+                    },
+                    kelas: {
                         required: true,
                     },
                     password: {
@@ -101,14 +124,17 @@
                     },
                 },
                 messages: {
+                    nis: {
+                        required: "NIS wajib diisi",
+                    },
                     nama: {
                         required: "Nama wajib diisi",
                     },
                     username: {
                         required: "Username wajib diisi",
                     },
-                    level: {
-                        required: "Level wajib diisi",
+                    kelas: {
+                        required: "Kelas wajib diisi",
                     },
                     password: {
                         required: "Password wajib diisi",
@@ -127,15 +153,16 @@
                     });
                     $("#submit").attr("disabled", true);
                     $.ajax({
-                        url: "{{route('kelola.user.tambah.post')}}",
+                        url: "{{ Request::url() }}/post",
                         type: "POST",
-                        data: $('#tambah-user').serialize(),
-                        success: function (response) {
+                        data: $('#user').serialize(),
+                        success: cash(async function (response) {
                             $('#submit').html('Submit');
                             $("#submit").attr("disabled", false);
                             cash('#success-modal').modal('show')
-                            document.getElementById("tambah-user").reset();
-                        }
+                            await helper.delay(3000)
+                            location.reload();
+                        })
                     });
                 }
             })

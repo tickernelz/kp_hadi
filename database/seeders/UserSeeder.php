@@ -35,12 +35,5 @@ class UserSeeder extends Seeder
                 'password' => Hash::make('123'),
                 'level' => 'Wali Kelas',
         ])->assignRole('wali_kelas');
-
-        User::create([
-                'nama' => 'Hadi4',
-                'username' => 'hadi4',
-                'password' => Hash::make('123'),
-                'level' => 'Siswa',
-        ])->assignRole('siswa');
     }
 }

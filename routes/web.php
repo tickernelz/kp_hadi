@@ -5,6 +5,7 @@ use App\Http\Controllers\DarkModeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\TahunAjaranController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -57,5 +58,18 @@ Route::middleware('auth')->group(function () {
         Route::get('kelola-tahun_ajaran/tambah', [TahunAjaranController::class, 'indextambah'])->name('kelola.tahun_ajaran.tambah');
         Route::post('kelola-tahun_ajaran/tambah/post', [TahunAjaranController::class, 'tambah'])->name('kelola.tahun_ajaran.tambah.post');
         Route::get('kelola-tahun_ajaran/hapus/{id}', [TahunAjaranController::class, 'hapus'])->name('kelola.tahun_ajaran.hapus');
+    });
+    Route::middleware('can:kelola siswa')->group(function () {
+        Route::get('kelola-siswa', [SiswaController::class, 'index'])->name('kelola.siswa');
+        Route::get('kelola-siswa/cari', [SiswaController::class, 'indexcari'])->name('kelola.siswa.cari');
+        Route::get('kelola-siswa/tambah', [SiswaController::class, 'indextambah'])->name('kelola.siswa.tambah');
+        Route::post('kelola-siswa/tambah/post', [SiswaController::class, 'tambah'])->name('kelola.siswa.tambah.post');
+        Route::post('kelola-siswa/tambah/ceknis', [SiswaController::class, 'ceknistambah'])->name('kelola.siswa.tambah.ceknis');
+        Route::get('kelola-siswa/edit/{id}', [SiswaController::class, 'indexedit'])->name('kelola.siswa.edit');
+        Route::post('kelola-siswa/edit/{id}/post', [SiswaController::class, 'edit'])->name('kelola.siswa.edit.post');
+        Route::get('kelola-siswa/hapus/{id}', [SiswaController::class, 'hapus'])->name('kelola.siswa.hapus');
+        Route::post('kelola-siswa/edit/{id}/cekusername', [SiswaController::class, 'cekusernameedit'])->name('kelola.siswa.edit.cekusername');
+        Route::post('kelola-siswa/edit/{id}/ceknis', [SiswaController::class, 'ceknisedit'])->name('kelola.siswa.edit.ceknis');
+
     });
 });

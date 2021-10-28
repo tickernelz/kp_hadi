@@ -40,6 +40,8 @@ use Spatie\Permission\Traits\HasRoles;
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUsername($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Siswa[] $siswa
+ * @property-read int|null $siswa_count
  */
 class User extends Authenticatable
 {
@@ -63,4 +65,9 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public function siswa()
+    {
+        return $this->hasMany(Siswa::class);
+    }
 }

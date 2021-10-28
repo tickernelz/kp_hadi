@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
-@push('judul', 'Tambah User')
-@push('breadcrumb', 'Tambah User')
+@push('judul', 'Tambah Siswa')
+@push('breadcrumb', 'Tambah Siswa')
 
 @section('subcontent')
 
@@ -35,6 +35,12 @@
                     @csrf
                     <div class="mt-3">
                         <div>
+                            <label for="nis" class="form-label">NIS</label>
+                            <input id="nis" name="nis" type="number" class="form-control w-full mb-3">
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div>
                             <label for="nama" class="form-label">Nama</label>
                             <input id="nama" name="nama" type="text" class="form-control w-full mb-3">
                         </div>
@@ -45,13 +51,13 @@
                             <input id="username" name="username" type="text" class="form-control w-full mb-3">
                         </div>
                     </div>
-                    <div class="mt-3">
-                        <label for="level" class="form-label">Level</label>
-                        <select data-placeholder="Pilih Level User" name="level" class="tom-select w-full mb-3"
-                                id="level">
-                            <option value="{{ Crypt::encrypt('Super Admin') }}">Super Admin</option>
-                            <option value="{{ Crypt::encrypt('Admin') }}">Admin</option>
-                            <option value="{{ Crypt::encrypt('Wali Kelas') }}">Wali Kelas</option>
+                    <div class="mt-3 mb-3">
+                        <label for="kelas" class="form-label">Kelas</label>
+                        <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3"
+                                id="kelas">
+                            @foreach($data_kelas as $list)
+                                <option value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="mt-3">
@@ -62,7 +68,7 @@
                     </div>
                     <div class="text-right mt-5">
                         <button type="button" class="btn btn-outline-secondary w-24 mr-1" onclick="
-                            window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.user') }}'
+                            window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.siswa') }}'
                             ">Kembali
                         </button>
                         <button type="submit" id="submit" class="btn btn-primary w-24">Simpan</button>
@@ -78,6 +84,18 @@
         if ($("#tambah-user").length > 0) {
             $("#tambah-user").validate({
                 rules: {
+                    nis: {
+                        required: true,
+                        remote: {
+                            url: "{{route('kelola.siswa.tambah.ceknis')}}",
+                            type: "post",
+                            data: {
+                                _token: function () {
+                                    return "{{csrf_token()}}"
+                                }
+                            }
+                        }
+                    },
                     nama: {
                         required: true,
                     },
@@ -93,7 +111,7 @@
                             }
                         }
                     },
-                    level: {
+                    kelas: {
                         required: true,
                     },
                     password: {
@@ -101,14 +119,17 @@
                     },
                 },
                 messages: {
+                    nis: {
+                        required: "NIS wajib diisi",
+                    },
                     nama: {
                         required: "Nama wajib diisi",
                     },
                     username: {
                         required: "Username wajib diisi",
                     },
-                    level: {
-                        required: "Level wajib diisi",
+                    kelas: {
+                        required: "Kelas wajib diisi",
                     },
                     password: {
                         required: "Password wajib diisi",
@@ -127,7 +148,7 @@
                     });
                     $("#submit").attr("disabled", true);
                     $.ajax({
-                        url: "{{route('kelola.user.tambah.post')}}",
+                        url: "{{route('kelola.siswa.tambah.post')}}",
                         type: "POST",
                         data: $('#tambah-user').serialize(),
                         success: function (response) {

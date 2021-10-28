@@ -20,6 +20,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Kelas whereNamaKelas($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Kelas whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Siswa[] $siswa
+ * @property-read int|null $siswa_count
  */
 class Kelas extends Model
 {
@@ -28,4 +30,9 @@ class Kelas extends Model
     protected $guarded = [
         'id',
     ];
+
+    public function siswa()
+    {
+        return $this->hasMany(Siswa::class);
+    }
 }

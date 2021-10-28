@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Siswa;
 use App\Models\User;
 use Crypt;
 use Illuminate\Http\Request;
@@ -69,8 +70,6 @@ class UserController extends Controller
             $data->assignRole('admin');
         } elseif ($get_level === 'Wali Kelas') {
             $data->assignRole('wali_kelas');
-        } elseif ($get_level === 'siswa') {
-            $data->assignRole('siswa');
         }
 
         return response()->json(['success' => true]);
@@ -102,8 +101,6 @@ class UserController extends Controller
             $data->assignRole('admin');
         } elseif ($get_level === 'Wali Kelas') {
             $data->assignRole('wali_kelas');
-        } elseif ($get_level === 'siswa') {
-            $data->assignRole('siswa');
         }
 
         return response()->json(['success' => true]);
@@ -111,12 +108,17 @@ class UserController extends Controller
 
     public function hapus(int $id)
     {
+        $siswa = Siswa::where('user_id', $id)->first();
+        if (isset($siswa))
+        {
+            $siswa->delete();
+        }
         User::find($id)->delete();
 
         return redirect()->route('kelola.user');
     }
 
-    function cekusername(Request $request, int $id)
+    function cekusername(Request $request)
     {
         if ($request->input('username') !== '') {
             if ($request->input('username')) {
@@ -138,6 +140,14 @@ class UserController extends Controller
         if ($request->input('username') === $data->username) {
             if ($request->input('username')) {
                 $rule = array('username' => 'required');
+                $validator = Validator::make($request->all(), $rule);
+            }
+            if (!$validator->fails()) {
+                die('true');
+            }
+        } elseif ($request->input('username') !== $data->username) {
+            if ($request->input('username')) {
+                $rule = array('username' => 'required|unique:users');
                 $validator = Validator::make($request->all(), $rule);
             }
             if (!$validator->fails()) {

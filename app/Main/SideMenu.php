@@ -89,6 +89,28 @@ class SideMenu
                     ],
                 ],
             ],
+            'kelola-siswa' => [
+                'icon' => 'smile',
+                'title' => 'Kelola Siswa',
+                'params' => [
+                ],
+                'sub_menu' => [
+                    'siswa-list' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.siswa',
+                        'params' => [
+                        ],
+                        'title' => 'Daftar Siswa'
+                    ],
+                    'siswa-tambah' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.siswa.tambah',
+                        'params' => [
+                        ],
+                        'title' => 'Tambah Siswa'
+                    ],
+                ],
+            ],
 //            'crud' => [
 //                'icon' => 'edit',
 //                'title' => 'Crud',
