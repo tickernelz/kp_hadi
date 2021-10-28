@@ -29,19 +29,41 @@ class SideMenu
                 'params' => [
                 ],
                 'sub_menu' => [
-                    'list' => [
+                    'user-list' => [
                         'icon' => '',
                         'route_name' => 'kelola.user',
                         'params' => [
                         ],
-                        'title' => 'Kelola User'
+                        'title' => 'Daftar User'
                     ],
-                    'tambah' => [
+                    'user-tambah' => [
                         'icon' => '',
                         'route_name' => 'kelola.user.tambah',
                         'params' => [
                         ],
                         'title' => 'Tambah User'
+                    ],
+                ],
+            ],
+            'kelola-kelas' => [
+                'icon' => 'bell',
+                'title' => 'Kelola Kelas',
+                'params' => [
+                ],
+                'sub_menu' => [
+                    'kelas-list' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.kelas',
+                        'params' => [
+                        ],
+                        'title' => 'Daftar Kelas'
+                    ],
+                    'kelas-tambah' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.kelas.tambah',
+                        'params' => [
+                        ],
+                        'title' => 'Tambah Kelas'
                     ],
                 ],
             ],

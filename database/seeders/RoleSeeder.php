@@ -21,7 +21,6 @@ class RoleSeeder extends Seeder
 
         // create permissions
         Permission::create(['name' => 'kelola user']);
-        Permission::create(['name' => 'kelola guru']);
         Permission::create(['name' => 'kelola siswa']);
         Permission::create(['name' => 'kelola tahun ajaran']);
         Permission::create(['name' => 'kelola mata pelajaran']);
@@ -36,7 +35,6 @@ class RoleSeeder extends Seeder
             'guard_name' => 'web',
         ]);
         $role1->givePermissionTo('kelola user');
-        $role1->givePermissionTo('kelola guru');
         $role1->givePermissionTo('kelola siswa');
         $role1->givePermissionTo('kelola tahun ajaran');
         $role1->givePermissionTo('kelola mata pelajaran');
@@ -50,7 +48,6 @@ class RoleSeeder extends Seeder
             'name' => 'admin',
             'guard_name' => 'web',
         ]);
-        $role2->givePermissionTo('kelola guru');
         $role2->givePermissionTo('kelola siswa');
         $role2->givePermissionTo('kelola tahun ajaran');
         $role2->givePermissionTo('kelola mata pelajaran');
