@@ -34,7 +34,7 @@
                                     <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit
                                 </a>
                                 <a class="flex items-center text-theme-21" href="{{ Request::url() }}/hapus/{{ $list->id }}" onclick="return confirm('Yakin Mau Dihapus?');">
-                                    <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete
+                                    <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Hapus
                                 </a>
                             </div>
                         </td>
