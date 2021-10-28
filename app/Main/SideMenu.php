@@ -67,6 +67,28 @@ class SideMenu
                     ],
                 ],
             ],
+            'kelola-tahun_ajaran' => [
+                'icon' => 'calendar',
+                'title' => 'Kelola Tahun Ajaran',
+                'params' => [
+                ],
+                'sub_menu' => [
+                    'tahun_ajaran-list' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.tahun_ajaran',
+                        'params' => [
+                        ],
+                        'title' => 'Daftar Tahun Ajaran'
+                    ],
+                    'tahun_ajaran-tambah' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.tahun_ajaran.tambah',
+                        'params' => [
+                        ],
+                        'title' => 'Tambah Tahun Ajaran'
+                    ],
+                ],
+            ],
 //            'crud' => [
 //                'icon' => 'edit',
 //                'title' => 'Crud',

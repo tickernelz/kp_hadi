@@ -5,6 +5,7 @@ use App\Http\Controllers\DarkModeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\TahunAjaranController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -50,5 +51,11 @@ Route::middleware('auth')->group(function () {
         Route::get('kelola-kelas/hapus/{id}', [KelasController::class, 'hapus'])->name('kelola.kelas.hapus');
         Route::post('kelola-kelas/cek', [KelasController::class, 'cektambah'])->name('kelola.kelas.tambah.cek');
         Route::post('kelola-kelas/edit/{id}/cek', [KelasController::class, 'cekedit'])->name('kelola.kelas.edit.cek');
+    });
+    Route::middleware('can:kelola tahun ajaran')->group(function () {
+        Route::get('kelola-tahun_ajaran', [TahunAjaranController::class, 'index'])->name('kelola.tahun_ajaran');
+        Route::get('kelola-tahun_ajaran/tambah', [TahunAjaranController::class, 'indextambah'])->name('kelola.tahun_ajaran.tambah');
+        Route::post('kelola-tahun_ajaran/tambah/post', [TahunAjaranController::class, 'tambah'])->name('kelola.tahun_ajaran.tambah.post');
+        Route::get('kelola-tahun_ajaran/hapus/{id}', [TahunAjaranController::class, 'hapus'])->name('kelola.tahun_ajaran.hapus');
     });
 });
