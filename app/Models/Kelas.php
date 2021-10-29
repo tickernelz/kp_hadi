@@ -22,6 +22,8 @@ use Illuminate\Database\Eloquent\Model;
  * @mixin \Eloquent
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Siswa[] $siswa
  * @property-read int|null $siswa_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\MataPelajaran[] $mata_pelajaran
+ * @property-read int|null $mata_pelajaran_count
  */
 class Kelas extends Model
 {
@@ -34,5 +36,10 @@ class Kelas extends Model
     public function siswa()
     {
         return $this->hasMany(Siswa::class);
+    }
+
+    public function mata_pelajaran()
+    {
+        return $this->hasMany(MataPelajaran::class);
     }
 }
