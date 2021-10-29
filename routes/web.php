@@ -4,7 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DarkModeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KelasController;
-use App\Http\Controllers\PageController;
+use App\Http\Controllers\MataPelajaranController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\TahunAjaranController;
 use App\Http\Controllers\UserController;
@@ -70,6 +70,14 @@ Route::middleware('auth')->group(function () {
         Route::get('kelola-siswa/hapus/{id}', [SiswaController::class, 'hapus'])->name('kelola.siswa.hapus');
         Route::post('kelola-siswa/edit/{id}/cekusername', [SiswaController::class, 'cekusernameedit'])->name('kelola.siswa.edit.cekusername');
         Route::post('kelola-siswa/edit/{id}/ceknis', [SiswaController::class, 'ceknisedit'])->name('kelola.siswa.edit.ceknis');
-
+    });
+    Route::middleware('can:kelola mata pelajaran')->group(function () {
+        Route::get('kelola-mata_pelajaran', [MataPelajaranController::class, 'index'])->name('kelola.mata_pelajaran');
+        Route::get('kelola-mata_pelajaran/cari', [MataPelajaranController::class, 'indexcari'])->name('kelola.mata_pelajaran.cari');
+        Route::get('kelola-mata_pelajaran/tambah', [MataPelajaranController::class, 'indextambah'])->name('kelola.mata_pelajaran.tambah');
+        Route::post('kelola-mata_pelajaran/tambah/post', [MataPelajaranController::class, 'tambah'])->name('kelola.mata_pelajaran.tambah.post');
+        Route::get('kelola-mata_pelajaran/edit/{id}', [MataPelajaranController::class, 'indexedit'])->name('kelola.mata_pelajaran.edit');
+        Route::post('kelola-mata_pelajaran/edit/{id}/post', [MataPelajaranController::class, 'edit'])->name('kelola.mata_pelajaran.edit.post');
+        Route::get('kelola-mata_pelajaran/hapus/{id}', [MataPelajaranController::class, 'hapus'])->name('kelola.mata_pelajaran.hapus');
     });
 });

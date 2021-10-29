@@ -111,6 +111,28 @@ class SideMenu
                     ],
                 ],
             ],
+            'kelola-mata_pelajaran' => [
+                'icon' => 'book-open',
+                'title' => 'Kelola Mata Pelajaran',
+                'params' => [
+                ],
+                'sub_menu' => [
+                    'mata_pelajaran-list' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.mata_pelajaran',
+                        'params' => [
+                        ],
+                        'title' => 'Daftar Mata Pelajaran'
+                    ],
+                    'mata_pelajaran-tambah' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.mata_pelajaran.tambah',
+                        'params' => [
+                        ],
+                        'title' => 'Tambah Mata Pelajaran'
+                    ],
+                ],
+            ],
 //            'crud' => [
 //                'icon' => 'edit',
 //                'title' => 'Crud',
