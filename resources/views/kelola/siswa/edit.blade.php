@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
-@push('judul', 'Edit User')
-@push('breadcrumb', 'Edit User')
+@push('judul', 'Edit Siswa')
+@push('breadcrumb', 'Edit Siswa')
 
 @section('subcontent')
 
