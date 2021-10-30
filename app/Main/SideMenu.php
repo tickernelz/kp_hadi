@@ -133,6 +133,28 @@ class SideMenu
                     ],
                 ],
             ],
+            'kelola-wali_kelas' => [
+                'icon' => 'briefcase',
+                'title' => 'Kelola Wali Kelas',
+                'params' => [
+                ],
+                'sub_menu' => [
+                    'wali_kelas-list' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.wali_kelas',
+                        'params' => [
+                        ],
+                        'title' => 'Daftar Wali Kelas'
+                    ],
+                    'wali_kelas-tambah' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.wali_kelas.tambah',
+                        'params' => [
+                        ],
+                        'title' => 'Tambah Wali Kelas'
+                    ],
+                ],
+            ],
 //            'crud' => [
 //                'icon' => 'edit',
 //                'title' => 'Crud',
