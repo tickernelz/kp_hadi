@@ -24,6 +24,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read int|null $siswa_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\MataPelajaran[] $mata_pelajaran
  * @property-read int|null $mata_pelajaran_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\WaliKelas[] $wali_kelas
+ * @property-read int|null $wali_kelas_count
  */
 class Kelas extends Model
 {
@@ -41,5 +43,10 @@ class Kelas extends Model
     public function mata_pelajaran()
     {
         return $this->hasMany(MataPelajaran::class);
+    }
+
+    public function wali_kelas()
+    {
+        return $this->hasMany(WaliKelas::class);
     }
 }
