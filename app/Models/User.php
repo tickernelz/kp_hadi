@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
@@ -42,6 +41,8 @@ use Spatie\Permission\Traits\HasRoles;
  * @mixin \Eloquent
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Siswa[] $siswa
  * @property-read int|null $siswa_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\WaliKelas[] $wali_kelas
+ * @property-read int|null $wali_kelas_count
  */
 class User extends Authenticatable
 {
@@ -69,5 +70,10 @@ class User extends Authenticatable
     public function siswa()
     {
         return $this->hasMany(Siswa::class);
+    }
+
+    public function wali_kelas()
+    {
+        return $this->hasMany(WaliKelas::class);
     }
 }

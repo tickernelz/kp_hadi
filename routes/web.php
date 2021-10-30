@@ -8,6 +8,7 @@ use App\Http\Controllers\MataPelajaranController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\TahunAjaranController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WaliKelasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -79,5 +80,16 @@ Route::middleware('auth')->group(function () {
         Route::get('kelola-mata_pelajaran/edit/{id}', [MataPelajaranController::class, 'indexedit'])->name('kelola.mata_pelajaran.edit');
         Route::post('kelola-mata_pelajaran/edit/{id}/post', [MataPelajaranController::class, 'edit'])->name('kelola.mata_pelajaran.edit.post');
         Route::get('kelola-mata_pelajaran/hapus/{id}', [MataPelajaranController::class, 'hapus'])->name('kelola.mata_pelajaran.hapus');
+    });
+    Route::middleware('can:kelola wali kelas')->group(function () {
+        Route::get('kelola-wali_kelas', [WaliKelasController::class, 'index'])->name('kelola.wali_kelas');
+        Route::get('kelola-wali_kelas/tambah', [WaliKelasController::class, 'indextambah'])->name('kelola.wali_kelas.tambah');
+        Route::post('kelola-wali_kelas/tambah/post', [WaliKelasController::class, 'tambah'])->name('kelola.wali_kelas.tambah.post');
+        Route::post('kelola-wali_kelas/tambah/ceknip', [WaliKelasController::class, 'cekniptambah'])->name('kelola.wali_kelas.tambah.ceknip');
+        Route::get('kelola-wali_kelas/edit/{id}', [WaliKelasController::class, 'indexedit'])->name('kelola.wali_kelas.edit');
+        Route::post('kelola-wali_kelas/edit/{id}/post', [WaliKelasController::class, 'edit'])->name('kelola.wali_kelas.edit.post');
+        Route::get('kelola-wali_kelas/hapus/{id}', [WaliKelasController::class, 'hapus'])->name('kelola.wali_kelas.hapus');
+        Route::post('kelola-wali_kelas/edit/{id}/cekusername', [WaliKelasController::class, 'cekusernameedit'])->name('kelola.wali_kelas.edit.cekusername');
+        Route::post('kelola-wali_kelas/edit/{id}/ceknip', [WaliKelasController::class, 'ceknipedit'])->name('kelola.wali_kelas.edit.ceknip');
     });
 });
