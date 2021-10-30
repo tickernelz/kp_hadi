@@ -60,31 +60,31 @@
             <div class="intro-y flex flex-col-reverse sm:flex-row items-center">
                 <div class="w-full sm:w-auto relative mr-auto mt-3 sm:mt-0">
                     <i class="w-4 h-4 absolute my-auto inset-y-0 ml-3 left-0 z-10 text-gray-700 dark:text-gray-300"
-                       data-feather="search"></i>
+                        data-feather="search"></i>
                     <input type="text"
-                           class="form-control w-full sm:w-64 box px-10 text-gray-700 dark:text-gray-300 placeholder-theme-13"
-                           placeholder="Search files">
+                        class="form-control w-full sm:w-64 box px-10 text-gray-700 dark:text-gray-300 placeholder-theme-13"
+                        placeholder="Search files">
                     <div class="inbox-filter dropdown absolute inset-y-0 mr-3 right-0 flex items-center"
-                         data-placement="bottom-start">
+                        data-placement="bottom-start">
                         <i class="dropdown-toggle w-4 h-4 cursor-pointer text-gray-700 dark:text-gray-300" role="button"
-                           aria-expanded="false" data-feather="chevron-down"></i>
+                            aria-expanded="false" data-feather="chevron-down"></i>
                         <div class="inbox-filter__dropdown-menu dropdown-menu pt-2">
                             <div class="dropdown-menu__content box p-5">
                                 <div class="grid grid-cols-12 gap-4 gap-y-3">
                                     <div class="col-span-6">
                                         <label for="input-filter-1" class="form-label text-xs">File Name</label>
                                         <input id="input-filter-1" type="text" class="form-control flex-1"
-                                               placeholder="Type the file name">
+                                            placeholder="Type the file name">
                                     </div>
                                     <div class="col-span-6">
                                         <label for="input-filter-2" class="form-label text-xs">Shared With</label>
                                         <input id="input-filter-2" type="text" class="form-control flex-1"
-                                               placeholder="example@gmail.com">
+                                            placeholder="example@gmail.com">
                                     </div>
                                     <div class="col-span-6">
                                         <label for="input-filter-3" class="form-label text-xs">Created At</label>
                                         <input id="input-filter-3" type="text" class="form-control flex-1"
-                                               placeholder="Important Meeting">
+                                            placeholder="Important Meeting">
                                     </div>
                                     <div class="col-span-6">
                                         <label for="input-filter-4" class="form-label text-xs">Size</label>
@@ -107,8 +107,7 @@
                 <div class="w-full sm:w-auto flex">
                     <button class="btn btn-primary shadow-md mr-2">Upload New Files</button>
                     <div class="dropdown">
-                        <button class="dropdown-toggle btn px-2 box text-gray-700 dark:text-gray-300"
-                                aria-expanded="false">
+                        <button class="dropdown-toggle btn px-2 box text-gray-700 dark:text-gray-300" aria-expanded="false">
                             <span class="w-5 h-5 flex items-center justify-center">
                                 <i class="w-4 h-4" data-feather="plus"></i>
                             </span>
@@ -116,11 +115,11 @@
                         <div class="dropdown-menu w-40">
                             <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                 <a href=""
-                                   class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                     <i data-feather="file" class="w-4 h-4 mr-2"></i> Share Files
                                 </a>
                                 <a href=""
-                                   class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                     <i data-feather="settings" class="w-4 h-4 mr-2"></i> Settings
                                 </a>
                             </div>
@@ -145,7 +144,7 @@
                                 <a href="" class="w-3/5 file__icon file__icon--image mx-auto">
                                     <div class="file__icon--image__preview image-fit">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . strtolower($faker['files'][0]['file_name'])) }}">
+                                            src="{{ asset('dist/images/' . strtolower($faker['files'][0]['file_name'])) }}">
                                     </div>
                                 </a>
                             @else
@@ -154,7 +153,7 @@
                                 </a>
                             @endif
                             <a href=""
-                               class="block font-medium mt-4 text-center truncate">{{ $faker['files'][0]['file_name'] }}</a>
+                                class="block font-medium mt-4 text-center truncate">{{ $faker['files'][0]['file_name'] }}</a>
                             <div class="text-gray-600 text-xs text-center mt-0.5">{{ $faker['files'][0]['size'] }}</div>
                             <div class="absolute top-0 right-0 mr-2 mt-2 dropdown ml-auto">
                                 <a class="dropdown-toggle w-5 h-5 block" href="javascript:" aria-expanded="false">
@@ -163,11 +162,11 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
                                             <i data-feather="users" class="w-4 h-4 mr-2"></i> Share File
                                         </a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
                                             <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete
                                         </a>
                                     </div>

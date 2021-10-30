@@ -18,11 +18,11 @@
                 <div class="dropdown-menu w-40">
                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="users" class="w-4 h-4 mr-2"></i> Add Group
                         </a>
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="message-circle" class="w-4 h-4 mr-2"></i> Send Message
                         </a>
                     </div>
@@ -43,7 +43,7 @@
                     <div class="flex flex-col lg:flex-row items-center p-5 border-b border-gray-200 dark:border-dark-5">
                         <div class="w-24 h-24 lg:w-12 lg:h-12 image-fit lg:mr-1">
                             <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                 src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
+                                src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
                         </div>
                         <div class="lg:ml-2 lg:mr-auto text-center lg:text-left mt-3 lg:mt-0">
                             <a href="" class="font-medium">{{ $faker['users'][0]['name'] }}</a>
@@ -51,18 +51,18 @@
                         </div>
                         <div class="flex -ml-2 lg:ml-0 lg:justify-end mt-3 lg:mt-0">
                             <a href=""
-                               class="w-8 h-8 rounded-full flex items-center justify-center border dark:border-dark-5 ml-2 text-gray-500 zoom-in tooltip"
-                               title="Facebook">
+                                class="w-8 h-8 rounded-full flex items-center justify-center border dark:border-dark-5 ml-2 text-gray-500 zoom-in tooltip"
+                                title="Facebook">
                                 <i class="w-3 h-3 fill-current" data-feather="facebook"></i>
                             </a>
                             <a href=""
-                               class="w-8 h-8 rounded-full flex items-center justify-center border dark:border-dark-5 ml-2 text-gray-500 zoom-in tooltip"
-                               title="Twitter">
+                                class="w-8 h-8 rounded-full flex items-center justify-center border dark:border-dark-5 ml-2 text-gray-500 zoom-in tooltip"
+                                title="Twitter">
                                 <i class="w-3 h-3 fill-current" data-feather="twitter"></i>
                             </a>
                             <a href=""
-                               class="w-8 h-8 rounded-full flex items-center justify-center border dark:border-dark-5 ml-2 text-gray-500 zoom-in tooltip"
-                               title="Linked In">
+                                class="w-8 h-8 rounded-full flex items-center justify-center border dark:border-dark-5 ml-2 text-gray-500 zoom-in tooltip"
+                                title="Linked In">
                                 <i class="w-3 h-3 fill-current" data-feather="linkedin"></i>
                             </a>
                         </div>
@@ -75,7 +75,7 @@
                             </div>
                             <div class="progress h-1 mt-2">
                                 <div class="progress-bar w-1/4 bg-theme-25" role="progressbar" aria-valuenow="0"
-                                     aria-valuemin="0" aria-valuemax="100"></div>
+                                    aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <button class="btn btn-primary py-1 px-2 mr-2">Message</button>
@@ -83,8 +83,8 @@
                     </div>
                 </div>
             </div>
-    @endforeach
-    <!-- END: Users Layout -->
+        @endforeach
+        <!-- END: Users Layout -->
         <!-- BEGIN: Pagination -->
         <div class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-nowrap items-center">
             <ul class="pagination">

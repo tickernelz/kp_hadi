@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Kelas;
-use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -78,7 +77,7 @@ class KelasController extends Controller
         return redirect()->route('kelola.kelas');
     }
 
-    function cektambah(Request $request)
+    public function cektambah(Request $request)
     {
         if ($request->input('nama_kelas') !== '') {
             if ($request->input('nama_kelas')) {
@@ -92,7 +91,7 @@ class KelasController extends Controller
         die('false');
     }
 
-    function cekedit(Request $request, int $id)
+    public function cekedit(Request $request, int $id)
     {
         // Get Data User
         $data = Kelas::find($id);

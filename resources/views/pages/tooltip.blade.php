@@ -16,15 +16,15 @@
                     <h2 class="font-medium text-base mr-auto">Basic Tooltip</h2>
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-1">Show example code</label>
-                        <input id="show-example-1" data-target="#basic-tooltip"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                        <input id="show-example-1" data-target="#basic-tooltip" class="show-code form-check-switch mr-0 ml-3"
+                            type="checkbox">
                     </div>
                 </div>
                 <div id="basic-tooltip" class="p-5">
                     <div class="preview">
                         <div class="text-center">
                             <a href="javascript:" class="tooltip btn btn-primary"
-                               title="This is awesome tooltip example!">Show Tooltip</a>
+                                title="This is awesome tooltip example!">Show Tooltip</a>
                         </div>
                     </div>
                     <div class="source-code hidden">
@@ -33,14 +33,14 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-basic-tooltip" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="text-center">
                                             <a href="javascript:;" class="tooltip btn btn-primary" title="This is awesome tooltip example!">Show Tooltip</a>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -53,31 +53,30 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-2">Show example code</label>
                         <input id="show-example-2" data-target="#on-click-tooltip"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="on-click-tooltip" class="p-5">
                     <div class="preview">
                         <div class="text-center">
                             <a href="javascript:" data-trigger="click" class="tooltip btn btn-primary"
-                               title="This is awesome tooltip example!">Show Tooltip</a>
+                                title="This is awesome tooltip example!">Show Tooltip</a>
                         </div>
                     </div>
                     <div class="source-code hidden">
-                        <button data-target="#copy-on-click-tooltip"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                        <button data-target="#copy-on-click-tooltip" class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-on-click-tooltip" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="text-center">
                                             <a href="javascript:;" data-trigger="click" class="tooltip btn btn-primary" title="This is awesome tooltip example!">Show Tooltip</a>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -90,14 +89,14 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-3">Show example code</label>
                         <input id="show-example-3" data-target="#light-tooltip"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="light-tooltip" class="p-5">
                     <div class="preview">
                         <div class="text-center">
                             <a href="javascript:" data-theme="light" class="tooltip btn btn-primary"
-                               title="This is awesome tooltip example!">Show Tooltip</a>
+                                title="This is awesome tooltip example!">Show Tooltip</a>
                         </div>
                     </div>
                     <div class="source-code hidden">
@@ -106,14 +105,14 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-light-tooltip" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="text-center">
                                             <a href="javascript:;" data-theme="light" class="tooltip btn btn-primary" title="This is awesome tooltip example!">Show Tooltip</a>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -128,7 +127,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-4">Show example code</label>
                         <input id="show-example-4" data-target="#custom-content-preview-tooltip"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="custom-content-preview-tooltip" class="p-5">
@@ -136,8 +135,8 @@
                         <!-- BEGIN: Custom Tooltip Toggle -->
                         <div class="text-center">
                             <a href="javascript:" data-theme="light" data-tooltip-content="#custom-content-tooltip"
-                               data-trigger="click" class="tooltip btn btn-primary"
-                               title="This is awesome tooltip example!">Show Tooltip</a>
+                                data-trigger="click" class="tooltip btn btn-primary"
+                                title="This is awesome tooltip example!">Show Tooltip</a>
                         </div>
                         <!-- END: Custom Tooltip Toggle -->
                         <!-- BEGIN: Custom Tooltip Content -->
@@ -145,11 +144,11 @@
                             <div id="custom-content-tooltip" class="relative flex items-center py-1">
                                 <div class="w-12 h-12 image-fit">
                                     <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                         src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
+                                        src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
                                 </div>
                                 <div class="ml-4 mr-auto">
-                                    <div
-                                        class="font-medium dark:text-gray-300 leading-relaxed">{{ $fakers[0]['users'][0]['name'] }}</div>
+                                    <div class="font-medium dark:text-gray-300 leading-relaxed">
+                                        {{ $fakers[0]['users'][0]['name'] }}</div>
                                     <div class="text-gray-600">Bootstrap 4 HTML Admin Template</div>
                                 </div>
                             </div>
@@ -158,34 +157,36 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-custom-content-preview-tooltip"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-custom-content-preview-tooltip" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Custom Tooltip Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode(
+    '
+                                        <!-- BEGIN: Custom Tooltip Toggle --><div class="text-center">
                                             <a href="javascript:;" data-theme="light" data-tooltip-content="#custom-content-tooltip" data-trigger="click" class="tooltip btn btn-primary" title="This is awesome tooltip example!">Show Tooltip</a>
                                         </div>
-                                        <!-- END: Custom Tooltip Toggle -->
-                                        <!-- BEGIN: Custom Tooltip Content -->
-                                        <div class="tooltip-content">
+                                        <!-- END: Custom Tooltip Toggle --><!-- BEGIN: Custom Tooltip Content --><div class="tooltip-content">
                                             <div id="custom-content-tooltip" class="relative flex items-center py-1">
                                                 <div class="w-12 h-12 image-fit">
-                                                    <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full" src="' . asset('dist/images/' . $fakers[0]['photos'][0]) . '">
+                                                    <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full" src="' .
+        asset('dist/images/' . $fakers[0]['photos'][0]) .
+        '">
                                                 </div>
                                                 <div class="ml-4 mr-auto">
-                                                    <div class="font-medium dark:text-gray-300 leading-relaxed">' . $fakers[0]['users'][0]['name'] . '</div>
+                                                    <div class="font-medium dark:text-gray-300 leading-relaxed">' .
+        $fakers[0]['users'][0]['name'] .
+        '</div>
                                                     <div class="text-gray-600">Bootstrap 4 HTML Admin Template</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Custom Tooltip Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Custom Tooltip Content -->',
+) }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -198,7 +199,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-5">Show example code</label>
                         <input id="show-example-5" data-target="#chart-preview-tooltip"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="chart-preview-tooltip" class="p-5">
@@ -206,8 +207,8 @@
                         <!-- BEGIN: Custom Tooltip Toggle -->
                         <div class="text-center">
                             <a href="javascript:" data-theme="light" data-tooltip-content="#chart-tooltip"
-                               data-trigger="click" class="tooltip btn btn-primary"
-                               title="This is awesome tooltip example!">Show Tooltip</a>
+                                data-trigger="click" class="tooltip btn btn-primary"
+                                title="This is awesome tooltip example!">Show Tooltip</a>
                         </div>
                         <!-- END: Custom Tooltip Toggle -->
                         <!-- BEGIN: Custom Tooltip Content -->
@@ -228,20 +229,17 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-chart-preview-tooltip"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-chart-preview-tooltip" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Custom Tooltip Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
+                                        <!-- BEGIN: Custom Tooltip Toggle --><div class="text-center">
                                             <a href="javascript:;" data-theme="light" data-tooltip-content="#chart-tooltip" data-trigger="click" class="tooltip btn btn-primary" title="This is awesome tooltip example!">Show Tooltip</a>
                                         </div>
-                                        <!-- END: Custom Tooltip Toggle -->
-                                        <!-- BEGIN: Custom Tooltip Content -->
-                                        <div class="tooltip-content">
+                                        <!-- END: Custom Tooltip Toggle --><!-- BEGIN: Custom Tooltip Content --><div class="tooltip-content">
                                             <div id="chart-tooltip" class="py-1">
                                                 <div class="font-medium dark:text-gray-300">Net Worth</div>
                                                 <div class="flex items-center mt-2 sm:mt-0">
@@ -254,10 +252,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Custom Tooltip Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Custom Tooltip Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>

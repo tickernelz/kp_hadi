@@ -13,12 +13,11 @@ class DarkModeController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function switch()
-    {
-        session([
-            'dark_mode' => session()->has('dark_mode') ? !session()->get('dark_mode') : true
-        ]);
+    function switch () {
+            session([
+                'dark_mode' => session()->has('dark_mode') ? !session()->get('dark_mode') : true,
+            ]);
 
-        return back();
+            return back();
     }
 }

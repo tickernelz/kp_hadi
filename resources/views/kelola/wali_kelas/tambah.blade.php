@@ -53,9 +53,8 @@
                     </div>
                     <div class="mt-3 mb-3">
                         <label for="kelas" class="form-label">Kelas</label>
-                        <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3"
-                                id="kelas">
-                            @foreach($data_kelas as $list)
+                        <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3" id="kelas">
+                            @foreach ($data_kelas as $list)
                                 <option value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
                             @endforeach
                         </select>
@@ -68,8 +67,8 @@
                     </div>
                     <div class="text-right mt-5">
                         <button type="button" class="btn btn-outline-secondary w-24 mr-1" onclick="
-                            window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.wali_kelas') }}'
-                            ">Kembali
+                                        window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.wali_kelas') }}'
+                                        ">Kembali
                         </button>
                         <button type="submit" id="submit" class="btn btn-primary w-24">Simpan</button>
                     </div>
@@ -87,11 +86,11 @@
                     nip: {
                         required: true,
                         remote: {
-                            url: "{{route('kelola.wali_kelas.tambah.ceknip')}}",
+                            url: "{{ route('kelola.wali_kelas.tambah.ceknip') }}",
                             type: "post",
                             data: {
-                                _token: function () {
-                                    return "{{csrf_token()}}"
+                                _token: function() {
+                                    return "{{ csrf_token() }}"
                                 }
                             }
                         }
@@ -102,11 +101,11 @@
                     username: {
                         required: true,
                         remote: {
-                            url: "{{route('kelola.user.tambah.cekusername')}}",
+                            url: "{{ route('kelola.user.tambah.cekusername') }}",
                             type: "post",
                             data: {
-                                _token: function () {
-                                    return "{{csrf_token()}}"
+                                _token: function() {
+                                    return "{{ csrf_token() }}"
                                 }
                             }
                         }
@@ -135,23 +134,24 @@
                         required: "Password wajib diisi",
                     },
                 },
-                submitHandler: function (form) {
+                submitHandler: function(form) {
                     $.ajaxSetup({
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         }
                     });
-                    cash(async function () {
+                    cash(async function() {
                         // Loading state
-                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>').svgLoader()
+                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>')
+                            .svgLoader()
                         await helper.delay(1500)
                     });
                     $("#submit").attr("disabled", true);
                     $.ajax({
-                        url: "{{route('kelola.wali_kelas.tambah.post')}}",
+                        url: "{{ route('kelola.wali_kelas.tambah.post') }}",
                         type: "POST",
                         data: $('#tambah-user').serialize(),
-                        success: function (response) {
+                        success: function(response) {
                             $('#submit').html('Submit');
                             $("#submit").attr("disabled", false);
                             cash('#success-modal').modal('show')

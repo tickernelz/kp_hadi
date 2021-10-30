@@ -3,7 +3,8 @@
     class="mobile-menu @yield('mobile-menu-modifier') {{ $layout == 'top-menu' ? 'mobile-menu--light' : '' }} md:hidden">
     <div class="mobile-menu-bar">
         <a href="" class="flex mr-auto">
-            <img alt="Tinker Tailwind HTML Admin Template" class="w-6" src="{{ asset('dist/images/logo.svg') }}">
+            <img alt="Tinker Tailwind HTML Admin Template" class="w-6"
+                src="{{ asset('dist/images/logo.svg') }}">
         </a>
         <a href="javascript:" id="mobile-menu-toggler">
             <i data-feather="bar-chart-2" class="w-8 h-8 text-gray-600 dark:text-white transform -rotate-90"></i>
@@ -16,7 +17,7 @@
             @else
                 <li>
                     <a href="{{ isset($menu['route_name']) ? route($menu['route_name'], $menu['params']) : 'javascript:;' }}"
-                       class="{{ $first_level_active_index == $menuKey ? 'menu menu--active' : 'menu' }}">
+                        class="{{ $first_level_active_index == $menuKey ? 'menu menu--active' : 'menu' }}">
                         <div class="menu__icon">
                             <i data-feather="{{ $menu['icon'] }}"></i>
                         </div>
@@ -24,7 +25,7 @@
                             {{ $menu['title'] }}
                             @if (isset($menu['sub_menu']))
                                 <i data-feather="chevron-down"
-                                   class="menu__sub-icon {{ $first_level_active_index == $menuKey ? 'transform rotate-180' : '' }}"></i>
+                                    class="menu__sub-icon {{ $first_level_active_index == $menuKey ? 'transform rotate-180' : '' }}"></i>
                             @endif
                         </div>
                     </a>
@@ -33,7 +34,7 @@
                             @foreach ($menu['sub_menu'] as $subMenuKey => $subMenu)
                                 <li>
                                     <a href="{{ isset($subMenu['layout']) ? route('page', ['layout' => $subMenu['layout'], 'theme' => $theme, 'pageName' => $subMenu['page_name']]) : 'javascript:;' }}"
-                                       class="{{ $second_level_active_index == $subMenuKey ? 'menu menu--active' : 'menu' }}">
+                                        class="{{ $second_level_active_index == $subMenuKey ? 'menu menu--active' : 'menu' }}">
                                         <div class="menu__icon">
                                             <i data-feather="activity"></i>
                                         </div>
@@ -41,16 +42,17 @@
                                             {{ $subMenu['title'] }}
                                             @if (isset($subMenu['sub_menu']))
                                                 <i data-feather="chevron-down"
-                                                   class="menu__sub-icon {{ $second_level_active_index == $subMenuKey ? 'transform rotate-180' : '' }}"></i>
+                                                    class="menu__sub-icon {{ $second_level_active_index == $subMenuKey ? 'transform rotate-180' : '' }}"></i>
                                             @endif
                                         </div>
                                     </a>
                                     @if (isset($subMenu['sub_menu']))
-                                        <ul class="{{ $second_level_active_index == $subMenuKey ? 'menu__sub-open' : '' }}">
+                                        <ul
+                                            class="{{ $second_level_active_index == $subMenuKey ? 'menu__sub-open' : '' }}">
                                             @foreach ($subMenu['sub_menu'] as $lastSubMenuKey => $lastSubMenu)
                                                 <li>
                                                     <a href="{{ isset($lastSubMenu['route_name']) ? route($lastSubMenu['route_name'], $lastSubMenu['params']) : 'javascript:;' }}"
-                                                       class="{{ $third_level_active_index == $lastSubMenuKey ? 'menu menu--active' : 'menu' }}">
+                                                        class="{{ $third_level_active_index == $lastSubMenuKey ? 'menu menu--active' : 'menu' }}">
                                                         <div class="menu__icon">
                                                             <i data-feather="zap"></i>
                                                         </div>

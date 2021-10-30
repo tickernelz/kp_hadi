@@ -18,11 +18,11 @@
                 <div class="dropdown-menu w-40">
                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="users" class="w-4 h-4 mr-2"></i> Add Group
                         </a>
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="message-circle" class="w-4 h-4 mr-2"></i> Send Message
                         </a>
                     </div>
@@ -44,7 +44,7 @@
                         <div class="w-full flex flex-col lg:flex-row items-center">
                             <div class="w-16 h-16 image-fit">
                                 <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                     src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
+                                    src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
                             </div>
                             <div class="lg:ml-4 text-center lg:text-left mt-3 lg:mt-0">
                                 <a href="" class="font-medium">{{ $faker['users'][0]['name'] }}</a>
@@ -58,11 +58,11 @@
                             <div class="dropdown-menu w-40">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                         <i data-feather="edit-2" class="w-4 h-4 mr-2"></i> Edit
                                     </a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                         <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete
                                     </a>
                                 </div>
@@ -84,8 +84,8 @@
                     </div>
                 </div>
             </div>
-    @endforeach
-    <!-- END: Users Layout -->
+        @endforeach
+        <!-- END: Users Layout -->
         <!-- BEGIN: Pagination -->
         <div class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-nowrap items-center">
             <ul class="pagination">

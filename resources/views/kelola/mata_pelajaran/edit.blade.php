@@ -37,25 +37,25 @@
                         <div>
                             <div>
                                 <label for="nama_mapel" class="form-label">Nama Mata Pelajaran</label>
-                                <input id="nama_mapel" name="nama_mapel" value="{{ $data->nama_mapel }}" type="text" class="form-control w-full mb-3">
+                                <input id="nama_mapel" name="nama_mapel" value="{{ $data->nama_mapel }}" type="text"
+                                    class="form-control w-full mb-3">
                             </div>
                         </div>
                     </div>
                     <div class="mt-3 mb-3">
                         <label for="kelas" class="form-label">Kelas</label>
-                        <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3"
-                                id="kelas">
-                            @foreach($data_kelas as $list)
+                        <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3" id="kelas">
+                            @foreach ($data_kelas as $list)
                                 <option @if ($list->id == $data->kelas_id)
-                                        selected="selected"
-                                        @endif value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
+                                    selected="selected"
+                                    @endif value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
                             @endforeach
                         </select>
                     </div>
                     <div class="text-right mt-5">
                         <button type="button" class="btn btn-outline-secondary w-24 mr-1" onclick="
-                            window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.mata_pelajaran') }}'
-                            ">Kembali
+                                window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.mata_pelajaran') }}'
+                                ">Kembali
                         </button>
                         <button type="submit" id="submit" class="btn btn-primary w-24">Simpan</button>
                     </div>
@@ -85,22 +85,23 @@
                         required: "Kelas wajib diisi",
                     },
                 },
-                submitHandler: function (form) {
+                submitHandler: function(form) {
                     $.ajaxSetup({
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         }
                     });
-                    cash(async function () {
+                    cash(async function() {
                         // Loading state
-                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>').svgLoader()
+                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>')
+                            .svgLoader()
                         await helper.delay(1500)
                     });
                     $.ajax({
                         url: "{{ Request::url() }}/post",
                         type: "POST",
                         data: $('#mata_pelajaran').serialize(),
-                        success: cash(async function (response) {
+                        success: cash(async function(response) {
                             cash('#success-modal').modal('show')
                             await helper.delay(3000)
                             location.reload();

@@ -109,8 +109,7 @@ class UserController extends Controller
     public function hapus(int $id)
     {
         $siswa = Siswa::where('user_id', $id)->first();
-        if (isset($siswa))
-        {
+        if (isset($siswa)) {
             $siswa->delete();
         }
         User::find($id)->delete();
@@ -118,7 +117,7 @@ class UserController extends Controller
         return redirect()->route('kelola.user');
     }
 
-    function cekusername(Request $request)
+    public function cekusername(Request $request)
     {
         if ($request->input('username') !== '') {
             if ($request->input('username')) {
@@ -132,7 +131,7 @@ class UserController extends Controller
         die('false');
     }
 
-    function cekusernameedit(Request $request, int $id)
+    public function cekusernameedit(Request $request, int $id)
     {
         // Get Data User
         $data = User::find($id);

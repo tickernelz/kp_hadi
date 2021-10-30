@@ -16,8 +16,8 @@
                     <h2 class="font-medium text-base mr-auto">Implementation</h2>
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-1">Show example code</label>
-                        <input id="show-example-1" data-target="#image-zoom"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                        <input id="show-example-1" data-target="#image-zoom" class="show-code form-check-switch mr-0 ml-3"
+                            type="checkbox">
                     </div>
                 </div>
                 <div id="image-zoom" class="p-5">
@@ -52,8 +52,8 @@
                             </p>
                             <div class="w-full h-64 my-5 image-fit">
                                 <img alt="Tinker Tailwind HTML Admin Template"
-                                     src="{{ asset('dist/images/' . $fakers[0]['images'][0]) }}" data-action="zoom"
-                                     class="w-full rounded-md">
+                                    src="{{ asset('dist/images/' . $fakers[0]['images'][0]) }}" data-action="zoom"
+                                    class="w-full rounded-md">
                             </div>
                             <p class="mb-5">
                                 Thundercats freegan Truffaut, four loko twee Austin scenester
@@ -96,8 +96,8 @@
                             </p>
                             <div class="w-3/5 h-64 mr-6 float-left image-fit">
                                 <img alt="Tinker Tailwind HTML Admin Template"
-                                     src="{{ asset('dist/images/' . $fakers[0]['images'][1]) }}" data-action="zoom"
-                                     class="w-full rounded-md">
+                                    src="{{ asset('dist/images/' . $fakers[0]['images'][1]) }}" data-action="zoom"
+                                    class="w-full rounded-md">
                             </div>
                             <p class="mb-5">
                                 Scenester chambray slow-carb, trust fund biodiesel ugh bicycle
@@ -145,8 +145,9 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-image-zoom" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode(
+    '
                                         <div class="leading-relaxed">
                                             <p class="mb-5">
                                                 Trust fund seitan chia, wolf lomo letterpress Bushwick before
@@ -176,7 +177,9 @@
                                                 readymade authentic plaid pickled hashtag biodiesel.
                                             </p>
                                             <div class="w-full h-64 my-5 image-fit">
-                                                <img alt="Tinker Tailwind HTML Admin Template" src="' . asset('dist/images/' . $fakers[0]['images'][0]) . '" data-action="zoom" class="w-full rounded-md">
+                                                <img alt="Tinker Tailwind HTML Admin Template" src="' .
+        asset('dist/images/' . $fakers[0]['images'][0]) .
+        '" data-action="zoom" class="w-full rounded-md">
                                             </div>
                                             <p class="mb-5">
                                                 Thundercats freegan Truffaut, four loko twee Austin scenester
@@ -218,7 +221,9 @@
                                                 Shoreditch swag selfies stumptown +1.
                                             </p>
                                             <div class="w-3/5 h-64 mr-6 float-left image-fit">
-                                                <img alt="Tinker Tailwind HTML Admin Template" src="' . asset('dist/images/' . $fakers[0]['images'][1]) . '" data-action="zoom" class="w-full rounded-md">
+                                                <img alt="Tinker Tailwind HTML Admin Template" src="' .
+        asset('dist/images/' . $fakers[0]['images'][1]) .
+        '" data-action="zoom" class="w-full rounded-md">
                                             </div>
                                             <p class="mb-5">
                                                 Scenester chambray slow-carb, trust fund biodiesel ugh bicycle
@@ -259,9 +264,10 @@
                                                 salvia.
                                             </p>
                                         </div>
-                                    ') }}
-                                </code>
-                            </pre>
+                                    ',
+) }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>

@@ -67,13 +67,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-1" class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-1" aria-expanded="true"
-                                    aria-controls="faq-accordion-collapse-1">
+                                data-bs-target="#faq-accordion-collapse-1" aria-expanded="true"
+                                aria-controls="faq-accordion-collapse-1">
                                 OpenSSL Essentials: Working with SSL Certificates, Private Keys
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-1" class="accordion-collapse collapse show"
-                             aria-labelledby="faq-accordion-content-1" data-bs-parent="#faq-accordion-1">
+                            aria-labelledby="faq-accordion-content-1" data-bs-parent="#faq-accordion-1">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -86,13 +86,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-2" class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-2" aria-expanded="false"
-                                    aria-controls="faq-accordion-collapse-2">
+                                data-bs-target="#faq-accordion-collapse-2" aria-expanded="false"
+                                aria-controls="faq-accordion-collapse-2">
                                 Understanding IP Addresses, Subnets, and CIDR Notation
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-2" class="accordion-collapse collapse"
-                             aria-labelledby="faq-accordion-content-2" data-bs-parent="#faq-accordion-1">
+                            aria-labelledby="faq-accordion-content-2" data-bs-parent="#faq-accordion-1">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -105,13 +105,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-3" class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-3" aria-expanded="false"
-                                    aria-controls="faq-accordion-collapse-3">
+                                data-bs-target="#faq-accordion-collapse-3" aria-expanded="false"
+                                aria-controls="faq-accordion-collapse-3">
                                 How To Troubleshoot Common HTTP Error Codes
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-3" class="accordion-collapse collapse"
-                             aria-labelledby="faq-accordion-content-3" data-bs-parent="#faq-accordion-1">
+                            aria-labelledby="faq-accordion-content-3" data-bs-parent="#faq-accordion-1">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -124,13 +124,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-4" class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-4" aria-expanded="false"
-                                    aria-controls="faq-accordion-collapse-4">
+                                data-bs-target="#faq-accordion-collapse-4" aria-expanded="false"
+                                aria-controls="faq-accordion-collapse-4">
                                 An Introduction to Securing your Linux VPS
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-4" class="accordion-collapse collapse"
-                             aria-labelledby="faq-accordion-content-4" data-bs-parent="#faq-accordion-1">
+                            aria-labelledby="faq-accordion-content-4" data-bs-parent="#faq-accordion-1">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -150,13 +150,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-1" class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-5" aria-expanded="true"
-                                    aria-controls="faq-accordion-collapse-5">
+                                data-bs-target="#faq-accordion-collapse-5" aria-expanded="true"
+                                aria-controls="faq-accordion-collapse-5">
                                 OpenSSL Essentials: Working with SSL Certificates, Private Keys
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-5" class="accordion-collapse collapse show"
-                             aria-labelledby="faq-accordion-content-1" data-bs-parent="#faq-accordion-2">
+                            aria-labelledby="faq-accordion-content-1" data-bs-parent="#faq-accordion-2">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -169,13 +169,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-2" class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-6" aria-expanded="false"
-                                    aria-controls="faq-accordion-collapse-6">
+                                data-bs-target="#faq-accordion-collapse-6" aria-expanded="false"
+                                aria-controls="faq-accordion-collapse-6">
                                 Understanding IP Addresses, Subnets, and CIDR Notation
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-6" class="accordion-collapse collapse"
-                             aria-labelledby="faq-accordion-content-2" data-bs-parent="#faq-accordion-2">
+                            aria-labelledby="faq-accordion-content-2" data-bs-parent="#faq-accordion-2">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -188,13 +188,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-3" class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-7" aria-expanded="false"
-                                    aria-controls="faq-accordion-collapse-7">
+                                data-bs-target="#faq-accordion-collapse-7" aria-expanded="false"
+                                aria-controls="faq-accordion-collapse-7">
                                 How To Troubleshoot Common HTTP Error Codes
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-7" class="accordion-collapse collapse"
-                             aria-labelledby="faq-accordion-content-3" data-bs-parent="#faq-accordion-2">
+                            aria-labelledby="faq-accordion-content-3" data-bs-parent="#faq-accordion-2">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -207,13 +207,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-4" class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-8" aria-expanded="false"
-                                    aria-controls="faq-accordion-collapse-8">
+                                data-bs-target="#faq-accordion-collapse-8" aria-expanded="false"
+                                aria-controls="faq-accordion-collapse-8">
                                 An Introduction to Securing your Linux VPS
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-8" class="accordion-collapse collapse"
-                             aria-labelledby="faq-accordion-content-4" data-bs-parent="#faq-accordion-2">
+                            aria-labelledby="faq-accordion-content-4" data-bs-parent="#faq-accordion-2">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -233,13 +233,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-1" class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-9" aria-expanded="true"
-                                    aria-controls="faq-accordion-collapse-9">
+                                data-bs-target="#faq-accordion-collapse-9" aria-expanded="true"
+                                aria-controls="faq-accordion-collapse-9">
                                 OpenSSL Essentials: Working with SSL Certificates, Private Keys
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-9" class="accordion-collapse collapse show"
-                             aria-labelledby="faq-accordion-content-1" data-bs-parent="#faq-accordion-3">
+                            aria-labelledby="faq-accordion-content-1" data-bs-parent="#faq-accordion-3">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -252,13 +252,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-2" class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-10" aria-expanded="false"
-                                    aria-controls="faq-accordion-collapse-10">
+                                data-bs-target="#faq-accordion-collapse-10" aria-expanded="false"
+                                aria-controls="faq-accordion-collapse-10">
                                 Understanding IP Addresses, Subnets, and CIDR Notation
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-10" class="accordion-collapse collapse"
-                             aria-labelledby="faq-accordion-content-2" data-bs-parent="#faq-accordion-3">
+                            aria-labelledby="faq-accordion-content-2" data-bs-parent="#faq-accordion-3">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -271,13 +271,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-3" class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-11" aria-expanded="false"
-                                    aria-controls="faq-accordion-collapse-11">
+                                data-bs-target="#faq-accordion-collapse-11" aria-expanded="false"
+                                aria-controls="faq-accordion-collapse-11">
                                 How To Troubleshoot Common HTTP Error Codes
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-11" class="accordion-collapse collapse"
-                             aria-labelledby="faq-accordion-content-3" data-bs-parent="#faq-accordion-3">
+                            aria-labelledby="faq-accordion-content-3" data-bs-parent="#faq-accordion-3">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -290,13 +290,13 @@
                     <div class="accordion-item">
                         <div id="faq-accordion-content-4" class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-accordion-collapse-12" aria-expanded="false"
-                                    aria-controls="faq-accordion-collapse-12">
+                                data-bs-target="#faq-accordion-collapse-12" aria-expanded="false"
+                                aria-controls="faq-accordion-collapse-12">
                                 An Introduction to Securing your Linux VPS
                             </button>
                         </div>
                         <div id="faq-accordion-collapse-12" class="accordion-collapse collapse"
-                             aria-labelledby="faq-accordion-content-4" data-bs-parent="#faq-accordion-3">
+                            aria-labelledby="faq-accordion-content-4" data-bs-parent="#faq-accordion-3">
                             <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown

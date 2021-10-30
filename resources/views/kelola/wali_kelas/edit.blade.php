@@ -36,45 +36,45 @@
                     <div class="mt-3">
                         <div>
                             <label for="nip" class="form-label">NIP</label>
-                            <input id="nip" name="nip" value="{{ $data->nip }}" type="number" class="form-control w-full mb-3">
+                            <input id="nip" name="nip" value="{{ $data->nip }}" type="number"
+                                class="form-control w-full mb-3">
                         </div>
                     </div>
                     <div class="mt-3">
                         <div>
                             <label for="nama" class="form-label">Nama</label>
                             <input id="nama" name="nama" value="{{ $data->user->nama }}" type="text"
-                                   class="form-control w-full mb-3">
+                                class="form-control w-full mb-3">
                         </div>
                     </div>
                     <div class="mt-3">
                         <div>
                             <label for="username" class="form-label">Username</label>
                             <input id="username" name="username" value="{{ $data->user->username }}" type="text"
-                                   class="form-control w-full mb-3">
+                                class="form-control w-full mb-3">
                         </div>
                     </div>
                     <div class="mt-3 mb-3">
                         <label for="kelas" class="form-label">Kelas</label>
-                        <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3"
-                                id="kelas">
-                            @foreach($data_kelas as $list)
+                        <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3" id="kelas">
+                            @foreach ($data_kelas as $list)
                                 <option @if ($list->id == $data->kelas_id)
-                                        selected="selected"
-                                        @endif value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
+                                    selected="selected"
+                                    @endif value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
                             @endforeach
                         </select>
                     </div>
                     <div class="mt-3">
                         <div>
                             <label for="password" class="form-label">Password</label>
-                            <input id="password" type="password" name="password" value="{{$data->user->password}}"
-                                   class="form-control w-full mb-3">
+                            <input id="password" type="password" name="password" value="{{ $data->user->password }}"
+                                class="form-control w-full mb-3">
                         </div>
                     </div>
                     <div class="text-right mt-5">
                         <button type="button" class="btn btn-outline-secondary w-24 mr-1" onclick="
-                            window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.wali_kelas') }}'
-                            ">Kembali
+                                        window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.wali_kelas') }}'
+                                        ">Kembali
                         </button>
                         <button type="submit" id="submit" class="btn btn-primary w-24">Simpan</button>
                     </div>
@@ -95,8 +95,8 @@
                             url: "{{ Request::url() }}/ceknip",
                             type: "post",
                             data: {
-                                _token: function () {
-                                    return "{{csrf_token()}}"
+                                _token: function() {
+                                    return "{{ csrf_token() }}"
                                 }
                             }
                         }
@@ -110,8 +110,8 @@
                             url: "{{ Request::url() }}/cekusername",
                             type: "post",
                             data: {
-                                _token: function () {
-                                    return "{{csrf_token()}}"
+                                _token: function() {
+                                    return "{{ csrf_token() }}"
                                 }
                             }
                         }
@@ -140,15 +140,16 @@
                         required: "Password wajib diisi",
                     },
                 },
-                submitHandler: function (form) {
+                submitHandler: function(form) {
                     $.ajaxSetup({
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         }
                     });
-                    cash(async function () {
+                    cash(async function() {
                         // Loading state
-                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>').svgLoader()
+                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>')
+                            .svgLoader()
                         await helper.delay(1500)
                     });
                     $("#submit").attr("disabled", true);
@@ -156,7 +157,7 @@
                         url: "{{ Request::url() }}/post",
                         type: "POST",
                         data: $('#user').serialize(),
-                        success: cash(async function (response) {
+                        success: cash(async function(response) {
                             $('#submit').html('Submit');
                             $("#submit").attr("disabled", false);
                             cash('#success-modal').modal('show')

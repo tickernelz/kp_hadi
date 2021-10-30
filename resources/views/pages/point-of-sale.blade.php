@@ -9,7 +9,7 @@
         <h2 class="text-lg font-medium mr-auto">Point of Sale</h2>
         <div class="w-full sm:w-auto flex mt-4 sm:mt-0">
             <a href="javascript:" data-toggle="modal" data-target="#new-order-modal"
-               class="btn btn-primary shadow-md mr-2">New Order</a>
+                class="btn btn-primary shadow-md mr-2">New Order</a>
             <div class="pos-dropdown dropdown ml-auto sm:ml-0">
                 <button class="dropdown-toggle btn px-2 box text-gray-700 dark:text-gray-300" aria-expanded="false">
                     <span class="w-5 h-5 flex items-center justify-center">
@@ -19,17 +19,17 @@
                 <div class="pos-dropdown__dropdown-menu dropdown-menu">
                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="activity" class="w-4 h-4 mr-2"></i>
                             <span class="truncate">INV-0206020 - {{ $fakers[3]['users'][0]['name'] }}</span>
                         </a>
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="activity" class="w-4 h-4 mr-2"></i>
                             <span class="truncate">INV-0206022 - {{ $fakers[4]['users'][0]['name'] }}</span>
                         </a>
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="activity" class="w-4 h-4 mr-2"></i>
                             <span class="truncate">INV-0206021 - {{ $fakers[5]['users'][0]['name'] }}</span>
                         </a>
@@ -44,7 +44,7 @@
             <div class="lg:flex intro-y">
                 <div class="relative text-gray-700 dark:text-gray-300">
                     <input type="text" class="form-control py-3 px-4 w-full lg:w-64 box pr-10 placeholder-theme-13"
-                           placeholder="Search item...">
+                        placeholder="Search item...">
                     <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" data-feather="search"></i>
                 </div>
                 <select class="form-select py-3 px-4 box w-full lg:w-auto mt-3 lg:mt-0 ml-auto">
@@ -89,16 +89,16 @@
             <div class="grid grid-cols-12 gap-5 mt-5 pt-5 border-t border-theme-31">
                 @foreach (array_slice($fakers, 0, 8) as $faker)
                     <a href="javascript:" data-toggle="modal" data-target="#add-item-modal"
-                       class="intro-y block col-span-12 sm:col-span-4 2xl:col-span-3">
+                        class="intro-y block col-span-12 sm:col-span-4 2xl:col-span-3">
                         <div class="box rounded-md p-3 relative zoom-in">
                             <div class="flex-none pos-image relative block">
                                 <div class="pos-image__preview image-fit">
                                     <img alt="Tinker Tailwind HTML Admin Template"
-                                         src="{{ asset('dist/images/' . $faker['foods'][0]['image']) }}">
+                                        src="{{ asset('dist/images/' . $faker['foods'][0]['image']) }}">
                                 </div>
                             </div>
-                            <div
-                                class="block font-medium text-center truncate mt-3">{{ $faker['foods'][0]['name'] }}</div>
+                            <div class="block font-medium text-center truncate mt-3">{{ $faker['foods'][0]['name'] }}
+                            </div>
                         </div>
                     </a>
                 @endforeach
@@ -111,11 +111,11 @@
                 <div class="box p-2">
                     <div class="pos__tabs nav nav-tabs justify-center" role="tablist">
                         <a id="ticket-tab" data-toggle="tab" data-target="#ticket" href="javascript:"
-                           class="flex-1 py-2 rounded-md text-center active" role="tab" aria-controls="ticket"
-                           aria-selected="true">Ticket</a>
+                            class="flex-1 py-2 rounded-md text-center active" role="tab" aria-controls="ticket"
+                            aria-selected="true">Ticket</a>
                         <a id="details-tab" data-toggle="tab" data-target="#details" href="javascript:"
-                           class="flex-1 py-2 rounded-md text-center" role="tab" aria-controls="details"
-                           aria-selected="false">Details</a>
+                            class="flex-1 py-2 rounded-md text-center" role="tab" aria-controls="details"
+                            aria-selected="false">Details</a>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                     <div class="pos__ticket box p-2 mt-5">
                         @foreach (array_slice($fakers, 0, 5) as $key => $faker)
                             <a href="javascript:" data-toggle="modal" data-target="#add-item-modal"
-                               class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-dark-3 hover:bg-gray-200 dark:hover:bg-dark-1 rounded-md">
+                                class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-dark-3 hover:bg-gray-200 dark:hover:bg-dark-1 rounded-md">
                                 <div class="pos__ticket__item-name truncate mr-1">{{ $faker['foods'][0]['name'] }}</div>
                                 <div class="text-gray-600">x 1</div>
                                 <i data-feather="edit" class="w-4 h-4 text-gray-600 ml-2"></i>
@@ -135,10 +135,9 @@
                     <div class="box flex p-5 mt-5">
                         <div class="w-full relative text-gray-700">
                             <input type="text"
-                                   class="form-control py-3 px-4 w-full bg-gray-200 border-gray-200 pr-10 placeholder-theme-13"
-                                   placeholder="Use coupon code...">
-                            <i class="w-4 h-4 hidden absolute-sm my-auto inset-y-0 mr-3 right-0"
-                               data-feather="search"></i>
+                                class="form-control py-3 px-4 w-full bg-gray-200 border-gray-200 pr-10 placeholder-theme-13"
+                                placeholder="Use coupon code...">
+                            <i class="w-4 h-4 hidden absolute-sm my-auto inset-y-0 mr-3 right-0" data-feather="search"></i>
                         </div>
                         <button class="btn btn-primary ml-2">Apply</button>
                     </div>
@@ -245,13 +244,13 @@
                         <label for="pos-form-4" class="form-label">Quantity</label>
                         <div class="flex mt-2 flex-1">
                             <button type="button"
-                                    class="btn w-12 border-gray-300 bg-gray-200 dark:bg-dark-1 text-gray-600 dark:text-gray-300 mr-1">
+                                class="btn w-12 border-gray-300 bg-gray-200 dark:bg-dark-1 text-gray-600 dark:text-gray-300 mr-1">
                                 -
                             </button>
                             <input id="pos-form-4" type="text" class="form-control w-24 text-center"
-                                   placeholder="Item quantity" value="2">
+                                placeholder="Item quantity" value="2">
                             <button type="button"
-                                    class="btn w-12 border-gray-300 bg-gray-200 dark:bg-dark-1 text-gray-600 dark:text-gray-300 ml-1">
+                                class="btn w-12 border-gray-300 bg-gray-200 dark:bg-dark-1 text-gray-600 dark:text-gray-300 ml-1">
                                 +
                             </button>
                         </div>

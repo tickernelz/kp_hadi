@@ -16,8 +16,8 @@
                     <h2 class="font-medium text-base mr-auto">Blank Modal</h2>
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-1">Show example code</label>
-                        <input id="show-example-1" data-target="#blank-modal"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                        <input id="show-example-1" data-target="#blank-modal" class="show-code form-check-switch mr-0 ml-3"
+                            type="checkbox">
                     </div>
                 </div>
                 <div id="blank-modal" class="p-5">
@@ -25,7 +25,7 @@
                         <!-- BEGIN: Modal Toggle -->
                         <div class="text-center">
                             <a href="javascript:" data-toggle="modal" data-target="#basic-modal-preview"
-                               class="btn btn-primary">Show Modal</a>
+                                class="btn btn-primary">Show Modal</a>
                         </div>
                         <!-- END: Modal Toggle -->
                         <!-- BEGIN: Modal Content -->
@@ -46,15 +46,12 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-blank-modal" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Modal Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
+                                        <!-- BEGIN: Modal Toggle --><div class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#basic-modal-preview" class="btn btn-primary">Show Modal</a>
                                         </div>
-                                        <!-- END: Modal Toggle -->
-                                        <!-- BEGIN: Modal Content -->
-                                        <div id="basic-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Modal Toggle --><!-- BEGIN: Modal Content --><div id="basic-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-body p-10 text-center">
@@ -63,10 +60,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Modal Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Modal Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -79,7 +75,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-2">Show example code</label>
                         <input data-target="#modal-size" class="show-code form-check-switch mr-0 ml-3" type="checkbox"
-                               id="show-example-2">
+                            id="show-example-2">
                     </div>
                 </div>
                 <div id="modal-size" class="p-5">
@@ -87,19 +83,19 @@
                         <div class="text-center">
                             <!-- BEGIN: Small Modal Toggle -->
                             <a href="javascript:" data-toggle="modal" data-target="#small-modal-size-preview"
-                               class="btn btn-primary mr-1 mb-2">Show Small Modal</a>
+                                class="btn btn-primary mr-1 mb-2">Show Small Modal</a>
                             <!-- END: Small Modal Toggle -->
                             <!-- BEGIN: Medium Modal Toggle -->
                             <a href="javascript:" data-toggle="modal" data-target="#medium-modal-size-preview"
-                               class="btn btn-primary mr-1 mb-2">Show Medium Modal</a>
+                                class="btn btn-primary mr-1 mb-2">Show Medium Modal</a>
                             <!-- END: Medium Modal Toggle -->
                             <!-- BEGIN: Large Modal Toggle -->
                             <a href="javascript:" data-toggle="modal" data-target="#large-modal-size-preview"
-                               class="btn btn-primary mr-1 mb-2">Show Large Modal</a>
+                                class="btn btn-primary mr-1 mb-2">Show Large Modal</a>
                             <!-- END: Large Modal Toggle -->
                             <!-- BEGIN: Super Large Modal Toggle -->
                             <a href="javascript:" data-toggle="modal" data-target="#superlarge-modal-size-preview"
-                               class="btn btn-primary mr-1 mb-2">Show Superlarge Modal</a>
+                                class="btn btn-primary mr-1 mb-2">Show Superlarge Modal</a>
                             <!-- END: Super Large Modal Toggle -->
                         </div>
                         <!-- BEGIN: Small Modal Content -->
@@ -153,24 +149,15 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-modal-size" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="text-center">
-                                            <!-- BEGIN: Small Modal Toggle -->
-                                            <a href="javascript:;" data-toggle="modal" data-target="#small-modal-size-preview" class="btn btn-primary mr-1 mb-2">Show Small Modal</a>
-                                            <!-- END: Small Modal Toggle -->
-                                            <!-- BEGIN: Medium Modal Toggle -->
-                                            <a href="javascript:;" data-toggle="modal" data-target="#medium-modal-size-preview" class="btn btn-primary mr-1 mb-2">Show Medium Modal</a>
-                                            <!-- END: Medium Modal Toggle -->
-                                            <!-- BEGIN: Large Modal Toggle -->
-                                            <a href="javascript:;" data-toggle="modal" data-target="#large-modal-size-preview" class="btn btn-primary mr-1 mb-2">Show Large Modal</a>
-                                            <!-- END: Large Modal Toggle -->
-                                            <!-- BEGIN: Super Large Modal Toggle -->
-                                            <a href="javascript:;" data-toggle="modal" data-target="#superlarge-modal-size-preview" class="btn btn-primary mr-1 mb-2">Show Superlarge Modal</a>
-                                            <!-- END: Super Large Modal Toggle -->
-                                        </div>
-                                        <!-- BEGIN: Small Modal Content -->
-                                        <div id="small-modal-size-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                            <!-- BEGIN: Small Modal Toggle --><a href="javascript:;" data-toggle="modal" data-target="#small-modal-size-preview" class="btn btn-primary mr-1 mb-2">Show Small Modal</a>
+                                            <!-- END: Small Modal Toggle --><!-- BEGIN: Medium Modal Toggle --><a href="javascript:;" data-toggle="modal" data-target="#medium-modal-size-preview" class="btn btn-primary mr-1 mb-2">Show Medium Modal</a>
+                                            <!-- END: Medium Modal Toggle --><!-- BEGIN: Large Modal Toggle --><a href="javascript:;" data-toggle="modal" data-target="#large-modal-size-preview" class="btn btn-primary mr-1 mb-2">Show Large Modal</a>
+                                            <!-- END: Large Modal Toggle --><!-- BEGIN: Super Large Modal Toggle --><a href="javascript:;" data-toggle="modal" data-target="#superlarge-modal-size-preview" class="btn btn-primary mr-1 mb-2">Show Superlarge Modal</a>
+                                            <!-- END: Super Large Modal Toggle --></div>
+                                        <!-- BEGIN: Small Modal Content --><div id="small-modal-size-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog modal-sm">
                                                 <div class="modal-content">
                                                     <div class="modal-body p-10 text-center">
@@ -179,9 +166,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Small Modal Content -->
-                                        <!-- BEGIN: Medium Modal Content -->
-                                        <div id="medium-modal-size-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Small Modal Content --><!-- BEGIN: Medium Modal Content --><div id="medium-modal-size-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-body p-10 text-center">
@@ -190,9 +175,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Medium Modal Content -->
-                                        <!-- BEGIN: Large Modal Content -->
-                                        <div id="large-modal-size-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Medium Modal Content --><!-- BEGIN: Large Modal Content --><div id="large-modal-size-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog modal-lg">
                                                 <div class="modal-content">
                                                     <div class="modal-body p-10 text-center">
@@ -201,9 +184,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Large Modal Content -->
-                                        <!-- BEGIN: Super Large Modal Content -->
-                                        <div id="superlarge-modal-size-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Large Modal Content --><!-- BEGIN: Super Large Modal Content --><div id="superlarge-modal-size-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog modal-xl">
                                                 <div class="modal-content">
                                                     <div class="modal-body p-10 text-center">
@@ -212,10 +193,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Super Large Modal Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Super Large Modal Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -228,7 +208,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-3">Show example code</label>
                         <input id="show-example-3" data-target="#programmatically-show-hide-modal"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="programmatically-show-hide-modal" class="p-5">
@@ -246,11 +226,11 @@
                                     <div class="modal-body p-10 text-center">
                                         <!-- BEGIN: Hide Modal Toggle -->
                                         <a id="programmatically-hide-modal" href="javascript:"
-                                           class="btn btn-primary mr-1">Hide Modal</a>
+                                            class="btn btn-primary mr-1">Hide Modal</a>
                                         <!-- END: Hide Modal Toggle -->
                                         <!-- BEGIN: Toggle Modal Toggle -->
                                         <a id="programmatically-toggle-modal" href="javascript:"
-                                           class="btn btn-primary mr-1">Toggle Modal</a>
+                                            class="btn btn-primary mr-1">Toggle Modal</a>
                                         <!-- END: Toggle Modal Toggle -->
                                     </div>
                                 </div>
@@ -260,46 +240,38 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-programmatically-show-hide-modal-js"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-programmatically-show-hide-modal-js" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Show Modal Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
+                                        <!-- BEGIN: Show Modal Toggle --><div class="text-center">
                                             <a id="programmatically-show-modal" href="javascript:;" class="btn btn-primary mr-1 mb-2">Show Modal</a>
                                         </div>
-                                        <!-- END: Show Modal Toggle -->
-                                        <!-- BEGIN: Modal Content -->
-                                        <div id="programmatically-modal" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Show Modal Toggle --><!-- BEGIN: Modal Content --><div id="programmatically-modal" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-body p-10 text-center">
-                                                        <!-- BEGIN: Hide Modal Toggle -->
-                                                        <a id="programmatically-hide-modal" href="javascript:;" class="btn btn-primary mr-1">Hide Modal</a>
-                                                        <!-- END: Hide Modal Toggle -->
-                                                        <!-- BEGIN: Toggle Modal Toggle -->
-                                                        <a id="programmatically-toggle-modal" href="javascript:;" class="btn btn-primary mr-1">Toggle Modal</a>
-                                                        <!-- END: Toggle Modal Toggle -->
-                                                    </div>
+                                                        <!-- BEGIN: Hide Modal Toggle --><a id="programmatically-hide-modal" href="javascript:;" class="btn btn-primary mr-1">Hide Modal</a>
+                                                        <!-- END: Hide Modal Toggle --><!-- BEGIN: Toggle Modal Toggle --><a id="programmatically-toggle-modal" href="javascript:;" class="btn btn-primary mr-1">Toggle Modal</a>
+                                                        <!-- END: Toggle Modal Toggle --></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Modal Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Modal Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                         <button data-target="#copy-programmatically-show-hide-modal-html"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary mt-5">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary mt-5">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-programmatically-show-hide-modal-html" class="source-preview">
-                                <code class="javascript text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="javascript text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         // Show modal
                                         cash(\'#programmatically-show-modal\').on(\'click\', function() {
                                             cash(\'#programmatically-modal\').modal(\'show\')
@@ -315,8 +287,8 @@
                                             cash(\'#programmatically-modal\').modal(\'toggle\')
                                         })
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -329,7 +301,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-4">Show example code</label>
                         <input id="show-example-4" data-target="#warning-modal"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="warning-modal" class="p-5">
@@ -337,7 +309,7 @@
                         <!-- BEGIN: Modal Toggle -->
                         <div class="text-center">
                             <a href="javascript:" data-toggle="modal" data-target="#warning-modal-preview"
-                               class="btn btn-primary">Show Modal</a>
+                                class="btn btn-primary">Show Modal</a>
                         </div>
                         <!-- END: Modal Toggle -->
                         <!-- BEGIN: Modal Content -->
@@ -370,15 +342,12 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-warning-modal" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Modal Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
+                                        <!-- BEGIN: Modal Toggle --><div class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#warning-modal-preview" class="btn btn-primary">Show Modal</a>
                                         </div>
-                                        <!-- END: Modal Toggle -->
-                                        <!-- BEGIN: Modal Content -->
-                                        <div id="warning-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Modal Toggle --><!-- BEGIN: Modal Content --><div id="warning-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-body p-0">
@@ -397,10 +366,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Modal Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Modal Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -413,7 +381,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-5">Show example code</label>
                         <input id="show-example-5" data-target="#button-modal"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="button-modal" class="p-5">
@@ -421,7 +389,7 @@
                         <!-- BEGIN: Modal Toggle -->
                         <div class="text-center">
                             <a href="javascript:" data-toggle="modal" data-target="#button-modal-preview"
-                               class="btn btn-primary">Show Modal</a>
+                                class="btn btn-primary">Show Modal</a>
                         </div>
                         <!-- END: Modal Toggle -->
                         <!-- BEGIN: Modal Content -->
@@ -434,7 +402,7 @@
                                     <div class="modal-body p-0">
                                         <div class="p-5 text-center">
                                             <i data-feather="check-circle"
-                                               class="w-16 h-16 text-theme-20 mx-auto mt-3"></i>
+                                                class="w-16 h-16 text-theme-20 mx-auto mt-3"></i>
                                             <div class="text-3xl mt-5">Modal Example</div>
                                             <div class="text-gray-600 mt-2">Modal with close button</div>
                                         </div>
@@ -454,15 +422,12 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-button-modal" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Modal Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
+                                        <!-- BEGIN: Modal Toggle --><div class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#button-modal-preview" class="btn btn-primary">Show Modal</a>
                                         </div>
-                                        <!-- END: Modal Toggle -->
-                                        <!-- BEGIN: Modal Content -->
-                                        <div id="button-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Modal Toggle --><!-- BEGIN: Modal Content --><div id="button-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <a data-dismiss="modal" href="javascript:;">
@@ -481,10 +446,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Modal Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Modal Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -497,7 +461,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-11">Show example code</label>
                         <input id="show-example-11" data-target="#static-backdrop-modal"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="static-backdrop-modal" class="p-5">
@@ -505,17 +469,18 @@
                         <!-- BEGIN: Modal Toggle -->
                         <div class="text-center">
                             <a href="javascript:" data-toggle="modal" data-target="#static-backdrop-modal-preview"
-                               class="btn btn-primary">Show Modal</a>
+                                class="btn btn-primary">Show Modal</a>
                         </div>
                         <!-- END: Modal Toggle -->
                         <!-- BEGIN: Modal Content -->
                         <div id="static-backdrop-modal-preview" class="modal" data-backdrop="static" tabindex="-1"
-                             aria-hidden="true">
+                            aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-body px-5 py-10">
                                         <div class="text-center">
-                                            <div class="mb-5">I will not close if you click outside me. Don't even try
+                                            <div class="mb-5">I will not close if you click outside me. Don't
+                                                even try
                                                 to press escape key.
                                             </div>
                                             <button type="button" data-dismiss="modal" class="btn btn-primary w-24">Ok
@@ -533,15 +498,12 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-button-modal" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Modal Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
+                                        <!-- BEGIN: Modal Toggle --><div class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#static-backdrop-modal-preview" class="btn btn-primary">Show Modal</a>
                                         </div>
-                                        <!-- END: Modal Toggle -->
-                                        <!-- BEGIN: Modal Content -->
-                                        <div id="static-backdrop-modal-preview" class="modal" data-backdrop="static" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Modal Toggle --><!-- BEGIN: Modal Content --><div id="static-backdrop-modal-preview" class="modal" data-backdrop="static" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-body px-5 py-10">
@@ -553,10 +515,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Modal Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Modal Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -571,7 +532,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-6">Show example code</label>
                         <input id="show-example-6" data-target="#overlapping-modal"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="overlapping-modal" class="p-5">
@@ -579,7 +540,7 @@
                         <!-- BEGIN: Modal Toggle -->
                         <div class="text-center">
                             <a href="javascript:" data-toggle="modal" data-target="#overlapping-modal-preview"
-                               class="btn btn-primary">Show Modal</a>
+                                class="btn btn-primary">Show Modal</a>
                         </div>
                         <!-- END: Modal Toggle -->
                         <!-- BEGIN: Modal Content -->
@@ -588,16 +549,17 @@
                                 <div class="modal-content">
                                     <div class="modal-body px-5 py-10">
                                         <div class="text-center">
-                                            <div class="mb-5">Click button bellow to show overlapping modal!</div>
+                                            <div class="mb-5">Click button bellow to show overlapping modal!
+                                            </div>
                                             <!-- BEGIN: Overlapping Modal Toggle -->
                                             <a href="javascript:" data-toggle="modal"
-                                               data-target="#next-overlapping-modal-preview" class="btn btn-primary">Show
+                                                data-target="#next-overlapping-modal-preview" class="btn btn-primary">Show
                                                 Overlapping Modal</a>
                                             <!-- END: Overlapping Modal Toggle -->
                                         </div>
                                         <!-- BEGIN: Overlapping Modal Content -->
                                         <div id="next-overlapping-modal-preview" class="modal" tabindex="-1"
-                                             aria-hidden="true">
+                                            aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-body text-center">
@@ -615,31 +577,25 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-overlapping-modal"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-overlapping-modal" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Modal Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
+                                        <!-- BEGIN: Modal Toggle --><div class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#overlapping-modal-preview" class="btn btn-primary">Show Modal</a>
                                         </div>
-                                        <!-- END: Modal Toggle -->
-                                        <!-- BEGIN: Modal Content -->
-                                        <div id="overlapping-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Modal Toggle --><!-- BEGIN: Modal Content --><div id="overlapping-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-body px-5 py-10">
                                                         <div class="text-center">
                                                             <div class="mb-5">Click button bellow to show overlapping modal!</div>
-                                                            <!-- BEGIN: Overlapping Modal Toggle -->
-                                                            <a href="javascript:;" data-toggle="modal" data-target="#next-overlapping-modal-preview" class="btn btn-primary">Show Overlapping Modal</a>
-                                                            <!-- END: Overlapping Modal Toggle -->
-                                                        </div>
-                                                        <!-- BEGIN: Overlapping Modal Content -->
-                                                        <div id="next-overlapping-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                                            <!-- BEGIN: Overlapping Modal Toggle --><a href="javascript:;" data-toggle="modal" data-target="#next-overlapping-modal-preview" class="btn btn-primary">Show Overlapping Modal</a>
+                                                            <!-- END: Overlapping Modal Toggle --></div>
+                                                        <!-- BEGIN: Overlapping Modal Content --><div id="next-overlapping-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
                                                             <div class="modal-dialog">
                                                                 <div class="modal-content">
                                                                     <div class="modal-body text-center">
@@ -648,15 +604,13 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!-- END: Overlapping Modal Content -->
-                                                    </div>
+                                                        <!-- END: Overlapping Modal Content --></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Modal Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Modal Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -669,7 +623,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-7">Show example code</label>
                         <input id="show-example-7" data-target="#header-footer-modal"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="header-footer-modal" class="p-5">
@@ -677,7 +631,7 @@
                         <!-- BEGIN: Modal Toggle -->
                         <div class="text-center">
                             <a href="javascript:" data-toggle="modal" data-target="#header-footer-modal-preview"
-                               class="btn btn-primary">Show Modal</a>
+                                class="btn btn-primary">Show Modal</a>
                         </div>
                         <!-- END: Modal Toggle -->
                         <!-- BEGIN: Modal Content -->
@@ -692,14 +646,14 @@
                                         </button>
                                         <div class="dropdown sm:hidden">
                                             <a class="dropdown-toggle w-5 h-5 block" href="javascript:"
-                                               aria-expanded="false">
+                                                aria-expanded="false">
                                                 <i data-feather="more-horizontal"
-                                                   class="w-5 h-5 text-gray-600 dark:text-gray-600"></i>
+                                                    class="w-5 h-5 text-gray-600 dark:text-gray-600"></i>
                                             </a>
                                             <div class="dropdown-menu w-40">
                                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                                     <a href="javascript:"
-                                                       class="flex items-center p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                                        class="flex items-center p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                                         <i data-feather="file" class="w-4 h-4 mr-2"></i> Download Docs
                                                     </a>
                                                 </div>
@@ -712,27 +666,27 @@
                                         <div class="col-span-12 sm:col-span-6">
                                             <label for="modal-form-1" class="form-label">From</label>
                                             <input id="modal-form-1" type="text" class="form-control"
-                                                   placeholder="example@gmail.com">
+                                                placeholder="example@gmail.com">
                                         </div>
                                         <div class="col-span-12 sm:col-span-6">
                                             <label for="modal-form-2" class="form-label">To</label>
                                             <input id="modal-form-2" type="text" class="form-control"
-                                                   placeholder="example@gmail.com">
+                                                placeholder="example@gmail.com">
                                         </div>
                                         <div class="col-span-12 sm:col-span-6">
                                             <label for="modal-form-3" class="form-label">Subject</label>
                                             <input id="modal-form-3" type="text" class="form-control"
-                                                   placeholder="Important Meeting">
+                                                placeholder="Important Meeting">
                                         </div>
                                         <div class="col-span-12 sm:col-span-6">
                                             <label for="modal-form-4" class="form-label">Has the Words</label>
                                             <input id="modal-form-4" type="text" class="form-control"
-                                                   placeholder="Job, Work, Documentation">
+                                                placeholder="Job, Work, Documentation">
                                         </div>
                                         <div class="col-span-12 sm:col-span-6">
                                             <label for="modal-form-5" class="form-label">Doesn't Have</label>
                                             <input id="modal-form-5" type="text" class="form-control"
-                                                   placeholder="Job, Work, Documentation">
+                                                placeholder="Job, Work, Documentation">
                                         </div>
                                         <div class="col-span-12 sm:col-span-6">
                                             <label for="modal-form-6" class="form-label">Size</label>
@@ -748,7 +702,7 @@
                                     <!-- BEGIN: Modal Footer -->
                                     <div class="modal-footer text-right">
                                         <button type="button" data-dismiss="modal"
-                                                class="btn btn-outline-secondary w-20 mr-1">Cancel
+                                            class="btn btn-outline-secondary w-20 mr-1">Cancel
                                         </button>
                                         <button type="button" class="btn btn-primary w-20">Send</button>
                                     </div>
@@ -760,24 +714,20 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-header-footer-modal"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-header-footer-modal" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Modal Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
+                                        <!-- BEGIN: Modal Toggle --><div class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#header-footer-modal-preview" class="btn btn-primary">Show Modal</a>
                                         </div>
-                                        <!-- END: Modal Toggle -->
-                                        <!-- BEGIN: Modal Content -->
-                                        <div id="header-footer-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Modal Toggle --><!-- BEGIN: Modal Content --><div id="header-footer-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
-                                                    <!-- BEGIN: Modal Header -->
-                                                    <div class="modal-header">
+                                                    <!-- BEGIN: Modal Header --><div class="modal-header">
                                                         <h2 class="font-medium text-base mr-auto">Broadcast Message</h2>
                                                         <button class="btn btn-outline-secondary hidden sm:flex">
                                                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Download Docs
@@ -795,9 +745,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- END: Modal Header -->
-                                                    <!-- BEGIN: Modal Body -->
-                                                    <div class="modal-body grid grid-cols-12 gap-4 gap-y-3">
+                                                    <!-- END: Modal Header --><!-- BEGIN: Modal Body --><div class="modal-body grid grid-cols-12 gap-4 gap-y-3">
                                                         <div class="col-span-12 sm:col-span-6">
                                                             <label for="modal-form-1" class="form-label">From</label>
                                                             <input id="modal-form-1" type="text" class="form-control" placeholder="example@gmail.com">
@@ -828,20 +776,16 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <!-- END: Modal Body -->
-                                                    <!-- BEGIN: Modal Footer -->
-                                                    <div class="modal-footer text-right">
+                                                    <!-- END: Modal Body --><!-- BEGIN: Modal Footer --><div class="modal-footer text-right">
                                                         <button type="button" data-dismiss="modal" class="btn btn-outline-secondary w-20 mr-1">Cancel</button>
                                                         <button type="button" class="btn btn-primary w-20">Send</button>
                                                     </div>
-                                                    <!-- END: Modal Footer -->
-                                                </div>
+                                                    <!-- END: Modal Footer --></div>
                                             </div>
                                         </div>
-                                        <!-- END: Modal Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Modal Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -854,7 +798,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-8">Show example code</label>
                         <input id="show-example-8" data-target="#delete-modal"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="delete-modal" class="p-5">
@@ -862,7 +806,7 @@
                         <!-- BEGIN: Modal Toggle -->
                         <div class="text-center">
                             <a href="javascript:" data-toggle="modal" data-target="#delete-modal-preview"
-                               class="btn btn-primary">Show Modal</a>
+                                class="btn btn-primary">Show Modal</a>
                         </div>
                         <!-- END: Modal Toggle -->
                         <!-- BEGIN: Modal Content -->
@@ -879,7 +823,7 @@
                                         </div>
                                         <div class="px-5 pb-8 text-center">
                                             <button type="button" data-dismiss="modal"
-                                                    class="btn btn-outline-secondary w-24 dark:border-dark-5 dark:text-gray-300 mr-1">
+                                                class="btn btn-outline-secondary w-24 dark:border-dark-5 dark:text-gray-300 mr-1">
                                                 Cancel
                                             </button>
                                             <button type="button" class="btn btn-danger w-24">Delete</button>
@@ -896,15 +840,12 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-delete-modal" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Modal Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
+                                        <!-- BEGIN: Modal Toggle --><div class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#delete-modal-preview" class="btn btn-primary">Show Modal</a>
                                         </div>
-                                        <!-- END: Modal Toggle -->
-                                        <!-- BEGIN: Modal Content -->
-                                        <div id="delete-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Modal Toggle --><!-- BEGIN: Modal Content --><div id="delete-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-body p-0">
@@ -921,10 +862,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Modal Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Modal Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -937,7 +877,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-9">Show example code</label>
                         <input id="show-example-9" data-target="#success-modal"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="success-modal" class="p-5">
@@ -945,7 +885,7 @@
                         <!-- BEGIN: Modal Toggle -->
                         <div class="text-center">
                             <a href="javascript:" data-toggle="modal" data-target="#success-modal-preview"
-                               class="btn btn-primary">Show Modal</a>
+                                class="btn btn-primary">Show Modal</a>
                         </div>
                         <!-- END: Modal Toggle -->
                         <!-- BEGIN: Modal Content -->
@@ -955,7 +895,7 @@
                                     <div class="modal-body p-0">
                                         <div class="p-5 text-center">
                                             <i data-feather="check-circle"
-                                               class="w-16 h-16 text-theme-20 mx-auto mt-3"></i>
+                                                class="w-16 h-16 text-theme-20 mx-auto mt-3"></i>
                                             <div class="text-3xl mt-5">Good job!</div>
                                             <div class="text-gray-600 mt-2">You clicked the button!</div>
                                         </div>
@@ -975,15 +915,12 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-success-modal" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Modal Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
+                                        <!-- BEGIN: Modal Toggle --><div class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#success-modal-preview" class="btn btn-primary">Show Modal</a>
                                         </div>
-                                        <!-- END: Modal Toggle -->
-                                        <!-- BEGIN: Modal Content -->
-                                        <div id="success-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Modal Toggle --><!-- BEGIN: Modal Content --><div id="success-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-body p-0">
@@ -999,10 +936,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Modal Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Modal Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -1015,7 +951,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-10">Show example code</label>
                         <input id="show-example-10" data-target="#tiny-slider-modal"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="tiny-slider-modal" class="p-5">
@@ -1023,7 +959,7 @@
                         <!-- BEGIN: Modal Toggle -->
                         <div class="text-center">
                             <a href="javascript:" data-toggle="modal" data-target="#tiny-slider-modal-preview"
-                               class="btn btn-primary">Show Modal</a>
+                                class="btn btn-primary">Show Modal</a>
                         </div>
                         <!-- END: Modal Toggle -->
                         <!-- BEGIN: Modal Content -->
@@ -1036,25 +972,25 @@
                                                 <div class="h-56 px-2">
                                                     <div class="h-full image-fit rounded-md overflow-hidden">
                                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                                             src="{{ asset('dist/images/' . $fakers[0]['images'][0]) }}"/>
+                                                            src="{{ asset('dist/images/' . $fakers[0]['images'][0]) }}" />
                                                     </div>
                                                 </div>
                                                 <div class="h-56 px-2">
                                                     <div class="h-full image-fit rounded-md overflow-hidden">
                                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                                             src="{{ asset('dist/images/' . $fakers[0]['images'][1]) }}"/>
+                                                            src="{{ asset('dist/images/' . $fakers[0]['images'][1]) }}" />
                                                     </div>
                                                 </div>
                                                 <div class="h-56 px-2">
                                                     <div class="h-full image-fit rounded-md overflow-hidden">
                                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                                             src="{{ asset('dist/images/' . $fakers[0]['images'][2]) }}"/>
+                                                            src="{{ asset('dist/images/' . $fakers[0]['images'][2]) }}" />
                                                     </div>
                                                 </div>
                                                 <div class="h-56 px-2">
                                                     <div class="h-full image-fit rounded-md overflow-hidden">
                                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                                             src="{{ asset('dist/images/' . $fakers[0]['images'][3]) }}"/>
+                                                            src="{{ asset('dist/images/' . $fakers[0]['images'][3]) }}" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -1067,20 +1003,18 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-tiny-slider-modal"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-tiny-slider-modal" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Modal Toggle -->
-                                        <div class="text-center">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode(
+    '
+                                        <!-- BEGIN: Modal Toggle --><div class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#tiny-slider-modal-preview" class="btn btn-primary">Show Modal</a>
                                         </div>
-                                        <!-- END: Modal Toggle -->
-                                        <!-- BEGIN: Modal Content -->
-                                        <div id="tiny-slider-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
+                                        <!-- END: Modal Toggle --><!-- BEGIN: Modal Content --><div id="tiny-slider-modal-preview" class="modal" tabindex="-1" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-body">
@@ -1088,22 +1022,30 @@
                                                             <div class="center-mode">
                                                                 <div class="h-56 px-2">
                                                                     <div class="h-full image-fit rounded-md overflow-hidden">
-                                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' . asset('dist/images/' . $fakers[0]['images'][0]) . '" />
+                                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' .
+        asset('dist/images/' . $fakers[0]['images'][0]) .
+        '" />
                                                                     </div>
                                                                 </div>
                                                                 <div class="h-56 px-2">
                                                                     <div class="h-full image-fit rounded-md overflow-hidden">
-                                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' . asset('dist/images/' . $fakers[0]['images'][1]) . '" />
+                                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' .
+        asset('dist/images/' . $fakers[0]['images'][1]) .
+        '" />
                                                                     </div>
                                                                 </div>
                                                                 <div class="h-56 px-2">
                                                                     <div class="h-full image-fit rounded-md overflow-hidden">
-                                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' . asset('dist/images/' . $fakers[0]['images'][2]) . '" />
+                                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' .
+        asset('dist/images/' . $fakers[0]['images'][2]) .
+        '" />
                                                                     </div>
                                                                 </div>
                                                                 <div class="h-56 px-2">
                                                                     <div class="h-full image-fit rounded-md overflow-hidden">
-                                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' . asset('dist/images/' . $fakers[0]['images'][3]) . '" />
+                                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' .
+        asset('dist/images/' . $fakers[0]['images'][3]) .
+        '" />
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1112,10 +1054,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Modal Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Modal Content -->',
+) }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>

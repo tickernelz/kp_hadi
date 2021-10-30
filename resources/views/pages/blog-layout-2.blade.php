@@ -18,11 +18,11 @@
                 <div class="dropdown-menu w-40">
                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="share-2" class="w-4 h-4 mr-2"></i> Share Post
                         </a>
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="download" class="w-4 h-4 mr-2"></i> Download Post
                         </a>
                     </div>
@@ -36,11 +36,11 @@
             <div class="intro-y blog col-span-12 md:col-span-6 box">
                 <div class="blog__preview image-fit">
                     <img alt="Tinker Tailwind HTML Admin Template" class="rounded-t-md"
-                         src="{{ asset('dist/images/' . $faker['images'][0]) }}">
+                        src="{{ asset('dist/images/' . $faker['images'][0]) }}">
                     <div class="absolute w-full flex items-center px-5 pt-6 z-10">
                         <div class="w-10 h-10 flex-none image-fit">
                             <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                 src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
+                                src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
                         </div>
                         <div class="ml-3 text-white mr-auto">
                             <a href="" class="font-medium">{{ $faker['users'][0]['name'] }}</a>
@@ -48,18 +48,18 @@
                         </div>
                         <div class="dropdown ml-3">
                             <a href="javascript:"
-                               class="blog__action dropdown-toggle w-8 h-8 flex items-center justify-center rounded-full"
-                               aria-expanded="false">
+                                class="blog__action dropdown-toggle w-8 h-8 flex items-center justify-center rounded-full"
+                                aria-expanded="false">
                                 <i data-feather="more-vertical" class="w-4 h-4 text-white"></i>
                             </a>
                             <div class="dropdown-menu w-40">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                         <i data-feather="edit-2" class="w-4 h-4 mr-2"></i> Edit Post
                                     </a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                         <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete Post
                                     </a>
                                 </div>
@@ -74,38 +74,38 @@
                 <div class="p-5 text-gray-700 dark:text-gray-600">{{ $faker['news'][0]['short_content'] }}</div>
                 <div class="flex items-center px-5 py-3 border-t border-gray-200 dark:border-dark-5">
                     <a href=""
-                       class="intro-x w-8 h-8 flex items-center justify-center rounded-full border border-gray-400 dark:border-dark-5 dark:bg-dark-5 dark:text-gray-300 text-gray-600 mr-2 tooltip"
-                       title="Bookmark">
+                        class="intro-x w-8 h-8 flex items-center justify-center rounded-full border border-gray-400 dark:border-dark-5 dark:bg-dark-5 dark:text-gray-300 text-gray-600 mr-2 tooltip"
+                        title="Bookmark">
                         <i data-feather="bookmark" class="w-3 h-3"></i>
                     </a>
                     <div class="intro-x flex mr-2">
                         <div class="intro-x w-8 h-8 image-fit">
                             <img alt="Tinker Tailwind HTML Admin Template"
-                                 class="rounded-full border border-white zoom-in tooltip"
-                                 src="{{ asset('dist/images/' . $faker['photos'][0]) }}"
-                                 title="{{ $faker['users'][0]['name'] }}">
+                                class="rounded-full border border-white zoom-in tooltip"
+                                src="{{ asset('dist/images/' . $faker['photos'][0]) }}"
+                                title="{{ $faker['users'][0]['name'] }}">
                         </div>
                         <div class="intro-x w-8 h-8 image-fit -ml-4">
                             <img alt="Tinker Tailwind HTML Admin Template"
-                                 class="rounded-full border border-white zoom-in tooltip"
-                                 src="{{ asset('dist/images/' . $faker['photos'][1]) }}"
-                                 title="{{ $faker['users'][1]['name'] }}">
+                                class="rounded-full border border-white zoom-in tooltip"
+                                src="{{ asset('dist/images/' . $faker['photos'][1]) }}"
+                                title="{{ $faker['users'][1]['name'] }}">
                         </div>
                         <div class="intro-x w-8 h-8 image-fit -ml-4">
                             <img alt="Tinker Tailwind HTML Admin Template"
-                                 class="rounded-full border border-white zoom-in tooltip"
-                                 src="{{ asset('dist/images/' . $faker['photos'][2]) }}"
-                                 title="{{ $faker['users'][2]['name'] }}">
+                                class="rounded-full border border-white zoom-in tooltip"
+                                src="{{ asset('dist/images/' . $faker['photos'][2]) }}"
+                                title="{{ $faker['users'][2]['name'] }}">
                         </div>
                     </div>
                     <a href=""
-                       class="intro-x w-8 h-8 flex items-center justify-center rounded-full bg-theme-19 dark:bg-dark-5 dark:text-gray-300 text-theme-22 ml-auto tooltip"
-                       title="Share">
+                        class="intro-x w-8 h-8 flex items-center justify-center rounded-full bg-theme-19 dark:bg-dark-5 dark:text-gray-300 text-theme-22 ml-auto tooltip"
+                        title="Share">
                         <i data-feather="share-2" class="w-3 h-3"></i>
                     </a>
                     <a href=""
-                       class="intro-x w-8 h-8 flex items-center justify-center rounded-full bg-theme-25 text-white ml-2 tooltip"
-                       title="Download PDF">
+                        class="intro-x w-8 h-8 flex items-center justify-center rounded-full bg-theme-25 text-white ml-2 tooltip"
+                        title="Download PDF">
                         <i data-feather="share" class="w-3 h-3"></i>
                     </a>
                 </div>
@@ -124,19 +124,19 @@
                     <div class="w-full flex items-center mt-3">
                         <div class="w-8 h-8 flex-none image-fit mr-3">
                             <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                 src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
+                                src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
                         </div>
                         <div class="flex-1 relative text-gray-700 dark:text-gray-300">
                             <input type="text"
-                                   class="form-control form-control-rounded border-transparent bg-gray-200 pr-10 placeholder-theme-13"
-                                   placeholder="Post a comment...">
+                                class="form-control form-control-rounded border-transparent bg-gray-200 pr-10 placeholder-theme-13"
+                                placeholder="Post a comment...">
                             <i data-feather="smile" class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0"></i>
                         </div>
                     </div>
                 </div>
             </div>
-    @endforeach
-    <!-- END: Blog Layout -->
+        @endforeach
+        <!-- END: Blog Layout -->
         <!-- BEGIN: Pagiantion -->
         <div class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-nowrap items-center">
             <ul class="pagination">

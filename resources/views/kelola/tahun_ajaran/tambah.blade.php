@@ -56,8 +56,8 @@
                         <div>
                             <label for="tahun" class="form-label">Tahun Ajaran</label>
                             <select data-placeholder="Pilih Tahun Ajaran" class="tom-select w-full mb-3" name="tahun"
-                                    id="tahun">
-                                @for ($year = (int)date('Y'); 1995 <= $year; $year--)
+                                id="tahun">
+                                @for ($year = (int) date('Y'); 1995 <= $year; $year--)
                                     <option value="{{ $year + 3 }}/{{ $year + 4 }}">{{ $year + 3 }}
                                         /{{ $year + 4 }}</option>
                                 @endfor
@@ -66,8 +66,8 @@
                     </div>
                     <div class="text-right mt-5">
                         <button type="button" class="btn btn-outline-secondary w-24 mr-1" onclick="
-                            window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.tahun_ajaran') }}'
-                            ">Kembali
+                                window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.tahun_ajaran') }}'
+                                ">Kembali
                         </button>
                         <button type="submit" id="submit" class="btn btn-primary w-24">Simpan</button>
                     </div>
@@ -91,31 +91,32 @@
                         required: "Tahun Ajaran wajib diisi",
                     },
                 },
-                submitHandler: function (form) {
+                submitHandler: function(form) {
                     let success = false;
                     $.ajaxSetup({
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         }
                     });
-                    cash(async function () {
+                    cash(async function() {
                         // Loading state
-                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>').svgLoader()
+                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>')
+                            .svgLoader()
                         await helper.delay(1500)
                     });
                     $("#submit").attr("disabled", true);
                     $.ajax({
-                        url: "{{route('kelola.tahun_ajaran.tambah.post')}}",
+                        url: "{{ route('kelola.tahun_ajaran.tambah.post') }}",
                         type: "POST",
                         data: $('#tambah-tahun_ajaran').serialize(),
-                        success: function (response) {
+                        success: function(response) {
                             success = true;
                             $('#submit').html('Submit');
                             $("#submit").attr("disabled", false);
                             cash('#success-modal').modal('show');
                             document.getElementById("tambah-tahun_ajaran").reset();
                         },
-                        error: cash(async function (response) {
+                        error: cash(async function(response) {
                             if (success === false) {
                                 cash('#error-modal').modal('show')
                                 await helper.delay(1500)

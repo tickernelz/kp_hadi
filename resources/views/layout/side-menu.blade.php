@@ -10,7 +10,8 @@
         <!-- BEGIN: Side Menu -->
         <nav class="side-nav">
             <a href="" class="intro-x flex items-center pl-5 pt-4 mt-3">
-                <img alt="Tinker Tailwind HTML Admin Template" class="w-6" src="{{ asset('dist/images/logo.svg') }}">
+                <img alt="Tinker Tailwind HTML Admin Template" class="w-6"
+                    src="{{ asset('dist/images/logo.svg') }}">
                 <span class="hidden xl:block text-white text-lg ml-3">
                     SI<span class="font-medium">PEHAB</span>
                 </span>
@@ -23,7 +24,7 @@
                     @else
                         <li>
                             <a href="{{ isset($menu['route_name']) ? route($menu['route_name'], $menu['params']) : 'javascript:;' }}"
-                               class="{{ $first_level_active_index == $menuKey ? 'side-menu side-menu--active' : 'side-menu' }}">
+                                class="{{ $first_level_active_index == $menuKey ? 'side-menu side-menu--active' : 'side-menu' }}">
                                 <div class="side-menu__icon">
                                     <i data-feather="{{ $menu['icon'] }}"></i>
                                 </div>
@@ -42,7 +43,7 @@
                                     @foreach ($menu['sub_menu'] as $subMenuKey => $subMenu)
                                         <li>
                                             <a href="{{ isset($subMenu['route_name']) ? route($subMenu['route_name'], $subMenu['params']) : 'javascript:;' }}"
-                                               class="{{ $second_level_active_index == $subMenuKey ? 'side-menu side-menu--active' : 'side-menu' }}">
+                                                class="{{ $second_level_active_index == $subMenuKey ? 'side-menu side-menu--active' : 'side-menu' }}">
                                                 <div class="side-menu__icon">
                                                     <i data-feather="activity"></i>
                                                 </div>
@@ -57,16 +58,17 @@
                                                 </div>
                                             </a>
                                             @if (isset($subMenu['sub_menu']))
-                                                <ul class="{{ $second_level_active_index == $subMenuKey ? 'side-menu__sub-open' : '' }}">
+                                                <ul
+                                                    class="{{ $second_level_active_index == $subMenuKey ? 'side-menu__sub-open' : '' }}">
                                                     @foreach ($subMenu['sub_menu'] as $lastSubMenuKey => $lastSubMenu)
                                                         <li>
                                                             <a href="{{ isset($lastSubMenu['route_name']) ? route($lastSubMenu['route_name'], $lastSubMenu['params']) : 'javascript:;' }}"
-                                                               class="{{ $third_level_active_index == $lastSubMenuKey ? 'side-menu side-menu--active' : 'side-menu' }}">
+                                                                class="{{ $third_level_active_index == $lastSubMenuKey ? 'side-menu side-menu--active' : 'side-menu' }}">
                                                                 <div class="side-menu__icon">
                                                                     <i data-feather="zap"></i>
                                                                 </div>
-                                                                <div
-                                                                    class="side-menu__title">{{ $lastSubMenu['title'] }}</div>
+                                                                <div class="side-menu__title">{{ $lastSubMenu['title'] }}
+                                                                </div>
                                                             </a>
                                                         </li>
                                                     @endforeach

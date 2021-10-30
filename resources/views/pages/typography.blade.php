@@ -17,7 +17,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-1">Show example code</label>
                         <input id="show-example-1" data-target="#heading" class="show-code form-check-switch mr-0 ml-3"
-                               type="checkbox">
+                            type="checkbox">
                     </div>
                 </div>
                 <div id="heading" class="p-5">
@@ -46,8 +46,8 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-heading" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div>
                                             <h1 class="text-4xl font-medium leading-none">h1. Heading 1</h1>
                                             <h2 class="text-3xl font-medium leading-none mt-3">h2. Heading 2</h2>
@@ -65,8 +65,8 @@
                                             <h6 class="text-gray-600 font-medium leading-none mt-3">h6. Heading 6</h6>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-2">Show example code</label>
                         <input id="show-example-2" data-target="#text-settings"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="text-settings" class="p-5">
@@ -104,8 +104,8 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-text-settings" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div>
                                             <div class="font-normal">Example text</div>
                                             <div class="font-medium">Example medium text</div>
@@ -120,8 +120,8 @@
                                             <div class="normal-case">Example cursive text</div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-3">Show example code</label>
                         <input id="show-example-3" data-target="#common-elements"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="common-elements" class="p-5">
@@ -154,14 +154,13 @@
                         <em class="block mt-1">This line rendered as italicized text.</em>
                     </div>
                     <div class="source-code hidden">
-                        <button data-target="#copy-common-elements"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                        <button data-target="#copy-common-elements" class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-common-elements" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div>You can use the mark tag to <mark class="p-1 bg-yellow-200">highlight</mark> text.</div>
                                         <del class="block mt-1">This line of text is meant to be treated as deleted text.</del>
                                         <s class="block mt-1">This line of text is meant to be treated as no longer accurate.</s>
@@ -171,8 +170,8 @@
                                         <strong class="block mt-1">This line rendered as bold text.</strong>
                                         <em class="block mt-1">This line rendered as italicized text.</em>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -187,7 +186,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-4">Show example code</label>
                         <input id="show-example-4" data-target="#badge" class="show-code form-check-switch mr-0 ml-3"
-                               type="checkbox">
+                            type="checkbox">
                     </div>
                 </div>
                 <div id="badge" class="p-5">
@@ -260,8 +259,8 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-badge" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="font-medium">Basic Badge</div>
                                         <div class="mt-2">
                                             <span class="text-xs px-1 rounded-full bg-theme-25 text-white mr-1">1</span>
@@ -314,8 +313,8 @@
                                             <span class="px-3 py-2 rounded-full border border-theme-21 text-theme-21 dark:border-theme-21 mr-1">5</span>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -327,8 +326,8 @@
                     <h2 class="font-medium text-base mr-auto">Separator</h2>
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-5">Show example code</label>
-                        <input id="show-example-5" data-target="#separator"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                        <input id="show-example-5" data-target="#separator" class="show-code form-check-switch mr-0 ml-3"
+                            type="checkbox">
                     </div>
                 </div>
                 <div id="separator" class="p-5">
@@ -342,13 +341,13 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-separator" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="w-full border-t border-gray-200 dark:border-dark-5 border-dashed"></div>
                                         <div class="w-full border-t border-gray-200 dark:border-dark-5 mt-5"></div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -361,7 +360,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-6">Show example code</label>
                         <input id="show-example-6" data-target="#devider" class="show-code form-check-switch mr-0 ml-3"
-                               type="checkbox">
+                            type="checkbox">
                     </div>
                 </div>
                 <div id="devider" class="p-5">
@@ -376,14 +375,14 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-devider" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="w-full flex justify-center border-t border-gray-200 dark:border-dark-5 mt-2">
                                             <div class="bg-white dark:bg-dark-3 px-5 -mt-3 text-gray-600">or</div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -396,7 +395,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-7">Show example code</label>
                         <input id="show-example-7" data-target="#link" class="show-code form-check-switch mr-0 ml-3"
-                               type="checkbox">
+                            type="checkbox">
                     </div>
                 </div>
                 <div id="link" class="p-5">
@@ -422,8 +421,8 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-link" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div>
                                             <a href="" class="text-theme-25 block font-normal">Example text</a>
                                             <a href="" class="text-theme-25 block font-medium">Example medium text</a>
@@ -439,8 +438,8 @@
                                             <a href="" class="text-theme-21 block">Danger state</a>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>

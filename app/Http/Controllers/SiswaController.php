@@ -136,7 +136,7 @@ class SiswaController extends Controller
         return redirect()->route('kelola.siswa');
     }
 
-    function ceknistambah(Request $request)
+    public function ceknistambah(Request $request)
     {
         if ($request->input('nis') !== '') {
             if ($request->input('nis')) {
@@ -150,7 +150,7 @@ class SiswaController extends Controller
         die('false');
     }
 
-    function ceknisedit(Request $request, int $id)
+    public function ceknisedit(Request $request, int $id)
     {
         // Get Data User
         $data = Siswa::with('user')->find($id);
@@ -175,7 +175,7 @@ class SiswaController extends Controller
         die('false');
     }
 
-    function cekusernameedit(Request $request, int $id)
+    public function cekusernameedit(Request $request, int $id)
     {
         // Get Data User
         $data = Siswa::with('user')->find($id);

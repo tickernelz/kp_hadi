@@ -17,7 +17,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-1">Show example code</label>
                         <input id="show-example-1" data-target="#single-item-slider"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="single-item-slider" class="p-5">
@@ -59,13 +59,13 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-single-item-slider"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-single-item-slider" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="mx-6">
                                             <div class="single-item">
                                                 <div class="h-32 px-2">
@@ -101,8 +101,8 @@
                                             </div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-2">Show example code</label>
                         <input id="show-example-2" data-target="#multiple-item-slider"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="multiple-item-slider" class="p-5">
@@ -172,13 +172,13 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-multiple-item-slider"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-multiple-item-slider" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="mx-6">
                                             <div class="multiple-items">
                                                 <div class="h-32 px-2">
@@ -229,8 +229,8 @@
                                             </div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -243,7 +243,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-3">Show example code</label>
                         <input id="show-example-3" data-target="#responsive-slider"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="responsive-slider" class="p-5">
@@ -295,13 +295,13 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-responsive-slider"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-responsive-slider" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="mx-6 pb-8">
                                             <div class="responsive-mode">
                                                 <div class="h-32 px-2">
@@ -347,8 +347,8 @@
                                             </div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -363,7 +363,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-4">Show example code</label>
                         <input id="show-example-4" data-target="#center-mode-slider"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="center-mode-slider" class="p-5">
@@ -405,13 +405,13 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-center-mode-slider"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-center-mode-slider" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="mx-6">
                                             <div class="center-mode">
                                                 <div class="h-32 px-2">
@@ -447,8 +447,8 @@
                                             </div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -461,7 +461,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-5">Show example code</label>
                         <input id="show-example-5" data-target="#fade-animation-slider"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="fade-animation-slider" class="p-5">
@@ -471,19 +471,19 @@
                                 <div class="h-64 px-2">
                                     <div class="h-full image-fit rounded-md overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $fakers[0]['images'][0]) }}"/>
+                                            src="{{ asset('dist/images/' . $fakers[0]['images'][0]) }}" />
                                     </div>
                                 </div>
                                 <div class="h-64 px-2">
                                     <div class="h-full image-fit rounded-md overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $fakers[1]['images'][1]) }}"/>
+                                            src="{{ asset('dist/images/' . $fakers[1]['images'][1]) }}" />
                                     </div>
                                 </div>
                                 <div class="h-64 px-2">
                                     <div class="h-full image-fit rounded-md overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $fakers[2]['images'][2]) }}"/>
+                                            src="{{ asset('dist/images/' . $fakers[2]['images'][2]) }}" />
                                     </div>
                                 </div>
                             </div>
@@ -491,35 +491,43 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-fade-animation-slider"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-fade-animation-slider" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode(
+    '
                                         <div class="mx-6 pb-8">
                                             <div class="fade-mode">
                                                 <div class="h-64 px-2">
                                                     <div class="h-full image-fit rounded-md overflow-hidden">
-                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' . asset('dist/images/' . $fakers[0]['images'][0]) . '" />
+                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' .
+        asset('dist/images/' . $fakers[0]['images'][0]) .
+        '" />
                                                     </div>
                                                 </div>
                                                 <div class="h-64 px-2">
                                                     <div class="h-full image-fit rounded-md overflow-hidden">
-                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' . asset('dist/images/' . $fakers[1]['images'][1]) . '" />
+                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' .
+        asset('dist/images/' . $fakers[1]['images'][1]) .
+        '" />
                                                     </div>
                                                 </div>
                                                 <div class="h-64 px-2">
                                                     <div class="h-full image-fit rounded-md overflow-hidden">
-                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' . asset('dist/images/' . $fakers[2]['images'][2]) . '" />
+                                                        <img alt="Tinker Tailwind HTML Admin Template" src="' .
+        asset('dist/images/' . $fakers[2]['images'][2]) .
+        '" />
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    ') }}
-                                </code>
-                            </pre>
+                                    ',
+) }}
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>

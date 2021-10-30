@@ -11,14 +11,14 @@
             <div class="hidden xl:flex flex-col min-h-screen">
                 <a href="" class="-intro-x flex items-center pt-5">
                     <img alt="Tinker Tailwind HTML Admin Template" class="w-6"
-                         src="{{ asset('dist/images/logo.svg') }}">
+                        src="{{ asset('dist/images/logo.svg') }}">
                     <span class="text-white text-lg ml-3">
                         Tink<span class="font-medium">er</span>
                     </span>
                 </a>
                 <div class="my-auto">
                     <img alt="Tinker Tailwind HTML Admin Template" class="-intro-x w-1/2 -mt-16"
-                         src="{{ asset('dist/images/illustration.svg') }}">
+                        src="{{ asset('dist/images/illustration.svg') }}">
                     <div class="-intro-x text-white font-medium text-4xl leading-tight mt-10">A few more clicks to <br>
                         sign up to your account.
                     </div>
@@ -38,16 +38,13 @@
                     </div>
                     <div class="intro-x mt-8">
                         <input type="text" class="intro-x login__input form-control py-3 px-4 border-gray-300 block"
-                               placeholder="First Name">
-                        <input type="text"
-                               class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-4"
-                               placeholder="Last Name">
-                        <input type="text"
-                               class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-4"
-                               placeholder="Email">
-                        <input type="text"
-                               class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-4"
-                               placeholder="Password">
+                            placeholder="First Name">
+                        <input type="text" class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-4"
+                            placeholder="Last Name">
+                        <input type="text" class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-4"
+                            placeholder="Email">
+                        <input type="text" class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-4"
+                            placeholder="Password">
                         <div class="intro-x w-full grid grid-cols-12 gap-4 h-1 mt-3">
                             <div class="col-span-3 h-full rounded bg-theme-20"></div>
                             <div class="col-span-3 h-full rounded bg-theme-20"></div>
@@ -56,9 +53,8 @@
                         </div>
                         <a href="" class="intro-x text-gray-600 block mt-2 text-xs sm:text-sm">What is a secure
                             password?</a>
-                        <input type="text"
-                               class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-4"
-                               placeholder="Password Confirmation">
+                        <input type="text" class="intro-x login__input form-control py-3 px-4 border-gray-300 block mt-4"
+                            placeholder="Password Confirmation">
                     </div>
                     <div class="intro-x flex items-center text-gray-700 dark:text-gray-600 mt-4 text-xs sm:text-sm">
                         <input id="remember-me" type="checkbox" class="form-check-input border mr-2">

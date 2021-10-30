@@ -17,7 +17,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-1">Show example code</label>
                         <input id="show-example-1" data-target="#basic-dropdown"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="basic-dropdown" class="p-5">
@@ -29,10 +29,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -40,14 +40,13 @@
                         </div>
                     </div>
                     <div class="source-code hidden">
-                        <button data-target="#copy-basic-dropdown"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                        <button data-target="#copy-basic-dropdown" class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-basic-dropdown" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="dropdown">
                                             <button class="dropdown-toggle btn btn-primary" aria-expanded="false">Show Dropdown</button>
                                             <div class="dropdown-menu w-40">
@@ -58,8 +57,8 @@
                                             </div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -70,7 +69,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-2">Show example code</label>
                         <input id="show-example-2" data-target="#header-footer-dropdown"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="header-footer-dropdown" class="p-5">
@@ -86,35 +85,34 @@
                                         </div>
                                         <div class="p-2">
                                             <a href=""
-                                               class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                                 <i data-feather="activity"
-                                                   class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> Export to
+                                                    class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> Export to
                                                 PDF
                                             </a>
                                             <a href=""
-                                               class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                                 <i data-feather="box"
-                                                   class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i>
+                                                    class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i>
                                                 Export to Excel
                                                 <div class="text-xs text-white px-1 rounded-full bg-theme-21 ml-auto">
                                                     10
                                                 </div>
                                             </a>
                                             <a href=""
-                                               class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                                 <i data-feather="layout"
-                                                   class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> Export to
+                                                    class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> Export to
                                                 CSV
                                             </a>
                                             <a href=""
-                                               class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                                 <i data-feather="sidebar"
-                                                   class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> Export to
+                                                    class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> Export to
                                                 Word
                                             </a>
                                         </div>
-                                        <div
-                                            class="px-3 py-3 border-t border-gray-200 dark:border-dark-5 font-medium flex">
+                                        <div class="px-3 py-3 border-t border-gray-200 dark:border-dark-5 font-medium flex">
                                             <button type="button" class="btn btn-primary py-1 px-2">Settings</button>
                                             <button type="button" class="btn btn-secondary py-1 px-2 ml-auto">View
                                                 Profile
@@ -127,13 +125,13 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-header-footer-dropdown"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-header-footer-dropdown" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="dropdown">
                                             <button class="dropdown-toggle btn btn-primary" aria-expanded="false">Show Dropdown</button>
                                             <div class="dropdown-menu w-56">
@@ -163,8 +161,8 @@
                                             </div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -175,7 +173,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-3">Show example code</label>
                         <input id="show-example-3" data-target="#icon-dropdown"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="icon-dropdown" class="p-5">
@@ -187,11 +185,11 @@
                                 <div class="dropdown-menu w-48">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                             <i data-feather="edit-2" class="w-4 h-4 mr-2"></i> New Dropdown
                                         </a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                             <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete Dropdown
                                         </a>
                                     </div>
@@ -205,8 +203,8 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-icon-dropdown" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="dropdown">
                                             <button class="dropdown-toggle btn btn-primary" aria-expanded="false">Show Dropdown</button>
                                             <div class="dropdown-menu w-48">
@@ -221,8 +219,8 @@
                                             </div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -233,7 +231,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-4">Show example code</label>
                         <input id="show-example-4" data-target="#programmatically-show-hide-dropdown"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="programmatically-show-hide-dropdown" class="p-5">
@@ -260,10 +258,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -273,24 +271,17 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-programmatically-show-hide-dropdown-html"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-programmatically-show-hide-dropdown-html" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
-                                        <!-- BEGIN: Show Modal Toggle -->
-                                        <button id="programmatically-show-dropdown" class="btn btn-primary w-40 mr-1 mb-2">Show</button>
-                                        <!-- END: Show Modal Toggle -->
-                                        <!-- BEGIN: Hide Modal Toggle -->
-                                        <button id="programmatically-hide-dropdown" class="btn btn-primary w-40 mr-1 mb-2">Hide</button>
-                                        <!-- END: Hide Modal Toggle -->
-                                        <!-- BEGIN: Toggle Modal Toggle -->
-                                        <button id="programmatically-toggle-dropdown" class="btn btn-primary w-40 mr-1 mb-2">Toggle</button>
-                                        <!-- END: Toggle Modal Toggle -->
-                                        <!-- BEGIN: Dropdown Content -->
-                                        <div id="programmatically-dropdown" class="dropdown inline-block">
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
+                                        <!-- BEGIN: Show Modal Toggle --><button id="programmatically-show-dropdown" class="btn btn-primary w-40 mr-1 mb-2">Show</button>
+                                        <!-- END: Show Modal Toggle --><!-- BEGIN: Hide Modal Toggle --><button id="programmatically-hide-dropdown" class="btn btn-primary w-40 mr-1 mb-2">Hide</button>
+                                        <!-- END: Hide Modal Toggle --><!-- BEGIN: Toggle Modal Toggle --><button id="programmatically-toggle-dropdown" class="btn btn-primary w-40 mr-1 mb-2">Toggle</button>
+                                        <!-- END: Toggle Modal Toggle --><!-- BEGIN: Dropdown Content --><div id="programmatically-dropdown" class="dropdown inline-block">
                                             <button class="dropdown-toggle btn btn-primary w-40 mr-1 mb-2" aria-expanded="false">Example Dropdown</button>
                                             <div class="dropdown-menu w-40">
                                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
@@ -299,19 +290,18 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END: Dropdown Content -->
-                                    ') }}
-                                </code>
-                            </pre>
+                                        <!-- END: Dropdown Content -->') }}
+                                    </code>
+                                </pre>
                         </div>
                         <button data-target="#copy-programmatically-show-hide-dropdown-js"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary mt-5">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary mt-5">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-programmatically-show-hide-dropdown-js" class="source-preview">
-                                <code class="javascript text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="javascript text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         // Show dropdown
                                         cash(\'#programmatically-show-dropdown\').on(\'click\', function() {
                                             cash(\'#programmatically-dropdown\').dropdown(\'show\')
@@ -327,8 +317,8 @@
                                             cash(\'#programmatically-dropdown\').dropdown(\'toggle\')
                                         })
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -339,7 +329,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-5">Show example code</label>
                         <input id="show-example-5" data-target="#button-dropdown"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="button-dropdown" class="p-5">
@@ -354,12 +344,12 @@
                                         <div>
                                             <div class="text-xs">From</div>
                                             <input type="text" class="form-control mt-2 flex-1"
-                                                   placeholder="example@gmail.com"/>
+                                                placeholder="example@gmail.com" />
                                         </div>
                                         <div class="mt-3">
                                             <div class="text-xs">To</div>
                                             <input type="text" class="form-control mt-2 flex-1"
-                                                   placeholder="example@gmail.com"/>
+                                                placeholder="example@gmail.com" />
                                         </div>
                                         <div class="flex items-center mt-3">
                                             <button data-dismiss="dropdown" class="btn btn-secondary w-32 ml-auto">
@@ -373,14 +363,13 @@
                         </div>
                     </div>
                     <div class="source-code hidden">
-                        <button data-target="#copy-button-dropdown"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                        <button data-target="#copy-button-dropdown" class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-button-dropdown" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="text-center">
                                             <div class="dropdown inline-block" data-placement="bottom-start">
                                                 <button class="dropdown-toggle btn btn-primary" aria-expanded="false">
@@ -405,8 +394,8 @@
                                             </div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -421,7 +410,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-6">Show example code</label>
                         <input id="show-example-6" data-target="#scrolled-dropdown"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="scrolled-dropdown" class="p-5">
@@ -433,15 +422,15 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2 overflow-y-auto h-32">
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">January</a>
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">January</a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">February</a>
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">February</a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">March</a>
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">March</a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">June</a>
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">June</a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">July</a>
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">July</a>
                                     </div>
                                 </div>
                             </div>
@@ -449,13 +438,13 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-scrolled-dropdown"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-scrolled-dropdown" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="dropdown">
                                             <button class="dropdown-toggle btn btn-primary" aria-expanded="false">Show Dropdown</button>
                                             <div class="dropdown-menu w-40">
@@ -469,8 +458,8 @@
                                             </div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -481,7 +470,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-7">Show example code</label>
                         <input id="show-example-7" data-target="#header-icon-dropdown"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="header-icon-dropdown" class="p-5">
@@ -497,24 +486,24 @@
                                         </div>
                                         <div class="p-2">
                                             <a href=""
-                                               class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                                 <i data-feather="printer"
-                                                   class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> Print
+                                                    class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> Print
                                             </a>
                                             <a href=""
-                                               class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                                 <i data-feather="external-link"
-                                                   class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> Excel
+                                                    class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> Excel
                                             </a>
                                             <a href=""
-                                               class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                                 <i data-feather="file-text"
-                                                   class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> CSV
+                                                    class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> CSV
                                             </a>
                                             <a href=""
-                                               class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                                 <i data-feather="archive"
-                                                   class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> PDF
+                                                    class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> PDF
                                             </a>
                                         </div>
                                     </div>
@@ -524,13 +513,13 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-header-icon-dropdown"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-header-icon-dropdown" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="dropdown">
                                             <button class="dropdown-toggle btn btn-primary" aria-expanded="false">Show Dropdown</button>
                                             <div class="dropdown-menu w-40">
@@ -554,8 +543,8 @@
                                             </div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -566,7 +555,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-8">Show example code</label>
                         <input id="show-example-8" data-target="#dropdown-placement"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="dropdown-placement" class="p-5">
@@ -579,10 +568,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -594,10 +583,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -609,10 +598,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -624,10 +613,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -639,10 +628,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -654,10 +643,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -669,10 +658,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -684,28 +673,25 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                class="dropdown inline-block"
-                                data-placement="bottom-start"
-                            >
+                            <div class="dropdown inline-block" data-placement="bottom-start">
                                 <button class="dropdown-toggle btn btn-primary w-32 mr-1 mb-2" aria-expanded="false">
                                     Bottom Start
                                 </button>
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -717,10 +703,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -732,10 +718,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -747,10 +733,10 @@
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">New
                                             Dropdown</a>
                                         <a href=""
-                                           class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
+                                            class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Delete
                                             Dropdown</a>
                                     </div>
                                 </div>
@@ -759,13 +745,13 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-dropdown-placement"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-dropdown-placement" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <div class="text-center">
                                             <div class="dropdown inline-block" data-placement="top-start">
                                                 <button class="dropdown-toggle btn btn-primary w-32 mr-1 mb-2" aria-expanded="false">Top Start</button>
@@ -880,8 +866,8 @@
                                             </div>
                                         </div>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>

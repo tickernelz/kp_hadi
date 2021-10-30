@@ -20,7 +20,7 @@ class SideMenu
                 'route_name' => 'beranda',
                 'params' => [
                 ],
-                'title' => 'Dashboard'
+                'title' => 'Dashboard',
             ],
             'devider',
             'kelola-user' => [
@@ -34,14 +34,14 @@ class SideMenu
                         'route_name' => 'kelola.user',
                         'params' => [
                         ],
-                        'title' => 'Daftar User'
+                        'title' => 'Daftar User',
                     ],
                     'user-tambah' => [
                         'icon' => '',
                         'route_name' => 'kelola.user.tambah',
                         'params' => [
                         ],
-                        'title' => 'Tambah User'
+                        'title' => 'Tambah User',
                     ],
                 ],
             ],
@@ -56,14 +56,14 @@ class SideMenu
                         'route_name' => 'kelola.kelas',
                         'params' => [
                         ],
-                        'title' => 'Daftar Kelas'
+                        'title' => 'Daftar Kelas',
                     ],
                     'kelas-tambah' => [
                         'icon' => '',
                         'route_name' => 'kelola.kelas.tambah',
                         'params' => [
                         ],
-                        'title' => 'Tambah Kelas'
+                        'title' => 'Tambah Kelas',
                     ],
                 ],
             ],
@@ -78,14 +78,14 @@ class SideMenu
                         'route_name' => 'kelola.tahun_ajaran',
                         'params' => [
                         ],
-                        'title' => 'Daftar Tahun Ajaran'
+                        'title' => 'Daftar Tahun Ajaran',
                     ],
                     'tahun_ajaran-tambah' => [
                         'icon' => '',
                         'route_name' => 'kelola.tahun_ajaran.tambah',
                         'params' => [
                         ],
-                        'title' => 'Tambah Tahun Ajaran'
+                        'title' => 'Tambah Tahun Ajaran',
                     ],
                 ],
             ],
@@ -100,14 +100,14 @@ class SideMenu
                         'route_name' => 'kelola.siswa',
                         'params' => [
                         ],
-                        'title' => 'Daftar Siswa'
+                        'title' => 'Daftar Siswa',
                     ],
                     'siswa-tambah' => [
                         'icon' => '',
                         'route_name' => 'kelola.siswa.tambah',
                         'params' => [
                         ],
-                        'title' => 'Tambah Siswa'
+                        'title' => 'Tambah Siswa',
                     ],
                 ],
             ],
@@ -122,14 +122,14 @@ class SideMenu
                         'route_name' => 'kelola.mata_pelajaran',
                         'params' => [
                         ],
-                        'title' => 'Daftar Mata Pelajaran'
+                        'title' => 'Daftar Mata Pelajaran',
                     ],
                     'mata_pelajaran-tambah' => [
                         'icon' => '',
                         'route_name' => 'kelola.mata_pelajaran.tambah',
                         'params' => [
                         ],
-                        'title' => 'Tambah Mata Pelajaran'
+                        'title' => 'Tambah Mata Pelajaran',
                     ],
                 ],
             ],
@@ -144,39 +144,39 @@ class SideMenu
                         'route_name' => 'kelola.wali_kelas',
                         'params' => [
                         ],
-                        'title' => 'Daftar Wali Kelas'
+                        'title' => 'Daftar Wali Kelas',
                     ],
                     'wali_kelas-tambah' => [
                         'icon' => '',
                         'route_name' => 'kelola.wali_kelas.tambah',
                         'params' => [
                         ],
-                        'title' => 'Tambah Wali Kelas'
+                        'title' => 'Tambah Wali Kelas',
                     ],
                 ],
             ],
 //            'crud' => [
-//                'icon' => 'edit',
-//                'title' => 'Crud',
-//                'sub_menu' => [
-//                    'crud-data-list' => [
-//                        'icon' => '',
-//                        'route_name' => 'crud-data-list',
-//                        'params' => [
-//                            'layout' => 'side-menu'
-//                        ],
-//                        'title' => 'Data List'
-//                    ],
-//                    'crud-form' => [
-//                        'icon' => '',
-//                        'route_name' => 'crud-form',
-//                        'params' => [
-//                            'layout' => 'side-menu'
-//                        ],
-//                        'title' => 'Form'
-//                    ]
-//                ]
-//            ],
+            //                'icon' => 'edit',
+            //                'title' => 'Crud',
+            //                'sub_menu' => [
+            //                    'crud-data-list' => [
+            //                        'icon' => '',
+            //                        'route_name' => 'crud-data-list',
+            //                        'params' => [
+            //                            'layout' => 'side-menu'
+            //                        ],
+            //                        'title' => 'Data List'
+            //                    ],
+            //                    'crud-form' => [
+            //                        'icon' => '',
+            //                        'route_name' => 'crud-form',
+            //                        'params' => [
+            //                            'layout' => 'side-menu'
+            //                        ],
+            //                        'title' => 'Form'
+            //                    ]
+            //                ]
+            //            ],
         ];
     }
 }

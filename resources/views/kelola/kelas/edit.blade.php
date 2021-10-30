@@ -36,13 +36,14 @@
                     <div class="mt-3">
                         <div>
                             <label for="nama_kelas" class="form-label">Nama Kelas</label>
-                            <input id="nama_kelas" name="nama_kelas" value="{{ $data->nama_kelas }}" type="text" class="form-control w-full mb-3">
+                            <input id="nama_kelas" name="nama_kelas" value="{{ $data->nama_kelas }}" type="text"
+                                class="form-control w-full mb-3">
                         </div>
                     </div>
                     <div class="text-right mt-5">
                         <button type="button" class="btn btn-outline-secondary w-24 mr-1" onclick="
-                            window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.kelas') }}'
-                            ">Kembali
+                                window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.kelas') }}'
+                                ">Kembali
                         </button>
                         <button type="submit" id="submit" class="btn btn-primary w-24">Simpan</button>
                     </div>
@@ -63,8 +64,8 @@
                             url: "{{ Request::url() }}/cek",
                             type: "post",
                             data: {
-                                _token: function () {
-                                    return "{{csrf_token()}}"
+                                _token: function() {
+                                    return "{{ csrf_token() }}"
                                 }
                             }
                         }
@@ -75,15 +76,16 @@
                         required: "Nama Kelas wajib diisi",
                     },
                 },
-                submitHandler: function (form) {
+                submitHandler: function(form) {
                     $.ajaxSetup({
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         }
                     });
-                    cash(async function () {
+                    cash(async function() {
                         // Loading state
-                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>').svgLoader()
+                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>')
+                            .svgLoader()
                         await helper.delay(1500)
                     });
                     $("#submit").attr("disabled", true);
@@ -91,7 +93,7 @@
                         url: "{{ Request::url() }}/post",
                         type: "POST",
                         data: $('#kelas').serialize(),
-                        success: cash(async function (response) {
+                        success: cash(async function(response) {
                             $('#submit').html('Submit');
                             $("#submit").attr("disabled", false);
                             cash('#success-modal').modal('show')

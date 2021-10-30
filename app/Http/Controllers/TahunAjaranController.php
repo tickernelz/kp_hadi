@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\TahunAjaran;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
 
 class TahunAjaranController extends Controller
 {

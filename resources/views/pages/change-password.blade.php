@@ -15,7 +15,7 @@
                 <div class="relative flex items-center p-5">
                     <div class="w-12 h-12 image-fit">
                         <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                             src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
+                            src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
                     </div>
                     <div class="ml-4 mr-auto">
                         <div class="font-medium text-base">{{ $fakers[0]['users'][0]['name'] }}</div>
@@ -32,25 +32,25 @@
                                 </div>
                                 <div class="p-2">
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                         <i data-feather="activity"
-                                           class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> English
+                                            class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> English
                                     </a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                         <i data-feather="box" class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i>
                                         Indonesia
                                         <div class="text-xs text-white px-1 rounded-full bg-theme-21 ml-auto">10</div>
                                     </a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
-                                        <i data-feather="layout"
-                                           class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> English
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        <i data-feather="layout" class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i>
+                                        English
                                     </a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
-                                        <i data-feather="sidebar"
-                                           class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i> Indonesia
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        <i data-feather="sidebar" class="w-4 h-4 text-gray-700 dark:text-gray-300 mr-2"></i>
+                                        Indonesia
                                     </a>
                                 </div>
                                 <div class="px-3 py-3 border-t border-gray-200 dark:border-dark-5 font-medium flex">
@@ -106,18 +106,15 @@
                 <div class="p-5">
                     <div>
                         <label for="change-password-form-1" class="form-label">Old Password</label>
-                        <input id="change-password-form-1" type="password" class="form-control"
-                               placeholder="Input text">
+                        <input id="change-password-form-1" type="password" class="form-control" placeholder="Input text">
                     </div>
                     <div class="mt-3">
                         <label for="change-password-form-2" class="form-label">New Password</label>
-                        <input id="change-password-form-2" type="password" class="form-control"
-                               placeholder="Input text">
+                        <input id="change-password-form-2" type="password" class="form-control" placeholder="Input text">
                     </div>
                     <div class="mt-3">
                         <label for="change-password-form-3" class="form-label">Confirm New Password</label>
-                        <input id="change-password-form-3" type="password" class="form-control"
-                               placeholder="Input text">
+                        <input id="change-password-form-3" type="password" class="form-control" placeholder="Input text">
                     </div>
                     <button type="button" class="btn btn-primary mt-4">Change Password</button>
                 </div>

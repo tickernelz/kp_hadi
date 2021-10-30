@@ -18,11 +18,11 @@
                 <div class="dropdown-menu w-40">
                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="share-2" class="w-4 h-4 mr-2"></i> Share
                         </a>
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="settings" class="w-4 h-4 mr-2"></i> Settings
                         </a>
                     </div>
@@ -45,7 +45,8 @@
                             <div class="pr-10">
                                 <div class="event__title truncate">VueJS Amsterdam</div>
                                 <div class="text-gray-600 text-xs mt-0.5">
-                                    <span class="event__days">2</span> Days <span class="mx-1">•</span> 10:00 AM
+                                    <span class="event__days">2</span> Days <span class="mx-1">•</span> 10:00
+                                    AM
                                 </div>
                             </div>
                         </div>
@@ -60,7 +61,8 @@
                             <div class="pr-10">
                                 <div class="event__title truncate">Vue Fes Japan 2019</div>
                                 <div class="text-gray-600 text-xs mt-0.5">
-                                    <span class="event__days">3</span> Days <span class="mx-1">•</span> 07:00 AM
+                                    <span class="event__days">3</span> Days <span class="mx-1">•</span> 07:00
+                                    AM
                                 </div>
                             </div>
                         </div>
@@ -75,7 +77,8 @@
                             <div class="pr-10">
                                 <div class="event__title truncate">Laracon 2021</div>
                                 <div class="text-gray-600 text-xs mt-0.5">
-                                    <span class="event__days">4</span> Days <span class="mx-1">•</span> 11:00 AM
+                                    <span class="event__days">4</span> Days <span class="mx-1">•</span> 11:00
+                                    AM
                                 </div>
                             </div>
                         </div>

@@ -63,41 +63,41 @@
             <div class="intro-y flex flex-col-reverse sm:flex-row items-center">
                 <div class="w-full sm:w-auto relative mr-auto mt-3 sm:mt-0">
                     <i class="w-4 h-4 absolute my-auto inset-y-0 ml-3 left-0 z-10 text-gray-700 dark:text-gray-300"
-                       data-feather="search"></i>
+                        data-feather="search"></i>
                     <input type="text"
-                           class="form-control w-full sm:w-64 box px-10 text-gray-700 dark:text-gray-300 placeholder-theme-13"
-                           placeholder="Search mail">
+                        class="form-control w-full sm:w-64 box px-10 text-gray-700 dark:text-gray-300 placeholder-theme-13"
+                        placeholder="Search mail">
                     <div class="inbox-filter dropdown absolute inset-y-0 mr-3 right-0 flex items-center"
-                         data-placement="bottom-start">
+                        data-placement="bottom-start">
                         <i class="dropdown-toggle w-4 h-4 cursor-pointer text-gray-700 dark:text-gray-300" role="button"
-                           aria-expanded="false" data-feather="chevron-down"></i>
+                            aria-expanded="false" data-feather="chevron-down"></i>
                         <div class="inbox-filter__dropdown-menu dropdown-menu pt-2">
                             <div class="dropdown-menu__content box p-5">
                                 <div class="grid grid-cols-12 gap-4 gap-y-3">
                                     <div class="col-span-6">
                                         <label for="input-filter-1" class="form-label text-xs">From</label>
                                         <input id="input-filter-1" type="text" class="form-control flex-1"
-                                               placeholder="example@gmail.com">
+                                            placeholder="example@gmail.com">
                                     </div>
                                     <div class="col-span-6">
                                         <label for="input-filter-2" class="form-label text-xs">To</label>
                                         <input id="input-filter-2" type="text" class="form-control flex-1"
-                                               placeholder="example@gmail.com">
+                                            placeholder="example@gmail.com">
                                     </div>
                                     <div class="col-span-6">
                                         <label for="input-filter-3" class="form-label text-xs">Subject</label>
                                         <input id="input-filter-3" type="text" class="form-control flex-1"
-                                               placeholder="Important Meeting">
+                                            placeholder="Important Meeting">
                                     </div>
                                     <div class="col-span-6">
                                         <label for="input-filter-4" class="form-label text-xs">Has the Words</label>
                                         <input id="input-filter-4" type="text" class="form-control flex-1"
-                                               placeholder="Job, Work, Documentation">
+                                            placeholder="Job, Work, Documentation">
                                     </div>
                                     <div class="col-span-6">
                                         <label for="input-filter-5" class="form-label text-xs">Doesn't Have</label>
                                         <input id="input-filter-5" type="text" class="form-control flex-1"
-                                               placeholder="Job, Work, Documentation">
+                                            placeholder="Job, Work, Documentation">
                                     </div>
                                     <div class="col-span-6">
                                         <label for="input-filter-6" class="form-label text-xs">Size</label>
@@ -120,8 +120,7 @@
                 <div class="w-full sm:w-auto flex">
                     <button class="btn btn-primary shadow-md mr-2">Start a Video Call</button>
                     <div class="dropdown">
-                        <button class="dropdown-toggle btn px-2 box text-gray-700 dark:text-gray-300"
-                                aria-expanded="false">
+                        <button class="dropdown-toggle btn px-2 box text-gray-700 dark:text-gray-300" aria-expanded="false">
                             <span class="w-5 h-5 flex items-center justify-center">
                                 <i class="w-4 h-4" data-feather="plus"></i>
                             </span>
@@ -129,11 +128,11 @@
                         <div class="dropdown-menu w-40">
                             <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                 <a href=""
-                                   class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                     <i data-feather="user" class="w-4 h-4 mr-2"></i> Contacts
                                 </a>
                                 <a href=""
-                                   class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                     <i data-feather="settings" class="w-4 h-4 mr-2"></i> Settings
                                 </a>
                             </div>
@@ -151,23 +150,23 @@
                         <input class="form-check-input" type="checkbox">
                         <div class="dropdown ml-1" data-placement="bottom-start">
                             <a class="dropdown-toggle w-5 h-5 block dark:text-gray-300" href="javascript:"
-                               aria-expanded="false">
+                                aria-expanded="false">
                                 <i data-feather="chevron-down" class="w-5 h-5"></i>
                             </a>
                             <div class="dropdown-menu w-32">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">All</a>
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">All</a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">None</a>
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">None</a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Read</a>
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Read</a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Unread</a>
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Unread</a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Starred</a>
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Starred</a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Unstarred</a>
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Unstarred</a>
                                 </div>
                             </div>
                         </div>
@@ -198,29 +197,30 @@
                                 class="inbox__item{{ $faker['true_false'][0] ? ' inbox__item--active' : '' }} inline-block sm:block text-gray-700 dark:text-gray-500 bg-gray-100 dark:bg-dark-1 border-b border-gray-200 dark:border-dark-1">
                                 <div class="flex px-5 py-3">
                                     <div class="w-72 flex-none flex items-center mr-5">
-                                        <input class="form-check-input flex-none"
-                                               type="checkbox" {{ !$faker['true_false'][0] ? 'checked' : '' }}>
+                                        <input class="form-check-input flex-none" type="checkbox"
+                                            {{ !$faker['true_false'][0] ? 'checked' : '' }}>
                                         <a href="javascript:"
-                                           class="w-5 h-5 flex-none ml-4 flex items-center justify-center text-gray-500">
+                                            class="w-5 h-5 flex-none ml-4 flex items-center justify-center text-gray-500">
                                             <i class="w-4 h-4" data-feather="star"></i>
                                         </a>
                                         <a href="javascript:"
-                                           class="w-5 h-5 flex-none ml-2 flex items-center justify-center text-gray-500">
+                                            class="w-5 h-5 flex-none ml-2 flex items-center justify-center text-gray-500">
                                             <i class="w-4 h-4" data-feather="bookmark"></i>
                                         </a>
                                         <div class="w-6 h-6 flex-none image-fit relative ml-5">
                                             <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                                 src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
+                                                src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
                                         </div>
-                                        <div
-                                            class="inbox__item--sender truncate ml-3">{{ $faker['users'][0]['name'] }}</div>
+                                        <div class="inbox__item--sender truncate ml-3">{{ $faker['users'][0]['name'] }}
+                                        </div>
                                     </div>
                                     <div class="w-64 sm:w-auto truncate">
                                         <span
-                                            class="inbox__item--highlight">{{ $faker['news'][0]['super_short_content'] }}</span> {{ $faker['news'][0]['short_content'] }}
+                                            class="inbox__item--highlight">{{ $faker['news'][0]['super_short_content'] }}</span>
+                                        {{ $faker['news'][0]['short_content'] }}
                                     </div>
-                                    <div
-                                        class="inbox__item--time whitespace-nowrap ml-auto pl-10">{{ $faker['times'][0] }}</div>
+                                    <div class="inbox__item--time whitespace-nowrap ml-auto pl-10">
+                                        {{ $faker['times'][0] }}</div>
                                 </div>
                             </div>
                         </div>

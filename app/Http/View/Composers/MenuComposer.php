@@ -63,7 +63,6 @@ class MenuComposer
         $secondLevelActiveIndex = '';
         $thirdLevelActiveIndex = '';
 
-
         if ($layout == 'top-menu') {
             foreach (TopMenu::menu() as $menuKey => $menu) {
                 if (isset($menu['route_name']) && $menu['route_name'] == $pageName && empty($firstPageName)) {
@@ -144,7 +143,7 @@ class MenuComposer
         return [
             'first_level_active_index' => $firstLevelActiveIndex,
             'second_level_active_index' => $secondLevelActiveIndex,
-            'third_level_active_index' => $thirdLevelActiveIndex
+            'third_level_active_index' => $thirdLevelActiveIndex,
         ];
     }
 }

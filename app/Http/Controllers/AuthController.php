@@ -24,7 +24,7 @@ class AuthController extends Controller
     public function loginView()
     {
         return view('login/main', [
-            'layout' => 'login'
+            'layout' => 'login',
         ]);
     }
 
@@ -38,7 +38,7 @@ class AuthController extends Controller
     {
         if (!Auth::attempt([
             'username' => $request->username,
-            'password' => $request->password
+            'password' => $request->password,
         ])) {
             throw new Exception('Salah Username dan Password.');
         }

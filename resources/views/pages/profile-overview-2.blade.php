@@ -14,11 +14,11 @@
             <div class="flex flex-1 px-5 items-center justify-center lg:justify-start">
                 <div class="w-20 h-20 sm:w-24 sm:h-24 flex-none lg:w-32 lg:h-32 image-fit relative">
                     <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                         src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
+                        src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
                 </div>
                 <div class="ml-5">
-                    <div
-                        class="w-24 sm:w-40 truncate sm:whitespace-normal font-medium text-lg">{{ $fakers[0]['users'][0]['name'] }}</div>
+                    <div class="w-24 sm:w-40 truncate sm:whitespace-normal font-medium text-lg">
+                        {{ $fakers[0]['users'][0]['name'] }}</div>
                     <div class="text-gray-600">{{ $fakers[0]['jobs'][0] }}</div>
                 </div>
             </div>
@@ -56,19 +56,19 @@
         </div>
         <div class="nav nav-tabs flex-col sm:flex-row justify-center lg:justify-start" role="tablist">
             <a id="profile-tab" data-toggle="tab" data-target="#profile" href="javascript:"
-               class="py-4 sm:mr-8 flex items-center active" role="tab" aria-controls="profile" aria-selected="true">
+                class="py-4 sm:mr-8 flex items-center active" role="tab" aria-controls="profile" aria-selected="true">
                 <i class="w-4 h-4 mr-2" data-feather="user"></i> Profile
             </a>
             <a id="account-tab" data-toggle="tab" data-target="#account" href="javascript:"
-               class="py-4 sm:mr-8 flex items-center" role="tab" aria-selected="false">
+                class="py-4 sm:mr-8 flex items-center" role="tab" aria-selected="false">
                 <i class="w-4 h-4 mr-2" data-feather="shield"></i> Account
             </a>
             <a id="change-password-tab" data-toggle="tab" data-target="#change-password" href="javascript:"
-               class="py-4 sm:mr-8 flex items-center" role="tab" aria-selected="false">
+                class="py-4 sm:mr-8 flex items-center" role="tab" aria-selected="false">
                 <i class="w-4 h-4 mr-2" data-feather="lock"></i> Change Password
             </a>
             <a id="settings-tab" data-toggle="tab" data-target="#settings" href="javascript:"
-               class="py-4 sm:mr-8 flex items-center" role="tab" aria-selected="false">
+                class="py-4 sm:mr-8 flex items-center" role="tab" aria-selected="false">
                 <i class="w-4 h-4 mr-2" data-feather="settings"></i> Settings
             </a>
         </div>
@@ -88,7 +88,7 @@
                             <div class="dropdown-menu w-40">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a href="javascript:"
-                                       class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">All
+                                        class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">All
                                         Files</a>
                                 </div>
                             </div>
@@ -106,17 +106,16 @@
                             </div>
                             <div class="dropdown ml-auto">
                                 <a class="dropdown-toggle w-5 h-5 block" href="javascript:" aria-expanded="false">
-                                    <i data-feather="more-horizontal"
-                                       class="w-5 h-5 text-gray-600 dark:text-gray-300"></i>
+                                    <i data-feather="more-horizontal" class="w-5 h-5 text-gray-600 dark:text-gray-300"></i>
                                 </a>
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                             <i data-feather="users" class="w-4 h-4 mr-2"></i> Share File
                                         </a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                             <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete
                                         </a>
                                     </div>
@@ -135,17 +134,16 @@
                             </div>
                             <div class="dropdown ml-auto">
                                 <a class="dropdown-toggle w-5 h-5 block" href="javascript:" aria-expanded="false">
-                                    <i data-feather="more-horizontal"
-                                       class="w-5 h-5 text-gray-600 dark:text-gray-300"></i>
+                                    <i data-feather="more-horizontal" class="w-5 h-5 text-gray-600 dark:text-gray-300"></i>
                                 </a>
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                             <i data-feather="users" class="w-4 h-4 mr-2"></i> Share File
                                         </a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                             <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete
                                         </a>
                                     </div>
@@ -162,17 +160,16 @@
                             </div>
                             <div class="dropdown ml-auto">
                                 <a class="dropdown-toggle w-5 h-5 block" href="javascript:" aria-expanded="false">
-                                    <i data-feather="more-horizontal"
-                                       class="w-5 h-5 text-gray-600 dark:text-gray-300"></i>
+                                    <i data-feather="more-horizontal" class="w-5 h-5 text-gray-600 dark:text-gray-300"></i>
                                 </a>
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                             <i data-feather="users" class="w-4 h-4 mr-2"></i> Share File
                                         </a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                             <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete
                                         </a>
                                     </div>
@@ -193,29 +190,28 @@
                             <div class="nav nav-tabs dropdown-menu w-40" role="tablist">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a id="work-in-progress-new-tab" href="javascript:" data-toggle="tab"
-                                       data-target="#work-in-progress-new"
-                                       class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
-                                       role="tab" aria-controls="work-in-progress-new" aria-selected="true">New</a>
+                                        data-target="#work-in-progress-new"
+                                        class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
+                                        role="tab" aria-controls="work-in-progress-new" aria-selected="true">New</a>
                                     <a id="work-in-progress-last-week-tab" href="javascript:" data-toggle="tab"
-                                       data-target="#work-in-progress-last-week"
-                                       class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
-                                       role="tab" aria-selected="false">Last Week</a>
+                                        data-target="#work-in-progress-last-week"
+                                        class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
+                                        role="tab" aria-selected="false">Last Week</a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav nav-tabs ml-auto hidden sm:flex" role="tablist">
-                            <a id="work-in-progress-mobile-new-tab" data-toggle="tab"
-                               data-target="#work-in-progress-new" href="javascript:" class="py-5 ml-6 active"
-                               role="tab" aria-selected="true">New</a>
+                            <a id="work-in-progress-mobile-new-tab" data-toggle="tab" data-target="#work-in-progress-new"
+                                href="javascript:" class="py-5 ml-6 active" role="tab" aria-selected="true">New</a>
                             <a id="week-work-in-progress-mobile-last-week-tab" data-toggle="tab"
-                               data-target="#work-in-progress-last-week" href="javascript:" class="py-5 ml-6"
-                               role="tab" aria-selected="false">Last Week</a>
+                                data-target="#work-in-progress-last-week" href="javascript:" class="py-5 ml-6"
+                                role="tab" aria-selected="false">Last Week</a>
                         </div>
                     </div>
                     <div class="p-5">
                         <div class="tab-content">
                             <div id="work-in-progress-new" class="tab-pane active" role="tabpanel"
-                                 aria-labelledby="work-in-progress-new-tab">
+                                aria-labelledby="work-in-progress-new-tab">
                                 <div>
                                     <div class="flex">
                                         <div class="mr-auto">Pending Tasks</div>
@@ -223,7 +219,7 @@
                                     </div>
                                     <div class="progress h-1 mt-2">
                                         <div class="progress-bar w-1/2 bg-theme-25" role="progressbar" aria-valuenow="0"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                            aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="mt-5">
@@ -233,7 +229,7 @@
                                     </div>
                                     <div class="progress h-1 mt-2">
                                         <div class="progress-bar w-1/4 bg-theme-25" role="progressbar" aria-valuenow="0"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                            aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="mt-5">
@@ -243,7 +239,7 @@
                                     </div>
                                     <div class="progress h-1 mt-2">
                                         <div class="progress-bar w-3/4 bg-theme-25" role="progressbar" aria-valuenow="0"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                            aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <a href="" class="btn btn-secondary block w-40 mx-auto mt-5">View More Details</a>
@@ -263,7 +259,7 @@
                             <div class="dropdown-menu w-40">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a href="javascript:"
-                                       class="flex items-center p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 rounded-md">
+                                        class="flex items-center p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 rounded-md">
                                         <i data-feather="file" class="w-4 h-4 mr-2"></i> Download Excel
                                     </a>
                                 </div>
@@ -277,7 +273,7 @@
                         <div class="relative flex items-center">
                             <div class="w-12 h-12 flex-none image-fit">
                                 <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                     src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
+                                    src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
                             </div>
                             <div class="ml-4 mr-auto">
                                 <a href="" class="font-medium">{{ $fakers[0]['users'][0]['name'] }}</a>
@@ -288,7 +284,7 @@
                         <div class="relative flex items-center mt-5">
                             <div class="w-12 h-12 flex-none image-fit">
                                 <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                     src="{{ asset('dist/images/' . $fakers[1]['photos'][0]) }}">
+                                    src="{{ asset('dist/images/' . $fakers[1]['photos'][0]) }}">
                             </div>
                             <div class="ml-4 mr-auto">
                                 <a href="" class="font-medium">{{ $fakers[1]['users'][0]['name'] }}</a>
@@ -299,7 +295,7 @@
                         <div class="relative flex items-center mt-5">
                             <div class="w-12 h-12 flex-none image-fit">
                                 <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                     src="{{ asset('dist/images/' . $fakers[2]['photos'][0]) }}">
+                                    src="{{ asset('dist/images/' . $fakers[2]['photos'][0]) }}">
                             </div>
                             <div class="ml-4 mr-auto">
                                 <a href="" class="font-medium">{{ $fakers[2]['users'][0]['name'] }}</a>
@@ -321,28 +317,28 @@
                             <div class="nav nav-tabs dropdown-menu w-40" role="tablist">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a id="latest-tasks-new-tab" href="javascript:" data-toggle="tab"
-                                       data-target="#latest-tasks-new"
-                                       class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
-                                       role="tab" aria-controls="latest-tasks-new" aria-selected="true">New</a>
+                                        data-target="#latest-tasks-new"
+                                        class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
+                                        role="tab" aria-controls="latest-tasks-new" aria-selected="true">New</a>
                                     <a id="latest-tasks-last-week-tab" href="javascript:" data-toggle="tab"
-                                       data-target="#latest-tasks-last-week"
-                                       class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
-                                       role="tab" aria-selected="false">Last Week</a>
+                                        data-target="#latest-tasks-last-week"
+                                        class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
+                                        role="tab" aria-selected="false">Last Week</a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav nav-tabs ml-auto hidden sm:flex" role="tablist">
                             <a id="latest-tasks-mobile-new-tab" data-toggle="tab" data-target="#latest-tasks-new"
-                               href="javascript:" class="py-5 ml-6 active" role="tab" aria-selected="true">New</a>
+                                href="javascript:" class="py-5 ml-6 active" role="tab" aria-selected="true">New</a>
                             <a id="latest-tasks-mobile-last-week-tab" data-toggle="tab"
-                               data-target="#latest-tasks-last-week" href="javascript:" class="py-5 ml-6" role="tab"
-                               aria-selected="false">Last Week</a>
+                                data-target="#latest-tasks-last-week" href="javascript:" class="py-5 ml-6" role="tab"
+                                aria-selected="false">Last Week</a>
                         </div>
                     </div>
                     <div class="p-5">
                         <div class="tab-content">
                             <div id="latest-tasks-new" class="tab-pane active" role="tabpanel"
-                                 aria-labelledby="latest-tasks-new-tab">
+                                aria-labelledby="latest-tasks-new-tab">
                                 <div class="flex items-center">
                                     <div class="border-l-2 border-theme-25 pl-4">
                                         <a href="" class="font-medium">Create New Campaign</a>
@@ -374,11 +370,11 @@
                     <div class="flex items-center px-5 py-3 border-b border-gray-200 dark:border-dark-5">
                         <h2 class="font-medium text-base mr-auto">New Products</h2>
                         <button data-carousel="new-products" data-target="prev"
-                                class="tiny-slider-navigator btn btn-outline-secondary px-2 mr-2">
+                            class="tiny-slider-navigator btn btn-outline-secondary px-2 mr-2">
                             <i data-feather="chevron-left" class="w-4 h-4"></i>
                         </button>
                         <button data-carousel="new-products" data-target="next"
-                                class="tiny-slider-navigator btn btn-outline-secondary px-2">
+                            class="tiny-slider-navigator btn btn-outline-secondary px-2">
                             <i data-feather="chevron-right" class="w-4 h-4"></i>
                         </button>
                     </div>
@@ -391,33 +387,33 @@
                                         <div class="sm:mr-5">
                                             <div class="w-20 h-20 image-fit">
                                                 <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                                     src="{{ asset('dist/images/' . $faker['images'][0]) }}">
+                                                    src="{{ asset('dist/images/' . $faker['images'][0]) }}">
                                             </div>
                                         </div>
                                         <div class="mr-auto text-center sm:text-left mt-3 sm:mt-0">
                                             <a href=""
-                                               class="font-medium text-lg">{{ $faker['products'][0]['name'] }}</a>
-                                            <div
-                                                class="text-gray-600 mt-1 sm:mt-0">{{ $faker['news'][0]['short_content'] }}</div>
+                                                class="font-medium text-lg">{{ $faker['products'][0]['name'] }}</a>
+                                            <div class="text-gray-600 mt-1 sm:mt-0">
+                                                {{ $faker['news'][0]['short_content'] }}</div>
                                         </div>
                                     </div>
                                     <div
                                         class="w-full lg:w-auto mt-6 lg:mt-0 pt-4 lg:pt-0 flex-1 flex items-center justify-center px-5 border-t lg:border-t-0 border-gray-200 dark:border-dark-5">
                                         <div class="text-center rounded-md w-20 py-3">
-                                            <div
-                                                class="font-medium text-theme-25 dark:text-theme-22 text-xl">{{ $faker['totals'][0] }}</div>
+                                            <div class="font-medium text-theme-25 dark:text-theme-22 text-xl">
+                                                {{ $faker['totals'][0] }}</div>
                                             <div class="text-gray-600">Orders</div>
                                         </div>
                                         <div class="text-center rounded-md w-20 py-3">
-                                            <div
-                                                class="font-medium text-theme-25 dark:text-theme-22 text-xl">{{ $faker['totals'][1] }}
+                                            <div class="font-medium text-theme-25 dark:text-theme-22 text-xl">
+                                                {{ $faker['totals'][1] }}
                                                 k
                                             </div>
                                             <div class="text-gray-600">Purchases</div>
                                         </div>
                                         <div class="text-center rounded-md w-20 py-3">
-                                            <div
-                                                class="font-medium text-theme-25 dark:text-theme-22 text-xl">{{ $faker['totals'][0] }}</div>
+                                            <div class="font-medium text-theme-25 dark:text-theme-22 text-xl">
+                                                {{ $faker['totals'][0] }}</div>
                                             <div class="text-gray-600">Reviews</div>
                                         </div>
                                     </div>
@@ -427,7 +423,8 @@
                                     <div
                                         class="w-full sm:w-auto flex justify-center sm:justify-start items-center border-b sm:border-b-0 border-gray-200 dark:border-dark-5 pb-5 sm:pb-0">
                                         <div
-                                            class="px-3 py-2 bg-theme-19 dark:bg-dark-5 dark:text-gray-300 text-theme-22 rounded font-medium mr-3">{{ $faker['dates'][0] }}</div>
+                                            class="px-3 py-2 bg-theme-19 dark:bg-dark-5 dark:text-gray-300 text-theme-22 rounded font-medium mr-3">
+                                            {{ $faker['dates'][0] }}</div>
                                         <div class="text-gray-600">Date of Release</div>
                                     </div>
                                     <div class="flex sm:ml-auto mt-5 sm:mt-0">
@@ -445,11 +442,11 @@
                     <div class="flex items-center px-5 py-3 border-b border-gray-200 dark:border-dark-5">
                         <h2 class="font-medium text-base mr-auto">New Authors</h2>
                         <button data-carousel="new-authors" data-target="prev"
-                                class="tiny-slider-navigator btn btn-outline-secondary px-2 mr-2">
+                            class="tiny-slider-navigator btn btn-outline-secondary px-2 mr-2">
                             <i data-feather="chevron-left" class="w-4 h-4"></i>
                         </button>
                         <button data-carousel="new-authors" data-target="next"
-                                class="tiny-slider-navigator btn btn-outline-secondary px-2">
+                            class="tiny-slider-navigator btn btn-outline-secondary px-2">
                             <i data-feather="chevron-right" class="w-4 h-4"></i>
                         </button>
                     </div>
@@ -462,7 +459,7 @@
                                         <div class="sm:mr-5">
                                             <div class="w-20 h-20 image-fit">
                                                 <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                                     src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
+                                                    src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
                                             </div>
                                         </div>
                                         <div class="mr-auto text-center sm:text-left mt-3 sm:mt-0">
@@ -474,14 +471,14 @@
                                         class="w-full lg:w-auto mt-6 lg:mt-0 pt-4 lg:pt-0 flex-1 flex flex-col justify-center items-center lg:items-start px-5 border-t lg:border-t-0 border-gray-200 dark:border-dark-5">
                                         <div class="flex items-center">
                                             <a href=""
-                                               class="w-8 h-8 rounded-full flex items-center justify-center border mr-2 text-gray-500">
+                                                class="w-8 h-8 rounded-full flex items-center justify-center border mr-2 text-gray-500">
                                                 <i class="w-3 h-3 fill-current" data-feather="facebook"></i>
                                             </a>
                                             {{ $faker['users'][0]['email'] }}
                                         </div>
                                         <div class="flex items-center mt-2">
                                             <a href=""
-                                               class="w-8 h-8 rounded-full flex items-center justify-center border mr-2 text-gray-500">
+                                                class="w-8 h-8 rounded-full flex items-center justify-center border mr-2 text-gray-500">
                                                 <i class="w-3 h-3 fill-current" data-feather="twitter"></i>
                                             </a>
                                             {{ $faker['users'][0]['name'] }}
@@ -493,7 +490,8 @@
                                     <div
                                         class="w-full sm:w-auto flex justify-center sm:justify-start items-center border-b sm:border-b-0 border-gray-200 dark:border-dark-5 pb-5 sm:pb-0">
                                         <div
-                                            class="px-3 py-2 bg-theme-19 dark:bg-dark-5 dark:text-gray-300 text-theme-22 rounded font-medium mr-3">{{ $faker['dates'][0] }}</div>
+                                            class="px-3 py-2 bg-theme-19 dark:bg-dark-5 dark:text-gray-300 text-theme-22 rounded font-medium mr-3">
+                                            {{ $faker['dates'][0] }}</div>
                                         <div class="text-gray-600">Joined Date</div>
                                     </div>
                                     <div class="flex sm:ml-auto mt-5 sm:mt-0">

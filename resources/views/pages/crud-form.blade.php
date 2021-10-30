@@ -19,7 +19,7 @@
                 <div class="mt-3">
                     <label for="crud-form-2" class="form-label">Category</label>
                     <select data-placeholder="Select your favorite actors" class="tom-select w-full" id="crud-form-2"
-                            multiple>
+                        multiple>
                         <option value="1" selected>Sport & Outdoor</option>
                         <option value="2">PC & Laptop</option>
                         <option value="3" selected>Smartphone & Tablet</option>
@@ -30,7 +30,7 @@
                     <label for="crud-form-3" class="form-label">Quantity</label>
                     <div class="input-group">
                         <input id="crud-form-3" type="text" class="form-control" placeholder="Quantity"
-                               aria-describedby="input-group-1">
+                            aria-describedby="input-group-1">
                         <div id="input-group-1" class="input-group-text">pcs</div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                     <label for="crud-form-4" class="form-label">Weight</label>
                     <div class="input-group">
                         <input id="crud-form-4" type="text" class="form-control" placeholder="Weight"
-                               aria-describedby="input-group-2">
+                            aria-describedby="input-group-2">
                         <div id="input-group-2" class="input-group-text">grams</div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         <div class="input-group mt-2 sm:mt-0">
                             <div id="input-group-4" class="input-group-text">Wholesale</div>
                             <input type="text" class="form-control" placeholder="Wholesale"
-                                   aria-describedby="input-group-4">
+                                aria-describedby="input-group-4">
                         </div>
                         <div class="input-group mt-2 sm:mt-0">
                             <div id="input-group-5" class="input-group-text">Bulk</div>

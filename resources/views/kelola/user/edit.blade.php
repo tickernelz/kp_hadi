@@ -37,45 +37,44 @@
                         <div>
                             <label for="nama" class="form-label">Nama</label>
                             <input id="nama" name="nama" value="{{ $data->nama }}" type="text"
-                                   class="form-control w-full mb-3">
+                                class="form-control w-full mb-3">
                         </div>
                     </div>
                     <div class="mt-3">
                         <div>
                             <label for="username" class="form-label">Username</label>
                             <input id="username" name="username" value="{{ $data->username }}" type="text"
-                                   class="form-control w-full mb-3">
+                                class="form-control w-full mb-3">
                         </div>
                     </div>
                     <div class="mt-3">
                         <label for="level" class="form-label">Level</label>
-                        <select data-placeholder="Pilih Level User" name="level" class="tom-select w-full mb-3"
-                                id="level">
+                        <select data-placeholder="Pilih Level User" name="level" class="tom-select w-full mb-3" id="level">
                             <option @if ($data->level === 'Super Admin')
-                                    selected="selected"
-                                    @endif value="{{ Crypt::encrypt('Super Admin') }}">Super Admin
+                                selected="selected"
+                                @endif value="{{ Crypt::encrypt('Super Admin') }}">Super Admin
                             </option>
                             <option @if ($data->level === 'Admin')
-                                    selected="selected"
-                                    @endif value="{{ Crypt::encrypt('Admin') }}">Admin
+                                selected="selected"
+                                @endif value="{{ Crypt::encrypt('Admin') }}">Admin
                             </option>
                             <option @if ($data->level === 'Wali Kelas')
-                                    selected="selected"
-                                    @endif value="{{ Crypt::encrypt('Wali Kelas') }}">Wali Kelas
+                                selected="selected"
+                                @endif value="{{ Crypt::encrypt('Wali Kelas') }}">Wali Kelas
                             </option>
                         </select>
                     </div>
                     <div class="mt-3">
                         <div>
                             <label for="password" class="form-label">Password</label>
-                            <input id="password" type="password" name="password" value="{{$data->password}}"
-                                   class="form-control w-full mb-3">
+                            <input id="password" type="password" name="password" value="{{ $data->password }}"
+                                class="form-control w-full mb-3">
                         </div>
                     </div>
                     <div class="text-right mt-5">
                         <button type="button" class="btn btn-outline-secondary w-24 mr-1" onclick="
-                            window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.user') }}'
-                            ">Kembali
+                                window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.user') }}'
+                                ">Kembali
                         </button>
                         <button type="submit" id="submit" class="btn btn-primary w-24">Simpan</button>
                     </div>
@@ -99,8 +98,8 @@
                             url: "{{ Request::url() }}/cekusername",
                             type: "post",
                             data: {
-                                _token: function () {
-                                    return "{{csrf_token()}}"
+                                _token: function() {
+                                    return "{{ csrf_token() }}"
                                 }
                             }
                         }
@@ -126,15 +125,16 @@
                         required: "Password wajib diisi",
                     },
                 },
-                submitHandler: function (form) {
+                submitHandler: function(form) {
                     $.ajaxSetup({
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         }
                     });
-                    cash(async function () {
+                    cash(async function() {
                         // Loading state
-                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>').svgLoader()
+                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>')
+                            .svgLoader()
                         await helper.delay(1500)
                     });
                     $("#submit").attr("disabled", true);
@@ -142,7 +142,7 @@
                         url: "{{ Request::url() }}/post",
                         type: "POST",
                         data: $('#user').serialize(),
-                        success: cash(async function (response) {
+                        success: cash(async function(response) {
                             $('#submit').html('Submit');
                             $("#submit").attr("disabled", false);
                             cash('#success-modal').modal('show')

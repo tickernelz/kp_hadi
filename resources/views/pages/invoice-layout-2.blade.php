@@ -18,11 +18,11 @@
                 <div class="dropdown-menu w-40">
                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Export Word
                         </a>
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Export PDF
                         </a>
                     </div>
@@ -57,50 +57,50 @@
             <div class="overflow-x-auto">
                 <table class="table">
                     <thead>
-                    <tr>
-                        <th class="border-b-2 dark:border-dark-5 whitespace-nowrap">DESCRIPTION</th>
-                        <th class="border-b-2 dark:border-dark-5 text-right whitespace-nowrap">QTY</th>
-                        <th class="border-b-2 dark:border-dark-5 text-right whitespace-nowrap">PRICE</th>
-                        <th class="border-b-2 dark:border-dark-5 text-right whitespace-nowrap">SUBTOTAL</th>
-                    </tr>
+                        <tr>
+                            <th class="border-b-2 dark:border-dark-5 whitespace-nowrap">DESCRIPTION</th>
+                            <th class="border-b-2 dark:border-dark-5 text-right whitespace-nowrap">QTY</th>
+                            <th class="border-b-2 dark:border-dark-5 text-right whitespace-nowrap">PRICE</th>
+                            <th class="border-b-2 dark:border-dark-5 text-right whitespace-nowrap">SUBTOTAL</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td class="border-b dark:border-dark-5">
-                            <div class="font-medium whitespace-nowrap">Tinker HTML Admin Template</div>
-                            <div class="text-gray-600 text-sm mt-0.5 whitespace-nowrap">Regular License</div>
-                        </td>
-                        <td class="text-right border-b dark:border-dark-5 w-32">2</td>
-                        <td class="text-right border-b dark:border-dark-5 w-32">$25</td>
-                        <td class="text-right border-b dark:border-dark-5 w-32 font-medium">$50</td>
-                    </tr>
-                    <tr>
-                        <td class="border-b dark:border-dark-5">
-                            <div class="font-medium whitespace-nowrap">Vuejs Admin Template</div>
-                            <div class="text-gray-600 text-sm mt-0.5 whitespace-nowrap">Regular License</div>
-                        </td>
-                        <td class="text-right border-b dark:border-dark-5 w-32">1</td>
-                        <td class="text-right border-b dark:border-dark-5 w-32">$25</td>
-                        <td class="text-right border-b dark:border-dark-5 w-32 font-medium">$25</td>
-                    </tr>
-                    <tr>
-                        <td class="border-b dark:border-dark-5">
-                            <div class="font-medium whitespace-nowrap">React Admin Template</div>
-                            <div class="text-gray-600 text-sm mt-0.5 whitespace-nowrap">Regular License</div>
-                        </td>
-                        <td class="text-right border-b dark:border-dark-5 w-32">1</td>
-                        <td class="text-right border-b dark:border-dark-5 w-32">$25</td>
-                        <td class="text-right border-b dark:border-dark-5 w-32 font-medium">$25</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="font-medium whitespace-nowrap">Laravel Admin Template</div>
-                            <div class="text-gray-600 text-sm mt-0.5 whitespace-nowrap">Regular License</div>
-                        </td>
-                        <td class="text-right w-32">3</td>
-                        <td class="text-right w-32">$25</td>
-                        <td class="text-right w-32 font-medium">$75</td>
-                    </tr>
+                        <tr>
+                            <td class="border-b dark:border-dark-5">
+                                <div class="font-medium whitespace-nowrap">Tinker HTML Admin Template</div>
+                                <div class="text-gray-600 text-sm mt-0.5 whitespace-nowrap">Regular License</div>
+                            </td>
+                            <td class="text-right border-b dark:border-dark-5 w-32">2</td>
+                            <td class="text-right border-b dark:border-dark-5 w-32">$25</td>
+                            <td class="text-right border-b dark:border-dark-5 w-32 font-medium">$50</td>
+                        </tr>
+                        <tr>
+                            <td class="border-b dark:border-dark-5">
+                                <div class="font-medium whitespace-nowrap">Vuejs Admin Template</div>
+                                <div class="text-gray-600 text-sm mt-0.5 whitespace-nowrap">Regular License</div>
+                            </td>
+                            <td class="text-right border-b dark:border-dark-5 w-32">1</td>
+                            <td class="text-right border-b dark:border-dark-5 w-32">$25</td>
+                            <td class="text-right border-b dark:border-dark-5 w-32 font-medium">$25</td>
+                        </tr>
+                        <tr>
+                            <td class="border-b dark:border-dark-5">
+                                <div class="font-medium whitespace-nowrap">React Admin Template</div>
+                                <div class="text-gray-600 text-sm mt-0.5 whitespace-nowrap">Regular License</div>
+                            </td>
+                            <td class="text-right border-b dark:border-dark-5 w-32">1</td>
+                            <td class="text-right border-b dark:border-dark-5 w-32">$25</td>
+                            <td class="text-right border-b dark:border-dark-5 w-32 font-medium">$25</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="font-medium whitespace-nowrap">Laravel Admin Template</div>
+                                <div class="text-gray-600 text-sm mt-0.5 whitespace-nowrap">Regular License</div>
+                            </td>
+                            <td class="text-right w-32">3</td>
+                            <td class="text-right w-32">$25</td>
+                            <td class="text-right w-32 font-medium">$75</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

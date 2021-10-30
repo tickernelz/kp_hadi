@@ -47,8 +47,7 @@
                     </div>
                     <div class="mt-3">
                         <label for="level" class="form-label">Level</label>
-                        <select data-placeholder="Pilih Level User" name="level" class="tom-select w-full mb-3"
-                                id="level">
+                        <select data-placeholder="Pilih Level User" name="level" class="tom-select w-full mb-3" id="level">
                             <option value="{{ Crypt::encrypt('Super Admin') }}">Super Admin</option>
                             <option value="{{ Crypt::encrypt('Admin') }}">Admin</option>
                             <option value="{{ Crypt::encrypt('Wali Kelas') }}">Wali Kelas</option>
@@ -62,8 +61,8 @@
                     </div>
                     <div class="text-right mt-5">
                         <button type="button" class="btn btn-outline-secondary w-24 mr-1" onclick="
-                            window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.user') }}'
-                            ">Kembali
+                                window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.user') }}'
+                                ">Kembali
                         </button>
                         <button type="submit" id="submit" class="btn btn-primary w-24">Simpan</button>
                     </div>
@@ -84,11 +83,11 @@
                     username: {
                         required: true,
                         remote: {
-                            url: "{{route('kelola.user.tambah.cekusername')}}",
+                            url: "{{ route('kelola.user.tambah.cekusername') }}",
                             type: "post",
                             data: {
-                                _token: function () {
-                                    return "{{csrf_token()}}"
+                                _token: function() {
+                                    return "{{ csrf_token() }}"
                                 }
                             }
                         }
@@ -114,23 +113,24 @@
                         required: "Password wajib diisi",
                     },
                 },
-                submitHandler: function (form) {
+                submitHandler: function(form) {
                     $.ajaxSetup({
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         }
                     });
-                    cash(async function () {
+                    cash(async function() {
                         // Loading state
-                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>').svgLoader()
+                        cash('#submit').html('<i data-loading-icon="oval" data-color="white"></i>')
+                            .svgLoader()
                         await helper.delay(1500)
                     });
                     $("#submit").attr("disabled", true);
                     $.ajax({
-                        url: "{{route('kelola.user.tambah.post')}}",
+                        url: "{{ route('kelola.user.tambah.post') }}",
                         type: "POST",
                         data: $('#tambah-user').serialize(),
-                        success: function (response) {
+                        success: function(response) {
                             $('#submit').html('Submit');
                             $("#submit").attr("disabled", false);
                             cash('#success-modal').modal('show')

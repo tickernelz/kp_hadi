@@ -136,7 +136,7 @@ class WaliKelasController extends Controller
         return redirect()->route('kelola.wali_kelas');
     }
 
-    function cekniptambah(Request $request)
+    public function cekniptambah(Request $request)
     {
         if ($request->input('nip') !== '') {
             if ($request->input('nip')) {
@@ -150,7 +150,7 @@ class WaliKelasController extends Controller
         die('false');
     }
 
-    function ceknipedit(Request $request, int $id)
+    public function ceknipedit(Request $request, int $id)
     {
         // Get Data User
         $data = WaliKelas::with('user')->find($id);
@@ -175,7 +175,7 @@ class WaliKelasController extends Controller
         die('false');
     }
 
-    function cekusernameedit(Request $request, int $id)
+    public function cekusernameedit(Request $request, int $id)
     {
         // Get Data User
         $data = WaliKelas::with('user')->find($id);

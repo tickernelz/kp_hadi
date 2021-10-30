@@ -14,15 +14,15 @@
             <div class="flex flex-1 px-5 items-center justify-center lg:justify-start">
                 <div class="w-20 h-20 sm:w-24 sm:h-24 flex-none lg:w-32 lg:h-32 image-fit relative">
                     <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                         src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
+                        src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
                     <div
                         class="absolute mb-1 mr-1 flex items-center justify-center bottom-0 right-0 bg-theme-25 rounded-full p-2">
                         <i class="w-4 h-4 text-white" data-feather="camera"></i>
                     </div>
                 </div>
                 <div class="ml-5">
-                    <div
-                        class="w-24 sm:w-40 truncate sm:whitespace-normal font-medium text-lg">{{ $fakers[0]['users'][0]['name'] }}</div>
+                    <div class="w-24 sm:w-40 truncate sm:whitespace-normal font-medium text-lg">
+                        {{ $fakers[0]['users'][0]['name'] }}</div>
                     <div class="text-gray-600">{{ $fakers[0]['jobs'][0] }}</div>
                 </div>
             </div>
@@ -63,14 +63,14 @@
             </div>
         </div>
         <div class="nav nav-tabs flex-col sm:flex-row justify-center lg:justify-start" role="tablist">
-            <a id="dashboard-tab" data-toggle="tab" data-target="#dashboard" href="javascript:"
-               class="py-4 sm:mr-8 active" role="tab" aria-controls="dashboard" aria-selected="true">Dashboard</a>
+            <a id="dashboard-tab" data-toggle="tab" data-target="#dashboard" href="javascript:" class="py-4 sm:mr-8 active"
+                role="tab" aria-controls="dashboard" aria-selected="true">Dashboard</a>
             <a id="account-and-profile-tab" data-toggle="tab" data-target="#account-and-profile" href="javascript:"
-               class="py-4 sm:mr-8" role="tab" aria-selected="false">Account & Profile</a>
+                class="py-4 sm:mr-8" role="tab" aria-selected="false">Account & Profile</a>
             <a id="activities-tab" data-toggle="tab" data-target="#activities" href="javascript:" class="py-4 sm:mr-8"
-               role="tab" aria-selected="false">Activities</a>
+                role="tab" aria-selected="false">Activities</a>
             <a id="tasks-tab" data-toggle="tab" data-target="#tasks" href="javascript:" class="py-4 sm:mr-8" role="tab"
-               aria-selected="false">Tasks</a>
+                aria-selected="false">Tasks</a>
         </div>
     </div>
     <!-- END: Profile Info -->
@@ -88,11 +88,11 @@
                             <div class="dropdown-menu w-40">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                         <i data-feather="plus" class="w-4 h-4 mr-2"></i> Add Category
                                     </a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                         <i data-feather="settings" class="w-4 h-4 mr-2"></i> Settings
                                     </a>
                                 </div>
@@ -159,29 +159,28 @@
                             <div class="nav nav-tabs dropdown-menu w-40" role="tablist">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a id="work-in-progress-new-tab" href="javascript:" data-toggle="tab"
-                                       data-target="#work-in-progress-new"
-                                       class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
-                                       role="tab" aria-controls="work-in-progress-new" aria-selected="true">New</a>
+                                        data-target="#work-in-progress-new"
+                                        class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
+                                        role="tab" aria-controls="work-in-progress-new" aria-selected="true">New</a>
                                     <a id="work-in-progress-last-week-tab" href="javascript:" data-toggle="tab"
-                                       data-target="#work-in-progress-last-week"
-                                       class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
-                                       role="tab" aria-selected="false">Last Week</a>
+                                        data-target="#work-in-progress-last-week"
+                                        class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
+                                        role="tab" aria-selected="false">Last Week</a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav nav-tabs ml-auto hidden sm:flex" role="tablist">
-                            <a id="work-in-progress-mobile-new-tab" data-toggle="tab"
-                               data-target="#work-in-progress-new" href="javascript:" class="py-5 ml-6 active"
-                               role="tab" aria-selected="true">New</a>
+                            <a id="work-in-progress-mobile-new-tab" data-toggle="tab" data-target="#work-in-progress-new"
+                                href="javascript:" class="py-5 ml-6 active" role="tab" aria-selected="true">New</a>
                             <a id="week-work-in-progress-mobile-last-week-tab" data-toggle="tab"
-                               data-target="#work-in-progress-last-week" href="javascript:" class="py-5 ml-6"
-                               role="tab" aria-selected="false">Last Week</a>
+                                data-target="#work-in-progress-last-week" href="javascript:" class="py-5 ml-6"
+                                role="tab" aria-selected="false">Last Week</a>
                         </div>
                     </div>
                     <div class="p-5">
                         <div class="tab-content">
                             <div id="work-in-progress-new" class="tab-pane active" role="tabpanel"
-                                 aria-labelledby="work-in-progress-new-tab">
+                                aria-labelledby="work-in-progress-new-tab">
                                 <div>
                                     <div class="flex">
                                         <div class="mr-auto">Pending Tasks</div>
@@ -189,7 +188,7 @@
                                     </div>
                                     <div class="progress h-1 mt-2">
                                         <div class="progress-bar w-1/2 bg-theme-25" role="progressbar" aria-valuenow="0"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                            aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="mt-5">
@@ -199,7 +198,7 @@
                                     </div>
                                     <div class="progress h-1 mt-2">
                                         <div class="progress-bar w-1/4 bg-theme-25" role="progressbar" aria-valuenow="0"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                            aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="mt-5">
@@ -209,7 +208,7 @@
                                     </div>
                                     <div class="progress h-1 mt-2">
                                         <div class="progress-bar w-3/4 bg-theme-25" role="progressbar" aria-valuenow="0"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                            aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <a href="" class="btn btn-secondary block w-40 mx-auto mt-5">View More Details</a>
@@ -229,7 +228,7 @@
                             <div class="dropdown-menu w-40">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a href="javascript:"
-                                       class="flex items-center p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        class="flex items-center p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                         <i data-feather="file" class="w-4 h-4 mr-2"></i> Download Excel
                                     </a>
                                 </div>
@@ -243,7 +242,7 @@
                         <div class="relative flex items-center">
                             <div class="w-12 h-12 flex-none image-fit">
                                 <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                     src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
+                                    src="{{ asset('dist/images/' . $fakers[0]['photos'][0]) }}">
                             </div>
                             <div class="ml-4 mr-auto">
                                 <a href="" class="font-medium">{{ $fakers[0]['users'][0]['name'] }}</a>
@@ -254,7 +253,7 @@
                         <div class="relative flex items-center mt-5">
                             <div class="w-12 h-12 flex-none image-fit">
                                 <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                     src="{{ asset('dist/images/' . $fakers[1]['photos'][0]) }}">
+                                    src="{{ asset('dist/images/' . $fakers[1]['photos'][0]) }}">
                             </div>
                             <div class="ml-4 mr-auto">
                                 <a href="" class="font-medium">{{ $fakers[1]['users'][0]['name'] }}</a>
@@ -265,7 +264,7 @@
                         <div class="relative flex items-center mt-5">
                             <div class="w-12 h-12 flex-none image-fit">
                                 <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                     src="{{ asset('dist/images/' . $fakers[2]['photos'][0]) }}">
+                                    src="{{ asset('dist/images/' . $fakers[2]['photos'][0]) }}">
                             </div>
                             <div class="ml-4 mr-auto">
                                 <a href="" class="font-medium">{{ $fakers[2]['users'][0]['name'] }}</a>
@@ -287,28 +286,28 @@
                             <div class="nav nav-tabs dropdown-menu w-40" role="tablist">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a id="latest-tasks-new-tab" href="javascript:" data-toggle="tab"
-                                       data-target="#latest-tasks-new"
-                                       class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
-                                       role="tab" aria-controls="latest-tasks-new" aria-selected="true">New</a>
+                                        data-target="#latest-tasks-new"
+                                        class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
+                                        role="tab" aria-controls="latest-tasks-new" aria-selected="true">New</a>
                                     <a id="latest-tasks-last-week-tab" href="javascript:" data-toggle="tab"
-                                       data-target="#latest-tasks-last-week"
-                                       class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
-                                       role="tab" aria-selected="false">Last Week</a>
+                                        data-target="#latest-tasks-last-week"
+                                        class="block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
+                                        role="tab" aria-selected="false">Last Week</a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav nav-tabs ml-auto hidden sm:flex" role="tablist">
                             <a id="latest-tasks-mobile-new-tab" data-toggle="tab" data-target="#latest-tasks-new"
-                               href="javascript:" class="py-5 ml-6 active" role="tab" aria-selected="true">New</a>
+                                href="javascript:" class="py-5 ml-6 active" role="tab" aria-selected="true">New</a>
                             <a id="latest-tasks-mobile-last-week-tab" data-toggle="tab"
-                               data-target="#latest-tasks-last-week" href="javascript:" class="py-5 ml-6" role="tab"
-                               aria-selected="false">Last Week</a>
+                                data-target="#latest-tasks-last-week" href="javascript:" class="py-5 ml-6" role="tab"
+                                aria-selected="false">Last Week</a>
                         </div>
                     </div>
                     <div class="p-5">
                         <div class="tab-content">
                             <div id="latest-tasks-new" class="tab-pane active" role="tabpanel"
-                                 aria-labelledby="latest-tasks-new-tab">
+                                aria-labelledby="latest-tasks-new-tab">
                                 <div class="flex items-center">
                                     <div class="border-l-2 border-theme-25 dark:border-theme-25 pl-4">
                                         <a href="" class="font-medium">Create New Campaign</a>
@@ -346,7 +345,7 @@
                             <div class="dropdown-menu w-40">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a href="javascript:"
-                                       class="flex items-center p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                                        class="flex items-center p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                                         <i data-feather="file" class="w-4 h-4 mr-2"></i> Download XML
                                     </a>
                                 </div>

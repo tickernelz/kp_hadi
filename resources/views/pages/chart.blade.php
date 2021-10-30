@@ -17,7 +17,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-1">Show example code</label>
                         <input id="show-example-1" data-target="#vertical-bar-chart"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="vertical-bar-chart" class="p-5">
@@ -26,17 +26,17 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-vertical-bar-chart"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-vertical-bar-chart" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <canvas id="vertical-bar-chart-widget" height="200"></canvas>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-2">Show example code</label>
                         <input id="show-example-2" data-target="#horizontal-bar-chart"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="horizontal-bar-chart" class="p-5">
@@ -58,17 +58,17 @@
                     </div>
                     <div class="source-code hidden">
                         <button data-target="#copy-horizontal-bar-chart"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                            class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-horizontal-bar-chart" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <canvas id="horizontal-bar-chart-widget" height="200"></canvas>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -80,8 +80,8 @@
                     <h2 class="font-medium text-base mr-auto">Donut Chart</h2>
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-3">Show example code</label>
-                        <input id="show-example-3" data-target="#donut-chart"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                        <input id="show-example-3" data-target="#donut-chart" class="show-code form-check-switch mr-0 ml-3"
+                            type="checkbox">
                     </div>
                 </div>
                 <div id="donut-chart" class="p-5">
@@ -94,12 +94,12 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-donut-chart" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <canvas id="donut-chart-widget" height="200"></canvas>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-4">Show example code</label>
                         <input id="show-example-4" data-target="#stacked-bar-chart"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                            class="show-code form-check-switch mr-0 ml-3" type="checkbox">
                     </div>
                 </div>
                 <div id="stacked-bar-chart" class="p-5">
@@ -122,18 +122,17 @@
                         <canvas id="stacked-bar-chart-widget" height="200"></canvas>
                     </div>
                     <div class="source-code hidden">
-                        <button data-target="#copy-stacked-bar-chart"
-                                class="copy-code btn py-1 px-2 btn-outline-secondary">
+                        <button data-target="#copy-stacked-bar-chart" class="copy-code btn py-1 px-2 btn-outline-secondary">
                             <i data-feather="file" class="w-4 h-4 mr-2"></i> Copy example code
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-stacked-bar-chart" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <canvas id="stacked-bar-chart-widget" height="200"></canvas>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -145,8 +144,8 @@
                     <h2 class="font-medium text-base mr-auto">Line Chart</h2>
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-5">Show example code</label>
-                        <input id="show-example-5" data-target="#line-chart"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                        <input id="show-example-5" data-target="#line-chart" class="show-code form-check-switch mr-0 ml-3"
+                            type="checkbox">
                     </div>
                 </div>
                 <div id="line-chart" class="p-5">
@@ -159,12 +158,12 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-line-chart" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <canvas id="line-chart-widget" height="200"></canvas>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>
@@ -176,8 +175,8 @@
                     <h2 class="font-medium text-base mr-auto">Pie Chart</h2>
                     <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <label class="form-check-label ml-0 sm:ml-2" for="show-example-6">Show example code</label>
-                        <input id="show-example-6" data-target="#pie-chart"
-                               class="show-code form-check-switch mr-0 ml-3" type="checkbox">
+                        <input id="show-example-6" data-target="#pie-chart" class="show-code form-check-switch mr-0 ml-3"
+                            type="checkbox">
                     </div>
                 </div>
                 <div id="pie-chart" class="p-5">
@@ -190,12 +189,12 @@
                         </button>
                         <div class="overflow-y-auto mt-3 rounded-md">
                             <pre id="copy-pie-chart" class="source-preview">
-                                <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
-                                    {{ Hp::formatCode('
+                                    <code class="text-xs p-0 rounded-md html pl-5 pt-8 pb-4 -mb-10 -mt-10">
+                                        {{ Hp::formatCode('
                                         <canvas id="pie-chart-widget" height="200"></canvas>
                                     ') }}
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
                         </div>
                     </div>
                 </div>

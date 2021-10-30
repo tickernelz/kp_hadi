@@ -17,8 +17,7 @@
         <div class="grid grid-cols-12 gap-6">
             <div class="col-span-12 xl:col-span-9 2xl:col-span-9 z-10">
                 <div class="mt-6 -mb-6 intro-y">
-                    <div class="alert alert-dismissible show box bg-theme-25 text-white flex items-center mb-6"
-                         role="alert">
+                    <div class="alert alert-dismissible show box bg-theme-25 text-white flex items-center mb-6" role="alert">
                         <span>
                             Introducing new dashboard! Download now at <a
                                 href="https://themeforest.net/item/midone-jquery-tailwindcss-html-admin-template/26366820"
@@ -41,11 +40,11 @@
                             <div class="dropdown-menu w-40">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
                                         <i data-feather="file-text" class="w-4 h-4 mr-2"></i> Monthly Report
                                     </a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
                                         <i data-feather="file-text" class="w-4 h-4 mr-2"></i> Annual Report
                                     </a>
                                 </div>
@@ -58,12 +57,11 @@
                             class="text-base 2xl:text-lg justify-center sm:justify-start flex items-center text-theme-34 dark:text-gray-500 leading-3 mt-14 2xl:mt-24">
                             My Total Assets
                             <i data-feather="alert-circle" class="tooltip w-5 h-5 ml-1.5 mt-0.5"
-                               title="Total value of your sales: $158.409.416"></i>
+                                title="Total value of your sales: $158.409.416"></i>
                         </div>
                         <div class="2xl:flex mt-5 mb-3">
                             <div class="flex items-center justify-center sm:justify-start">
-                                <div
-                                    class="text-white relative text-2xl 2xl:text-3xl font-medium leading-6 pl-3 2xl:pl-4">
+                                <div class="text-white relative text-2xl 2xl:text-3xl font-medium leading-6 pl-3 2xl:pl-4">
                                     <span class="absolute text-xl 2xl:text-2xl top-0 left-0 -mt-1 2xl:mt-0">$</span>
                                     18,402,210
                                 </div>
@@ -73,8 +71,7 @@
                             </div>
                             <div
                                 class="mt-5 2xl:flex 2xl:justify-center 2xl:mt-0 2xl:-ml-20 2xl:w-14 2xl:flex-none 2xl:pl-2.5">
-                                <div
-                                    class="font-medium inline-flex bg-theme-20 text-white rounded-full px-2 py-1 text-xs 2xl:text-sm 2xl:p-0 2xl:text-theme-20 2xl:bg-transparent 2xl:flex items-center tooltip cursor-pointer 2xl:justify-center"
+                                <div class="font-medium inline-flex bg-theme-20 text-white rounded-full px-2 py-1 text-xs 2xl:text-sm 2xl:p-0 2xl:text-theme-20 2xl:bg-transparent 2xl:flex items-center tooltip cursor-pointer 2xl:justify-center"
                                     title="49% Higher than last month">
                                     49% <i data-feather="chevron-up" class="w-4 h-4 ml-0.5"></i>
                                 </div>
@@ -97,11 +94,11 @@
                             <div class="dropdown-menu w-44 2xl:w-52">
                                 <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
                                         <i data-feather="file-text" class="w-4 h-4 mr-2"></i> Monthly Report
                                     </a>
                                     <a href=""
-                                       class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
+                                        class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md">
                                         <i data-feather="file-text" class="w-4 h-4 mr-2"></i> Annual Report
                                     </a>
                                 </div>
@@ -139,19 +136,18 @@
                     </div>
                     <div
                         class="col-span-12 sm:col-span-6 md:col-span-4 py-6 border-theme-11 border-t sm:border-t-0 border-l md:border-l-0 border-dashed -ml-4 pl-4 md:ml-0 md:pl-0">
-                        <div
-                            class="boxed-tabs nav nav-tabs justify-center w-3/4 2xl:w-4/6 bg-theme-27 text-white dark:bg-dark-2 dark:text-gray-500 rounded-md p-1 mx-auto"
+                        <div class="boxed-tabs nav nav-tabs justify-center w-3/4 2xl:w-4/6 bg-theme-27 text-white dark:bg-dark-2 dark:text-gray-500 rounded-md p-1 mx-auto"
                             role="tablist">
                             <a data-toggle="tab" data-target="#active-users" href="javascript:"
-                               class="btn flex-1 border-0 shadow-none py-1.5 px-2 active" id="active-users-tab"
-                               role="tab" aria-controls="active-users" aria-selected="true">Active</a>
+                                class="btn flex-1 border-0 shadow-none py-1.5 px-2 active" id="active-users-tab" role="tab"
+                                aria-controls="active-users" aria-selected="true">Active</a>
                             <a data-toggle="tab" data-target="#inactive-users" href="javascript:"
-                               class="btn flex-1 border-0 shadow-none py-1.5 px-2" id="inactive-users-tab" role="tab"
-                               aria-selected="false">Inactive</a>
+                                class="btn flex-1 border-0 shadow-none py-1.5 px-2" id="inactive-users-tab" role="tab"
+                                aria-selected="false">Inactive</a>
                         </div>
                         <div class="tab-content mt-6">
                             <div class="tab-pane active" id="active-users" role="tabpanel"
-                                 aria-labelledby="active-users-tab">
+                                aria-labelledby="active-users-tab">
                                 <div class="relative">
                                     <canvas class="mt-8" id="report-donut-chart-3" height="190"></canvas>
                                     <div
@@ -165,21 +161,24 @@
                                         <div class="w-2 h-2 bg-theme-25 rounded-full mr-3"></div>
                                         <span class="text-white truncate">17 - 30 Years old</span>
                                         <div
-                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden">
+                                        </div>
                                         <span class="text-white font-medium xl:ml-auto">62%</span>
                                     </div>
                                     <div class="flex items-center mt-4">
                                         <div class="w-2 h-2 bg-theme-21 rounded-full mr-3"></div>
                                         <span class="text-white truncate">31 - 50 Years old</span>
                                         <div
-                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden">
+                                        </div>
                                         <span class="text-white font-medium xl:ml-auto">33%</span>
                                     </div>
                                     <div class="flex items-center mt-4">
                                         <div class="w-2 h-2 bg-theme-15 rounded-full mr-3"></div>
                                         <span class="text-white truncate">>= 50 Years old</span>
                                         <div
-                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden">
+                                        </div>
                                         <span class="text-white font-medium xl:ml-auto">10%</span>
                                     </div>
                                 </div>
@@ -222,7 +221,8 @@
                                 </div>
                             </div>
                             <div
-                                class="w-px h-16 border border-r border-dashed border-theme-28 dark:border-dark-5 mx-4 xl:mx-6"></div>
+                                class="w-px h-16 border border-r border-dashed border-theme-28 dark:border-dark-5 mx-4 xl:mx-6">
+                            </div>
                             <div>
                                 <div class="text-white dark:text-gray-300 text-3xl font-medium">135</div>
                                 <div class="text-gray-500 truncate mt-1 text-theme-34 dark:text-theme-34">Total
@@ -258,14 +258,14 @@
                                 <div class="text-white text-opacity-70 flex items-center leading-3">
                                     AVAILABLE FUNDS
                                     <i data-feather="alert-circle" class="tooltip w-4 h-4 ml-1.5"
-                                       title="Total value of your sales: $158.409.416"></i>
+                                        title="Total value of your sales: $158.409.416"></i>
                                 </div>
                                 <div class="text-white relative text-2xl font-medium leading-5 pl-4 mt-3.5">
                                     <span class="absolute text-xl top-0 left-0 -mt-1.5">$</span> 47,578.77
                                 </div>
                             </div>
                             <a class="flex items-center justify-center w-12 h-12 rounded-full bg-theme-26 dark:bg-dark-1 hover:bg-opacity-80 text-white"
-                               href="">
+                                href="">
                                 <i data-feather="plus" class="w-6 h-6"></i>
                             </a>
                         </div>
@@ -279,26 +279,24 @@
                                         <i data-feather="refresh-ccw" class="w-4 h-4 mr-3"></i> Refresh
                                     </a>
                                 </div>
-                                <div
-                                    class="boxed-tabs nav nav-tabs justify-center border border-gray-400 border-dashed text-gray-600 dark:border-gray-700 dark:bg-dark-3 dark:text-gray-500 rounded-md p-1 mt-5 mx-auto"
+                                <div class="boxed-tabs nav nav-tabs justify-center border border-gray-400 border-dashed text-gray-600 dark:border-gray-700 dark:bg-dark-3 dark:text-gray-500 rounded-md p-1 mt-5 mx-auto"
                                     role="tablist">
                                     <a data-toggle="tab" data-target="#active-users" href="javascript:"
-                                       class="btn flex-1 border-0 shadow-none py-1.5 px-2 active" id="active-users-tab"
-                                       role="tab" aria-controls="active-users" aria-selected="true">Weekly</a>
+                                        class="btn flex-1 border-0 shadow-none py-1.5 px-2 active" id="active-users-tab"
+                                        role="tab" aria-controls="active-users" aria-selected="true">Weekly</a>
                                     <a data-toggle="tab" data-target="#inactive-users" href="javascript:"
-                                       class="btn flex-1 border-0 shadow-none py-1.5 px-2" id="inactive-users-tab"
-                                       role="tab" aria-selected="false">Monthly</a>
+                                        class="btn flex-1 border-0 shadow-none py-1.5 px-2" id="inactive-users-tab"
+                                        role="tab" aria-selected="false">Monthly</a>
                                 </div>
                             </div>
                             <div class="tab-content px-5 pb-5">
                                 <div class="tab-pane active grid grid-cols-12 gap-y-6" id="active-users" role="tabpanel"
-                                     aria-labelledby="active-users-tab">
+                                    aria-labelledby="active-users-tab">
                                     <div class="col-span-12 sm:col-span-6 md:col-span-4 xl:col-span-12">
                                         <div class="text-gray-600 dark:text-gray-500">Unpaid Loan</div>
                                         <div class="mt-1.5 flex items-center">
                                             <div class="text-lg">$155.430.000</div>
-                                            <div
-                                                class="text-theme-21 flex text-xs font-medium tooltip cursor-pointer ml-2"
+                                            <div class="text-theme-21 flex text-xs font-medium tooltip cursor-pointer ml-2"
                                                 title="2% Lower than last month">
                                                 2% <i data-feather="chevron-down" class="w-4 h-4 ml-0.5"></i>
                                             </div>
@@ -308,8 +306,7 @@
                                         <div class="text-gray-600 dark:text-gray-500">Active Funding Partner</div>
                                         <div class="mt-1.5 flex items-center">
                                             <div class="text-lg">52 Partner</div>
-                                            <div
-                                                class="text-theme-20 flex text-xs font-medium tooltip cursor-pointer ml-2"
+                                            <div class="text-theme-20 flex text-xs font-medium tooltip cursor-pointer ml-2"
                                                 title="0.1% Lower than last month">
                                                 49% <i data-feather="chevron-up" class="w-4 h-4 ml-0.5"></i>
                                             </div>
@@ -319,8 +316,7 @@
                                         <div class="text-gray-600 dark:text-gray-500">Paid Installment</div>
                                         <div class="mt-1.5 flex items-center">
                                             <div class="text-lg">$75.430.000</div>
-                                            <div
-                                                class="text-theme-20 flex text-xs font-medium tooltip cursor-pointer ml-2"
+                                            <div class="text-theme-20 flex text-xs font-medium tooltip cursor-pointer ml-2"
                                                 title="49% Higher than last month">
                                                 36% <i data-feather="chevron-up" class="w-4 h-4 ml-0.5"></i>
                                             </div>
@@ -342,8 +338,7 @@
                                         <div class="text-gray-600 dark:text-gray-500">Unpaid Loan</div>
                                         <div class="mt-1.5 flex items-center">
                                             <div class="text-lg">$21.430.000</div>
-                                            <div
-                                                class="text-theme-21 flex text-xs font-medium tooltip cursor-pointer ml-2"
+                                            <div class="text-theme-21 flex text-xs font-medium tooltip cursor-pointer ml-2"
                                                 title="2% Lower than last month">
                                                 23% <i data-feather="chevron-down" class="w-4 h-4 ml-0.5"></i>
                                             </div>
@@ -380,7 +375,7 @@
                     <div class="intro-y box p-5 mt-12 sm:mt-5">
                         <div>250 Official stores in 21 countries, click the marker to see location details.</div>
                         <div class="report-maps mt-5 bg-gray-200 rounded-md" data-center="-6.2425342, 106.8626478"
-                             data-sources="/dist/json/location.json"></div>
+                            data-sources="/dist/json/location.json"></div>
                     </div>
                 </div>
                 <!-- END: Official Store -->
@@ -395,7 +390,7 @@
                                 <div class="box px-4 py-4 mb-3 flex items-center zoom-in">
                                     <div class="w-10 h-10 flex-none image-fit rounded-md overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
+                                            src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
                                     </div>
                                     <div class="ml-4 mr-auto">
                                         <div class="font-medium">{{ $faker['users'][0]['name'] }}</div>
@@ -409,7 +404,7 @@
                             </div>
                         @endforeach
                         <a href=""
-                           class="intro-y w-full block text-center rounded-md py-4 border border-dotted border-theme-32 dark:border-dark-5 text-theme-33 dark:text-gray-600">View
+                            class="intro-y w-full block text-center rounded-md py-4 border border-dotted border-theme-32 dark:border-dark-5 text-theme-33 dark:text-gray-600">View
                             More</a>
                     </div>
                 </div>
@@ -430,65 +425,65 @@
                     <div class="intro-y overflow-auto lg:overflow-visible mt-8 sm:mt-0">
                         <table class="table table-report sm:mt-2">
                             <thead>
-                            <tr>
-                                <th class="whitespace-nowrap">IMAGES</th>
-                                <th class="whitespace-nowrap">PRODUCT NAME</th>
-                                <th class="text-center whitespace-nowrap">STOCK</th>
-                                <th class="text-center whitespace-nowrap">STATUS</th>
-                                <th class="text-center whitespace-nowrap">ACTIONS</th>
-                            </tr>
+                                <tr>
+                                    <th class="whitespace-nowrap">IMAGES</th>
+                                    <th class="whitespace-nowrap">PRODUCT NAME</th>
+                                    <th class="text-center whitespace-nowrap">STOCK</th>
+                                    <th class="text-center whitespace-nowrap">STATUS</th>
+                                    <th class="text-center whitespace-nowrap">ACTIONS</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            @foreach (array_slice($fakers, 0, 4) as $faker)
-                                <tr class="intro-x">
-                                    <td class="w-40">
-                                        <div class="flex">
-                                            <div class="w-10 h-10 image-fit zoom-in">
-                                                <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="tooltip rounded-full"
-                                                     src="{{ asset('dist/images/' . $faker['images'][0]) }}"
-                                                     title="Uploaded at {{ $faker['dates'][0] }}">
+                                @foreach (array_slice($fakers, 0, 4) as $faker)
+                                    <tr class="intro-x">
+                                        <td class="w-40">
+                                            <div class="flex">
+                                                <div class="w-10 h-10 image-fit zoom-in">
+                                                    <img alt="Tinker Tailwind HTML Admin Template"
+                                                        class="tooltip rounded-full"
+                                                        src="{{ asset('dist/images/' . $faker['images'][0]) }}"
+                                                        title="Uploaded at {{ $faker['dates'][0] }}">
+                                                </div>
+                                                <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                    <img alt="Tinker Tailwind HTML Admin Template"
+                                                        class="tooltip rounded-full"
+                                                        src="{{ asset('dist/images/' . $faker['images'][1]) }}"
+                                                        title="Uploaded at {{ $faker['dates'][1] }}">
+                                                </div>
+                                                <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                    <img alt="Tinker Tailwind HTML Admin Template"
+                                                        class="tooltip rounded-full"
+                                                        src="{{ asset('dist/images/' . $faker['images'][2]) }}"
+                                                        title="Uploaded at {{ $faker['dates'][2] }}">
+                                                </div>
                                             </div>
-                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
-                                                <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="tooltip rounded-full"
-                                                     src="{{ asset('dist/images/' . $faker['images'][1]) }}"
-                                                     title="Uploaded at {{ $faker['dates'][1] }}">
+                                        </td>
+                                        <td>
+                                            <a href=""
+                                                class="font-medium whitespace-nowrap">{{ $faker['products'][0]['name'] }}</a>
+                                            <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">
+                                                {{ $faker['products'][0]['category'] }}</div>
+                                        </td>
+                                        <td class="text-center">{{ $faker['stocks'][0] }}</td>
+                                        <td class="w-40">
+                                            <div
+                                                class="flex items-center justify-center {{ $faker['true_false'][0] ? 'text-theme-20' : 'text-theme-21' }}">
+                                                <i data-feather="check-square" class="w-4 h-4 mr-2"></i>
+                                                {{ $faker['true_false'][0] ? 'Active' : 'Inactive' }}
                                             </div>
-                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
-                                                <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="tooltip rounded-full"
-                                                     src="{{ asset('dist/images/' . $faker['images'][2]) }}"
-                                                     title="Uploaded at {{ $faker['dates'][2] }}">
+                                        </td>
+                                        <td class="table-report__action w-56">
+                                            <div class="flex justify-center items-center">
+                                                <a class="flex items-center mr-3" href="">
+                                                    <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit
+                                                </a>
+                                                <a class="flex items-center text-theme-21" href="">
+                                                    <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete
+                                                </a>
                                             </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <a href=""
-                                           class="font-medium whitespace-nowrap">{{ $faker['products'][0]['name'] }}</a>
-                                        <div
-                                            class="text-gray-600 text-xs whitespace-nowrap mt-0.5">{{ $faker['products'][0]['category'] }}</div>
-                                    </td>
-                                    <td class="text-center">{{ $faker['stocks'][0] }}</td>
-                                    <td class="w-40">
-                                        <div
-                                            class="flex items-center justify-center {{ $faker['true_false'][0] ? 'text-theme-20' : 'text-theme-21' }}">
-                                            <i data-feather="check-square"
-                                               class="w-4 h-4 mr-2"></i> {{ $faker['true_false'][0] ? 'Active' : 'Inactive' }}
-                                        </div>
-                                    </td>
-                                    <td class="table-report__action w-56">
-                                        <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3" href="">
-                                                <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit
-                                            </a>
-                                            <a class="flex items-center text-theme-21" href="">
-                                                <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            @endforeach
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -555,7 +550,7 @@
                                 <div class="report-timeline__image">
                                     <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $fakers[9]['photos'][0]) }}">
+                                            src="{{ asset('dist/images/' . $fakers[9]['photos'][0]) }}">
                                     </div>
                                 </div>
                                 <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
@@ -570,7 +565,7 @@
                                 <div class="report-timeline__image">
                                     <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $fakers[8]['photos'][0]) }}">
+                                            src="{{ asset('dist/images/' . $fakers[8]['photos'][0]) }}">
                                     </div>
                                 </div>
                                 <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
@@ -582,22 +577,22 @@
                                         <div class="mt-1">Added 3 new photos</div>
                                         <div class="flex mt-2">
                                             <div class="tooltip w-8 h-8 image-fit mr-1 zoom-in"
-                                                 title="{{ $fakers[0]['products'][0]['name'] }}">
+                                                title="{{ $fakers[0]['products'][0]['name'] }}">
                                                 <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="rounded-md border border-white"
-                                                     src="{{ asset('dist/images/' . $fakers[8]['images'][0]) }}">
+                                                    class="rounded-md border border-white"
+                                                    src="{{ asset('dist/images/' . $fakers[8]['images'][0]) }}">
                                             </div>
                                             <div class="tooltip w-8 h-8 image-fit mr-1 zoom-in"
-                                                 title="{{ $fakers[1]['products'][0]['name'] }}">
+                                                title="{{ $fakers[1]['products'][0]['name'] }}">
                                                 <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="rounded-md border border-white"
-                                                     src="{{ asset('dist/images/' . $fakers[8]['images'][1]) }}">
+                                                    class="rounded-md border border-white"
+                                                    src="{{ asset('dist/images/' . $fakers[8]['images'][1]) }}">
                                             </div>
                                             <div class="tooltip w-8 h-8 image-fit mr-1 zoom-in"
-                                                 title="{{ $fakers[2]['products'][0]['name'] }}">
+                                                title="{{ $fakers[2]['products'][0]['name'] }}">
                                                 <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="rounded-md border border-white"
-                                                     src="{{ asset('dist/images/' . $fakers[8]['images'][2]) }}">
+                                                    class="rounded-md border border-white"
+                                                    src="{{ asset('dist/images/' . $fakers[8]['images'][2]) }}">
                                             </div>
                                         </div>
                                     </div>
@@ -608,7 +603,7 @@
                                 <div class="report-timeline__image">
                                     <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $fakers[7]['photos'][0]) }}">
+                                            src="{{ asset('dist/images/' . $fakers[7]['photos'][0]) }}">
                                     </div>
                                 </div>
                                 <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
@@ -626,7 +621,7 @@
                                 <div class="report-timeline__image">
                                     <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $fakers[6]['photos'][0]) }}">
+                                            src="{{ asset('dist/images/' . $fakers[6]['photos'][0]) }}">
                                     </div>
                                 </div>
                                 <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
@@ -654,20 +649,20 @@
                                     <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
                                         <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
                                             <img alt="Tinker Tailwind HTML Admin Template"
-                                                 src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
+                                                src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
                                         </div>
                                         <div class="ml-4 mr-auto">
                                             <div class="font-medium">{{ $faker['users'][0]['name'] }}</div>
                                             <div class="text-gray-600 text-xs mt-0.5">{{ $faker['dates'][0] }}</div>
                                         </div>
-                                        <div
-                                            class="{{ $faker['true_false'][0] ? 'text-theme-20' : 'text-theme-21' }}">{{ $faker['true_false'][0] ? '+' : '-' }}
+                                        <div class="{{ $faker['true_false'][0] ? 'text-theme-20' : 'text-theme-21' }}">
+                                            {{ $faker['true_false'][0] ? '+' : '-' }}
                                             ${{ $faker['totals'][0] }}</div>
                                     </div>
                                 </div>
                             @endforeach
                             <a href=""
-                               class="intro-x w-full block text-center rounded-md py-3 border border-dotted border-theme-32 dark:border-dark-5 text-theme-33 dark:text-gray-600">View
+                                class="intro-x w-full block text-center rounded-md py-3 border border-dotted border-theme-32 dark:border-dark-5 text-theme-33 dark:text-gray-600">View
                                 More</a>
                         </div>
                     </div>

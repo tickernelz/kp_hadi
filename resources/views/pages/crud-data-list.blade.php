@@ -18,15 +18,15 @@
                 <div class="dropdown-menu w-40">
                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="printer" class="w-4 h-4 mr-2"></i> Print
                         </a>
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="file-text" class="w-4 h-4 mr-2"></i> Export to Excel
                         </a>
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="file-text" class="w-4 h-4 mr-2"></i> Export to PDF
                         </a>
                     </div>
@@ -44,62 +44,62 @@
         <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
             <table class="table table-report -mt-2">
                 <thead>
-                <tr>
-                    <th class="whitespace-nowrap">IMAGES</th>
-                    <th class="whitespace-nowrap">PRODUCT NAME</th>
-                    <th class="text-center whitespace-nowrap">STOCK</th>
-                    <th class="text-center whitespace-nowrap">STATUS</th>
-                    <th class="text-center whitespace-nowrap">ACTIONS</th>
-                </tr>
+                    <tr>
+                        <th class="whitespace-nowrap">IMAGES</th>
+                        <th class="whitespace-nowrap">PRODUCT NAME</th>
+                        <th class="text-center whitespace-nowrap">STOCK</th>
+                        <th class="text-center whitespace-nowrap">STATUS</th>
+                        <th class="text-center whitespace-nowrap">ACTIONS</th>
+                    </tr>
                 </thead>
                 <tbody>
-                @foreach (array_slice($fakers, 0, 9) as $faker)
-                    <tr class="intro-x">
-                        <td class="w-40">
-                            <div class="flex">
-                                <div class="w-10 h-10 image-fit zoom-in">
-                                    <img alt="Tinker Tailwind HTML Admin Template" class="tooltip rounded-full"
-                                         src="{{ asset('dist/images/' . $faker['images'][0]) }}"
-                                         title="Uploaded at {{ $faker['dates'][0] }}">
+                    @foreach (array_slice($fakers, 0, 9) as $faker)
+                        <tr class="intro-x">
+                            <td class="w-40">
+                                <div class="flex">
+                                    <div class="w-10 h-10 image-fit zoom-in">
+                                        <img alt="Tinker Tailwind HTML Admin Template" class="tooltip rounded-full"
+                                            src="{{ asset('dist/images/' . $faker['images'][0]) }}"
+                                            title="Uploaded at {{ $faker['dates'][0] }}">
+                                    </div>
+                                    <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                        <img alt="Tinker Tailwind HTML Admin Template" class="tooltip rounded-full"
+                                            src="{{ asset('dist/images/' . $faker['images'][1]) }}"
+                                            title="Uploaded at {{ $faker['dates'][0] }}">
+                                    </div>
+                                    <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                        <img alt="Tinker Tailwind HTML Admin Template" class="tooltip rounded-full"
+                                            src="{{ asset('dist/images/' . $faker['images'][2]) }}"
+                                            title="Uploaded at {{ $faker['dates'][0] }}">
+                                    </div>
                                 </div>
-                                <div class="w-10 h-10 image-fit zoom-in -ml-5">
-                                    <img alt="Tinker Tailwind HTML Admin Template" class="tooltip rounded-full"
-                                         src="{{ asset('dist/images/' . $faker['images'][1]) }}"
-                                         title="Uploaded at {{ $faker['dates'][0] }}">
+                            </td>
+                            <td>
+                                <a href="" class="font-medium whitespace-nowrap">{{ $faker['products'][0]['name'] }}</a>
+                                <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">
+                                    {{ $faker['products'][0]['category'] }}</div>
+                            </td>
+                            <td class="text-center">{{ $faker['stocks'][0] }}</td>
+                            <td class="w-40">
+                                <div
+                                    class="flex items-center justify-center {{ $faker['true_false'][0] ? 'text-theme-20' : 'text-theme-21' }}">
+                                    <i data-feather="check-square" class="w-4 h-4 mr-2"></i>
+                                    {{ $faker['true_false'][0] ? 'Active' : 'Inactive' }}
                                 </div>
-                                <div class="w-10 h-10 image-fit zoom-in -ml-5">
-                                    <img alt="Tinker Tailwind HTML Admin Template" class="tooltip rounded-full"
-                                         src="{{ asset('dist/images/' . $faker['images'][2]) }}"
-                                         title="Uploaded at {{ $faker['dates'][0] }}">
+                            </td>
+                            <td class="table-report__action w-56">
+                                <div class="flex justify-center items-center">
+                                    <a class="flex items-center mr-3" href="javascript:">
+                                        <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit
+                                    </a>
+                                    <a class="flex items-center text-theme-21" href="javascript:" data-toggle="modal"
+                                        data-target="#delete-confirmation-modal">
+                                        <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete
+                                    </a>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a href="" class="font-medium whitespace-nowrap">{{ $faker['products'][0]['name'] }}</a>
-                            <div
-                                class="text-gray-600 text-xs whitespace-nowrap mt-0.5">{{ $faker['products'][0]['category'] }}</div>
-                        </td>
-                        <td class="text-center">{{ $faker['stocks'][0] }}</td>
-                        <td class="w-40">
-                            <div
-                                class="flex items-center justify-center {{ $faker['true_false'][0] ? 'text-theme-20' : 'text-theme-21' }}">
-                                <i data-feather="check-square"
-                                   class="w-4 h-4 mr-2"></i> {{ $faker['true_false'][0] ? 'Active' : 'Inactive' }}
-                            </div>
-                        </td>
-                        <td class="table-report__action w-56">
-                            <div class="flex justify-center items-center">
-                                <a class="flex items-center mr-3" href="javascript:">
-                                    <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit
-                                </a>
-                                <a class="flex items-center text-theme-21" href="javascript:" data-toggle="modal"
-                                   data-target="#delete-confirmation-modal">
-                                    <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
-                @endforeach
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

@@ -22,10 +22,10 @@
                                 <div class="box p-5">
                                     <div class="flex">
                                         <i data-feather="shopping-cart"
-                                           class="report-box__icon text-theme-24 dark:text-theme-25"></i>
+                                            class="report-box__icon text-theme-24 dark:text-theme-25"></i>
                                         <div class="ml-auto">
                                             <div class="report-box__indicator bg-theme-20 tooltip cursor-pointer"
-                                                 title="33% Higher than last month">
+                                                title="33% Higher than last month">
                                                 33% <i data-feather="chevron-up" class="w-4 h-4 ml-0.5"></i>
                                             </div>
                                         </div>
@@ -42,7 +42,7 @@
                                         <i data-feather="credit-card" class="report-box__icon text-theme-29"></i>
                                         <div class="ml-auto">
                                             <div class="report-box__indicator bg-theme-21 tooltip cursor-pointer"
-                                                 title="2% Lower than last month">
+                                                title="2% Lower than last month">
                                                 2% <i data-feather="chevron-down" class="w-4 h-4 ml-0.5"></i>
                                             </div>
                                         </div>
@@ -59,7 +59,7 @@
                                         <i data-feather="monitor" class="report-box__icon text-theme-15"></i>
                                         <div class="ml-auto">
                                             <div class="report-box__indicator bg-theme-20 tooltip cursor-pointer"
-                                                 title="12% Higher than last month">
+                                                title="12% Higher than last month">
                                                 12% <i data-feather="chevron-up" class="w-4 h-4 ml-0.5"></i>
                                             </div>
                                         </div>
@@ -76,7 +76,7 @@
                                         <i data-feather="user" class="report-box__icon text-theme-20"></i>
                                         <div class="ml-auto">
                                             <div class="report-box__indicator bg-theme-20 tooltip cursor-pointer"
-                                                 title="22% Higher than last month">
+                                                title="22% Higher than last month">
                                                 22% <i data-feather="chevron-up" class="w-4 h-4 ml-0.5"></i>
                                             </div>
                                         </div>
@@ -108,7 +108,8 @@
                                     <div class="mt-0.5 text-gray-600 dark:text-gray-600">This Month</div>
                                 </div>
                                 <div
-                                    class="w-px h-12 border border-r border-dashed border-gray-300 dark:border-dark-5 mx-4 xl:mx-5"></div>
+                                    class="w-px h-12 border border-r border-dashed border-gray-300 dark:border-dark-5 mx-4 xl:mx-5">
+                                </div>
                                 <div>
                                     <div class="text-gray-600 dark:text-gray-600 text-lg xl:text-xl font-medium">
                                         $10,000
@@ -117,23 +118,22 @@
                                 </div>
                             </div>
                             <div class="dropdown xl:ml-auto mt-5 xl:mt-0">
-                                <button class="dropdown-toggle btn btn-outline-secondary font-normal"
-                                        aria-expanded="false">
+                                <button class="dropdown-toggle btn btn-outline-secondary font-normal" aria-expanded="false">
                                     Filter by Category <i data-feather="chevron-down" class="w-4 h-4 ml-2"></i>
                                 </button>
                                 <div class="dropdown-menu w-40">
                                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2 overflow-y-auto h-32">
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">PC
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">PC
                                             & Laptop</a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Smartphone</a>
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Smartphone</a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Electronic</a>
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Electronic</a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Photography</a>
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Photography</a>
                                         <a href=""
-                                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Sport</a>
+                                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">Sport</a>
                                     </div>
                                 </div>
                             </div>
@@ -156,22 +156,19 @@
                             <div class="flex items-center">
                                 <div class="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
                                 <span class="truncate">17 - 30 Years old</span>
-                                <div
-                                    class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
                                 <span class="font-medium xl:ml-auto">62%</span>
                             </div>
                             <div class="flex items-center mt-4">
                                 <div class="w-2 h-2 bg-theme-21 rounded-full mr-3"></div>
                                 <span class="truncate">31 - 50 Years old</span>
-                                <div
-                                    class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
                                 <span class="font-medium xl:ml-auto">33%</span>
                             </div>
                             <div class="flex items-center mt-4">
                                 <div class="w-2 h-2 bg-theme-15 rounded-full mr-3"></div>
                                 <span class="truncate">>= 50 Years old</span>
-                                <div
-                                    class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
                                 <span class="font-medium xl:ml-auto">10%</span>
                             </div>
                         </div>
@@ -190,22 +187,22 @@
                             <div class="flex items-center">
                                 <div class="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
                                 <span class="truncate">17 - 30 Years old</span>
-                                <div
-                                    class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden">
+                                </div>
                                 <span class="font-medium xl:ml-auto">62%</span>
                             </div>
                             <div class="flex items-center mt-4">
                                 <div class="w-2 h-2 bg-theme-21 rounded-full mr-3"></div>
                                 <span class="truncate">31 - 50 Years old</span>
-                                <div
-                                    class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden">
+                                </div>
                                 <span class="font-medium xl:ml-auto">33%</span>
                             </div>
                             <div class="flex items-center mt-4">
                                 <div class="w-2 h-2 bg-theme-15 rounded-full mr-3"></div>
                                 <span class="truncate">>= 50 Years old</span>
-                                <div
-                                    class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden">
+                                </div>
                                 <span class="font-medium xl:ml-auto">10%</span>
                             </div>
                         </div>
@@ -224,7 +221,7 @@
                     <div class="intro-y box p-5 mt-12 sm:mt-5">
                         <div>250 Official stores in 21 countries, click the marker to see location details.</div>
                         <div class="report-maps mt-5 bg-gray-200 rounded-md" data-center="-6.2425342, 106.8626478"
-                             data-sources="/dist/json/location.json"></div>
+                            data-sources="/dist/json/location.json"></div>
                     </div>
                 </div>
                 <!-- END: Official Store -->
@@ -239,7 +236,7 @@
                                 <div class="box px-4 py-4 mb-3 flex items-center zoom-in">
                                     <div class="w-10 h-10 flex-none image-fit rounded-md overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
+                                            src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
                                     </div>
                                     <div class="ml-4 mr-auto">
                                         <div class="font-medium">{{ $faker['users'][0]['name'] }}</div>
@@ -253,7 +250,7 @@
                             </div>
                         @endforeach
                         <a href=""
-                           class="intro-y w-full block text-center rounded-md py-4 border border-dotted border-theme-32 dark:border-dark-5 text-theme-33 dark:text-gray-600">View
+                            class="intro-y w-full block text-center rounded-md py-4 border border-dotted border-theme-32 dark:border-dark-5 text-theme-33 dark:text-gray-600">View
                             More</a>
                     </div>
                 </div>
@@ -340,65 +337,65 @@
                     <div class="intro-y overflow-auto lg:overflow-visible mt-8 sm:mt-0">
                         <table class="table table-report sm:mt-2">
                             <thead>
-                            <tr>
-                                <th class="whitespace-nowrap">IMAGES</th>
-                                <th class="whitespace-nowrap">PRODUCT NAME</th>
-                                <th class="text-center whitespace-nowrap">STOCK</th>
-                                <th class="text-center whitespace-nowrap">STATUS</th>
-                                <th class="text-center whitespace-nowrap">ACTIONS</th>
-                            </tr>
+                                <tr>
+                                    <th class="whitespace-nowrap">IMAGES</th>
+                                    <th class="whitespace-nowrap">PRODUCT NAME</th>
+                                    <th class="text-center whitespace-nowrap">STOCK</th>
+                                    <th class="text-center whitespace-nowrap">STATUS</th>
+                                    <th class="text-center whitespace-nowrap">ACTIONS</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            @foreach (array_slice($fakers, 0, 4) as $faker)
-                                <tr class="intro-x">
-                                    <td class="w-40">
-                                        <div class="flex">
-                                            <div class="w-10 h-10 image-fit zoom-in">
-                                                <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="tooltip rounded-full"
-                                                     src="{{ asset('dist/images/' . $faker['images'][0]) }}"
-                                                     title="Uploaded at {{ $faker['dates'][0] }}">
+                                @foreach (array_slice($fakers, 0, 4) as $faker)
+                                    <tr class="intro-x">
+                                        <td class="w-40">
+                                            <div class="flex">
+                                                <div class="w-10 h-10 image-fit zoom-in">
+                                                    <img alt="Tinker Tailwind HTML Admin Template"
+                                                        class="tooltip rounded-full"
+                                                        src="{{ asset('dist/images/' . $faker['images'][0]) }}"
+                                                        title="Uploaded at {{ $faker['dates'][0] }}">
+                                                </div>
+                                                <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                    <img alt="Tinker Tailwind HTML Admin Template"
+                                                        class="tooltip rounded-full"
+                                                        src="{{ asset('dist/images/' . $faker['images'][1]) }}"
+                                                        title="Uploaded at {{ $faker['dates'][1] }}">
+                                                </div>
+                                                <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                    <img alt="Tinker Tailwind HTML Admin Template"
+                                                        class="tooltip rounded-full"
+                                                        src="{{ asset('dist/images/' . $faker['images'][2]) }}"
+                                                        title="Uploaded at {{ $faker['dates'][2] }}">
+                                                </div>
                                             </div>
-                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
-                                                <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="tooltip rounded-full"
-                                                     src="{{ asset('dist/images/' . $faker['images'][1]) }}"
-                                                     title="Uploaded at {{ $faker['dates'][1] }}">
+                                        </td>
+                                        <td>
+                                            <a href=""
+                                                class="font-medium whitespace-nowrap">{{ $faker['products'][0]['name'] }}</a>
+                                            <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">
+                                                {{ $faker['products'][0]['category'] }}</div>
+                                        </td>
+                                        <td class="text-center">{{ $faker['stocks'][0] }}</td>
+                                        <td class="w-40">
+                                            <div
+                                                class="flex items-center justify-center {{ $faker['true_false'][0] ? 'text-theme-20' : 'text-theme-21' }}">
+                                                <i data-feather="check-square" class="w-4 h-4 mr-2"></i>
+                                                {{ $faker['true_false'][0] ? 'Active' : 'Inactive' }}
                                             </div>
-                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
-                                                <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="tooltip rounded-full"
-                                                     src="{{ asset('dist/images/' . $faker['images'][2]) }}"
-                                                     title="Uploaded at {{ $faker['dates'][2] }}">
+                                        </td>
+                                        <td class="table-report__action w-56">
+                                            <div class="flex justify-center items-center">
+                                                <a class="flex items-center mr-3" href="">
+                                                    <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit
+                                                </a>
+                                                <a class="flex items-center text-theme-21" href="">
+                                                    <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete
+                                                </a>
                                             </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <a href=""
-                                           class="font-medium whitespace-nowrap">{{ $faker['products'][0]['name'] }}</a>
-                                        <div
-                                            class="text-gray-600 text-xs whitespace-nowrap mt-0.5">{{ $faker['products'][0]['category'] }}</div>
-                                    </td>
-                                    <td class="text-center">{{ $faker['stocks'][0] }}</td>
-                                    <td class="w-40">
-                                        <div
-                                            class="flex items-center justify-center {{ $faker['true_false'][0] ? 'text-theme-20' : 'text-theme-21' }}">
-                                            <i data-feather="check-square"
-                                               class="w-4 h-4 mr-2"></i> {{ $faker['true_false'][0] ? 'Active' : 'Inactive' }}
-                                        </div>
-                                    </td>
-                                    <td class="table-report__action w-56">
-                                        <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3" href="">
-                                                <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit
-                                            </a>
-                                            <a class="flex items-center text-theme-21" href="">
-                                                <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            @endforeach
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -465,20 +462,20 @@
                                     <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
                                         <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
                                             <img alt="Tinker Tailwind HTML Admin Template"
-                                                 src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
+                                                src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
                                         </div>
                                         <div class="ml-4 mr-auto">
                                             <div class="font-medium">{{ $faker['users'][0]['name'] }}</div>
                                             <div class="text-gray-600 text-xs mt-0.5">{{ $faker['dates'][0] }}</div>
                                         </div>
-                                        <div
-                                            class="{{ $faker['true_false'][0] ? 'text-theme-20' : 'text-theme-21' }}">{{ $faker['true_false'][0] ? '+' : '-' }}
+                                        <div class="{{ $faker['true_false'][0] ? 'text-theme-20' : 'text-theme-21' }}">
+                                            {{ $faker['true_false'][0] ? '+' : '-' }}
                                             ${{ $faker['totals'][0] }}</div>
                                     </div>
                                 </div>
                             @endforeach
                             <a href=""
-                               class="intro-y w-full block text-center rounded-md py-3 border border-dotted border-theme-32 dark:border-dark-5 text-theme-33 dark:text-gray-600">View
+                                class="intro-y w-full block text-center rounded-md py-3 border border-dotted border-theme-32 dark:border-dark-5 text-theme-33 dark:text-gray-600">View
                                 More</a>
                         </div>
                     </div>
@@ -494,7 +491,7 @@
                                 <div class="report-timeline__image">
                                     <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $fakers[9]['photos'][0]) }}">
+                                            src="{{ asset('dist/images/' . $fakers[9]['photos'][0]) }}">
                                     </div>
                                 </div>
                                 <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
@@ -509,7 +506,7 @@
                                 <div class="report-timeline__image">
                                     <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $fakers[8]['photos'][0]) }}">
+                                            src="{{ asset('dist/images/' . $fakers[8]['photos'][0]) }}">
                                     </div>
                                 </div>
                                 <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
@@ -521,22 +518,22 @@
                                         <div class="mt-1">Added 3 new photos</div>
                                         <div class="flex mt-2">
                                             <div class="tooltip w-8 h-8 image-fit mr-1 zoom-in"
-                                                 title="{{ $fakers[0]['products'][0]['name'] }}">
+                                                title="{{ $fakers[0]['products'][0]['name'] }}">
                                                 <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="rounded-md border border-white"
-                                                     src="{{ asset('dist/images/' . $fakers[8]['images'][0]) }}">
+                                                    class="rounded-md border border-white"
+                                                    src="{{ asset('dist/images/' . $fakers[8]['images'][0]) }}">
                                             </div>
                                             <div class="tooltip w-8 h-8 image-fit mr-1 zoom-in"
-                                                 title="{{ $fakers[1]['products'][0]['name'] }}">
+                                                title="{{ $fakers[1]['products'][0]['name'] }}">
                                                 <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="rounded-md border border-white"
-                                                     src="{{ asset('dist/images/' . $fakers[8]['images'][1]) }}">
+                                                    class="rounded-md border border-white"
+                                                    src="{{ asset('dist/images/' . $fakers[8]['images'][1]) }}">
                                             </div>
                                             <div class="tooltip w-8 h-8 image-fit mr-1 zoom-in"
-                                                 title="{{ $fakers[2]['products'][0]['name'] }}">
+                                                title="{{ $fakers[2]['products'][0]['name'] }}">
                                                 <img alt="Tinker Tailwind HTML Admin Template"
-                                                     class="rounded-md border border-white"
-                                                     src="{{ asset('dist/images/' . $fakers[8]['images'][2]) }}">
+                                                    class="rounded-md border border-white"
+                                                    src="{{ asset('dist/images/' . $fakers[8]['images'][2]) }}">
                                             </div>
                                         </div>
                                     </div>
@@ -547,7 +544,7 @@
                                 <div class="report-timeline__image">
                                     <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $fakers[7]['photos'][0]) }}">
+                                            src="{{ asset('dist/images/' . $fakers[7]['photos'][0]) }}">
                                     </div>
                                 </div>
                                 <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
@@ -565,7 +562,7 @@
                                 <div class="report-timeline__image">
                                     <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
                                         <img alt="Tinker Tailwind HTML Admin Template"
-                                             src="{{ asset('dist/images/' . $fakers[6]['photos'][0]) }}">
+                                            src="{{ asset('dist/images/' . $fakers[6]['photos'][0]) }}">
                                     </div>
                                 </div>
                                 <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
@@ -588,11 +585,11 @@
                         <div class="intro-x flex items-center h-10">
                             <h2 class="text-lg font-medium truncate mr-auto">Important Notes</h2>
                             <button data-carousel="important-notes" data-target="prev"
-                                    class="tiny-slider-navigator btn px-2 border-gray-400 text-gray-700 dark:text-gray-300 mr-2">
+                                class="tiny-slider-navigator btn px-2 border-gray-400 text-gray-700 dark:text-gray-300 mr-2">
                                 <i data-feather="chevron-left" class="w-4 h-4"></i>
                             </button>
                             <button data-carousel="important-notes" data-target="next"
-                                    class="tiny-slider-navigator btn px-2 border-gray-400 text-gray-700 dark:text-gray-300 mr-2">
+                                class="tiny-slider-navigator btn px-2 border-gray-400 text-gray-700 dark:text-gray-300 mr-2">
                                 <i data-feather="chevron-right" class="w-4 h-4"></i>
                             </button>
                         </div>
@@ -611,7 +608,7 @@
                                             <button type="button" class="btn btn-secondary py-1 px-2">View Notes
                                             </button>
                                             <button type="button"
-                                                    class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss
+                                                class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss
                                             </button>
                                         </div>
                                     </div>
@@ -627,7 +624,7 @@
                                             <button type="button" class="btn btn-secondary py-1 px-2">View Notes
                                             </button>
                                             <button type="button"
-                                                    class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss
+                                                class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss
                                             </button>
                                         </div>
                                     </div>
@@ -643,7 +640,7 @@
                                             <button type="button" class="btn btn-secondary py-1 px-2">View Notes
                                             </button>
                                             <button type="button"
-                                                    class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss
+                                                class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss
                                             </button>
                                         </div>
                                     </div>
@@ -726,21 +723,24 @@
                                         <div class="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
                                         <span class="truncate">UI/UX Workshop</span>
                                         <div
-                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden">
+                                        </div>
                                         <span class="font-medium xl:ml-auto">23th</span>
                                     </div>
                                     <div class="flex items-center mt-4">
                                         <div class="w-2 h-2 bg-theme-21 rounded-full mr-3"></div>
                                         <span class="truncate">VueJs Frontend Development</span>
                                         <div
-                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden">
+                                        </div>
                                         <span class="font-medium xl:ml-auto">10th</span>
                                     </div>
                                     <div class="flex items-center mt-4">
                                         <div class="w-2 h-2 bg-theme-15 rounded-full mr-3"></div>
                                         <span class="truncate">Laravel Rest API</span>
                                         <div
-                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                            class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden">
+                                        </div>
                                         <span class="font-medium xl:ml-auto">31th</span>
                                     </div>
                                 </div>

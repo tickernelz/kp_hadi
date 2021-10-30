@@ -18,11 +18,11 @@
                 <div class="dropdown-menu w-40">
                     <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="users" class="w-4 h-4 mr-2"></i> Add Group
                         </a>
                         <a href=""
-                           class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
+                            class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md">
                             <i data-feather="message-circle" class="w-4 h-4 mr-2"></i> Send Message
                         </a>
                     </div>
@@ -43,7 +43,7 @@
                     <div class="flex flex-col lg:flex-row items-center p-5">
                         <div class="w-24 h-24 lg:w-12 lg:h-12 image-fit lg:mr-1">
                             <img alt="Tinker Tailwind HTML Admin Template" class="rounded-full"
-                                 src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
+                                src="{{ asset('dist/images/' . $faker['photos'][0]) }}">
                         </div>
                         <div class="lg:ml-2 lg:mr-auto text-center lg:text-left mt-3 lg:mt-0">
                             <a href="" class="font-medium">{{ $faker['users'][0]['name'] }}</a>
@@ -56,8 +56,8 @@
                     </div>
                 </div>
             </div>
-    @endforeach
-    <!-- BEGIN: Users Layout -->
+        @endforeach
+        <!-- BEGIN: Users Layout -->
         <!-- END: Pagination -->
         <div class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-nowrap items-center">
             <ul class="pagination">
