@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
-@push('judul', 'Kelola User')
-@push('breadcrumb', 'Kelola User')
+@push('judul', 'Kelola Siswa')
+@push('breadcrumb', 'Kelola Siswa')
 
 @section('subcontent')
     <div class="intro-y flex flex-col sm:flex-row items-center mt-8">
