@@ -42,16 +42,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-3 mb-3">
-                        <label for="kelas" class="form-label">Kelas</label>
-                        <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3" id="kelas">
-                            @foreach ($data_kelas as $list)
-                                <option @if ($list->id == $data->kelas_id)
-                                    selected="selected"
-                                    @endif value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
-                            @endforeach
-                        </select>
-                    </div>
                     <div class="text-right mt-5">
                         <button type="button" class="btn btn-outline-secondary w-24 mr-1" onclick="
                                 window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.mata_pelajaran') }}'
@@ -73,16 +63,10 @@
                     nama_mapel: {
                         required: true,
                     },
-                    kelas: {
-                        required: true,
-                    },
                 },
                 messages: {
                     nama_mapel: {
                         required: "Nama Mata Pelajaran wajib diisi",
-                    },
-                    kelas: {
-                        required: "Kelas wajib diisi",
                     },
                 },
                 submitHandler: function(form) {
@@ -103,6 +87,7 @@
                         data: $('#mata_pelajaran').serialize(),
                         success: cash(async function(response) {
                             cash('#success-modal').modal('show')
+                            $('#submit').html('Simpan');
                             await helper.delay(3000)
                             location.reload();
                         })

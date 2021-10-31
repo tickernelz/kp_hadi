@@ -40,11 +40,6 @@ class Kelas extends Model
         return $this->hasMany(Siswa::class);
     }
 
-    public function mata_pelajaran()
-    {
-        return $this->hasMany(MataPelajaran::class);
-    }
-
     public function wali_kelas()
     {
         return $this->hasMany(WaliKelas::class);

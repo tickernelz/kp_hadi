@@ -14,7 +14,7 @@ class MataPelajaranController extends Controller
         $judulcrud = 'Data Mata Pelajaran';
 
         // Get Data
-        $data_mapel = MataPelajaran::with('kelas')->get();
+        $data_mapel = MataPelajaran::get();
         $data_kelas = Kelas::get();
 
         return view('kelola.mata_pelajaran.index', [
@@ -60,7 +60,7 @@ class MataPelajaranController extends Controller
     public function indexedit(int $id)
     {
         // Ambil Data Mata Pelajaran
-        $data = MataPelajaran::with('kelas')->find($id);
+        $data = MataPelajaran::find($id);
 
         // Nilai tetap
         $judulcrud = 'Edit Mata Pelajaran';
@@ -79,11 +79,9 @@ class MataPelajaranController extends Controller
     {
         // Get Request
         $get_nama_mapel = $request->input('nama_mapel');
-        $get_kelas = $request->input('kelas');
 
         $data = new MataPelajaran;
         $data->nama_mapel = $get_nama_mapel;
-        $data->kelas_id = $get_kelas;
         $data->save();
 
         return response()->json(['success' => true]);
@@ -96,10 +94,8 @@ class MataPelajaranController extends Controller
 
         // Get Request
         $get_nama_mapel = $request->input('nama_mapel');
-        $get_kelas = $request->input('kelas');
 
         $data->nama_mapel = $get_nama_mapel;
-        $data->kelas_id = $get_kelas;
         $data->save();
 
         return response()->json(['success' => true]);

@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\Kelas;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -16,7 +15,6 @@ class CreateMataPelajaransTable extends Migration
     {
         Schema::create('mata_pelajarans', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Kelas::class);
             $table->string('nama_mapel');
             $table->timestamps();
         });
