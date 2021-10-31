@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Hash;
 use Illuminate\Database\Seeder;
-use App\Models\User;
 
 class UserSeeder extends Seeder
 {
@@ -28,12 +28,5 @@ class UserSeeder extends Seeder
                 'password' => Hash::make('123'),
                 'level' => 'Admin',
         ])->assignRole('admin');
-
-        User::create([
-                'nama' => 'Hadi3',
-                'username' => 'hadi3',
-                'password' => Hash::make('123'),
-                'level' => 'Wali Kelas',
-        ])->assignRole('wali_kelas');
     }
 }

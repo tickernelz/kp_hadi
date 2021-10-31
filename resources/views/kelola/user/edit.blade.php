@@ -58,10 +58,6 @@
                                 selected="selected"
                                 @endif value="{{ Crypt::encrypt('Admin') }}">Admin
                             </option>
-                            <option @if ($data->level === 'Wali Kelas')
-                                selected="selected"
-                                @endif value="{{ Crypt::encrypt('Wali Kelas') }}">Wali Kelas
-                            </option>
                         </select>
                     </div>
                     <div class="mt-3">

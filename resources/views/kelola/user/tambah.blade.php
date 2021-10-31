@@ -50,7 +50,6 @@
                         <select data-placeholder="Pilih Level User" name="level" class="tom-select w-full mb-3" id="level">
                             <option value="{{ Crypt::encrypt('Super Admin') }}">Super Admin</option>
                             <option value="{{ Crypt::encrypt('Admin') }}">Admin</option>
-                            <option value="{{ Crypt::encrypt('Wali Kelas') }}">Wali Kelas</option>
                         </select>
                     </div>
                     <div class="mt-3">

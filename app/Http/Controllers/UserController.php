@@ -68,8 +68,6 @@ class UserController extends Controller
             $data->assignRole('super_admin');
         } elseif ($get_level === 'Admin') {
             $data->assignRole('admin');
-        } elseif ($get_level === 'Wali Kelas') {
-            $data->assignRole('wali_kelas');
         }
 
         return response()->json(['success' => true]);
@@ -99,8 +97,6 @@ class UserController extends Controller
             $data->assignRole('super_admin');
         } elseif ($get_level === 'Admin') {
             $data->assignRole('admin');
-        } elseif ($get_level === 'Wali Kelas') {
-            $data->assignRole('wali_kelas');
         }
 
         return response()->json(['success' => true]);
