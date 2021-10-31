@@ -155,6 +155,28 @@ class SideMenu
                     ],
                 ],
             ],
+            'kelola-kelompok_nilai' => [
+                'icon' => 'archive',
+                'title' => 'Kelola Kelompok Nilai',
+                'params' => [
+                ],
+                'sub_menu' => [
+                    'kelompok_nilai-list' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.kelompok_nilai',
+                        'params' => [
+                        ],
+                        'title' => 'Daftar Kelompok Nilai',
+                    ],
+                    'kelompok_nilai-tambah' => [
+                        'icon' => '',
+                        'route_name' => 'kelola.kelompok_nilai.tambah',
+                        'params' => [
+                        ],
+                        'title' => 'Tambah Kelompok Nilai',
+                    ],
+                ],
+            ],
 //            'crud' => [
             //                'icon' => 'edit',
             //                'title' => 'Crud',
