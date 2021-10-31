@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DarkModeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KelasController;
+use App\Http\Controllers\KelompokNilaiController;
 use App\Http\Controllers\MataPelajaranController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\TahunAjaranController;
@@ -91,5 +92,14 @@ Route::middleware('auth')->group(function () {
         Route::get('kelola-wali_kelas/hapus/{id}', [WaliKelasController::class, 'hapus'])->name('kelola.wali_kelas.hapus');
         Route::post('kelola-wali_kelas/edit/{id}/cekusername', [WaliKelasController::class, 'cekusernameedit'])->name('kelola.wali_kelas.edit.cekusername');
         Route::post('kelola-wali_kelas/edit/{id}/ceknip', [WaliKelasController::class, 'ceknipedit'])->name('kelola.wali_kelas.edit.ceknip');
+    });
+    Route::middleware('can:kelola kelompok nilai')->group(function () {
+        Route::get('kelola-kelompok_nilai', [KelompokNilaiController::class, 'index'])->name('kelola.kelompok_nilai');
+        Route::get('kelola-kelompok_nilai/cari', [KelompokNilaiController::class, 'indexcari'])->name('kelola.kelompok_nilai.cari');
+        Route::get('kelola-kelompok_nilai/tambah', [KelompokNilaiController::class, 'indextambah'])->name('kelola.kelompok_nilai.tambah');
+        Route::post('kelola-kelompok_nilai/tambah/post', [KelompokNilaiController::class, 'tambah'])->name('kelola.kelompok_nilai.tambah.post');
+        Route::get('kelola-kelompok_nilai/edit/{id}', [KelompokNilaiController::class, 'indexedit'])->name('kelola.kelompok_nilai.edit');
+        Route::post('kelola-kelompok_nilai/edit/{id}/post', [KelompokNilaiController::class, 'edit'])->name('kelola.kelompok_nilai.edit.post');
+        Route::get('kelola-kelompok_nilai/hapus/{id}', [KelompokNilaiController::class, 'hapus'])->name('kelola.kelompok_nilai.hapus');
     });
 });
