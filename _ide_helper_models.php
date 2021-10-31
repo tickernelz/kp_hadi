@@ -32,8 +32,35 @@ namespace App\Models{
  * @property-read int|null $mata_pelajaran_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\WaliKelas[] $wali_kelas
  * @property-read int|null $wali_kelas_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\KelompokNilai[] $kelompok_nilai
+ * @property-read int|null $kelompok_nilai_count
  */
 	class Kelas extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\KelompokNilai
+ *
+ * @property int $id
+ * @property int $mata_pelajaran_id
+ * @property int $kelas_id
+ * @property string $nama_kelompok
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\Models\Kelas $kelas
+ * @property-read \App\Models\MataPelajaran $mata_pelajaran
+ * @method static \Illuminate\Database\Eloquent\Builder|KelompokNilai newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|KelompokNilai newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|KelompokNilai query()
+ * @method static \Illuminate\Database\Eloquent\Builder|KelompokNilai whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|KelompokNilai whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|KelompokNilai whereKelasId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|KelompokNilai whereMataPelajaranId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|KelompokNilai whereNamaKelompok($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|KelompokNilai whereUpdatedAt($value)
+ */
+	class KelompokNilai extends \Eloquent {}
 }
 
 namespace App\Models{
@@ -55,6 +82,8 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|MataPelajaran whereNamaMapel($value)
  * @method static \Illuminate\Database\Eloquent\Builder|MataPelajaran whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\KelompokNilai[] $kelompok_nilai
+ * @property-read int|null $kelompok_nilai_count
  */
 	class MataPelajaran extends \Eloquent {}
 }

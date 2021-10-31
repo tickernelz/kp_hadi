@@ -15,31 +15,30 @@
     <div class="intro-y box p-5 mt-5">
         <!-- BEGIN: Data List -->
         <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
-            <div class="flex flex-col sm:flex-row sm:items-end xl:items-start mb-6">
-                <form name="cari" id="cari" method="get" action="{{ route('kelola.mata_pelajaran.cari') }}"
-                    class="xl:flex sm:mr-auto">
-                    <div class="sm:flex items-center sm:mr-4 mt-2 xl:mt-0">
-                        <label class="w-12 flex-none xl:w-auto mr-2">Kelas</label>
-                        <select data-placeholder="Cari Kelas" name="kelas" class="tom-select w-full" id="kelas">
-                            @foreach ($data_kelas as $list)
-                                <option @if (Request::get('kelas') == $list->id)
-                                    selected="selected"
-                                    @endif value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="mt-2 xl:mt-0">
-                        <button id="tabulator-html-filter-go" type="submit"
-                            class="btn btn-primary w-full sm:w-16">Cari</button>
-                    </div>
-                </form>
-            </div>
+{{--            <div class="flex flex-col sm:flex-row sm:items-end xl:items-start mb-6">--}}
+{{--                <form name="cari" id="cari" method="get" action="{{ route('kelola.mata_pelajaran.cari') }}"--}}
+{{--                    class="xl:flex sm:mr-auto">--}}
+{{--                    <div class="sm:flex items-center sm:mr-4 mt-2 xl:mt-0">--}}
+{{--                        <label class="w-12 flex-none xl:w-auto mr-2">Kelas</label>--}}
+{{--                        <select data-placeholder="Cari Kelas" name="kelas" class="tom-select w-full" id="kelas">--}}
+{{--                            @foreach ($data_kelas as $list)--}}
+{{--                                <option @if (Request::get('kelas') == $list->id)--}}
+{{--                                    selected="selected"--}}
+{{--                                    @endif value="{{ $list->id }}">{{ $list->nama_kelas }}</option>--}}
+{{--                            @endforeach--}}
+{{--                        </select>--}}
+{{--                    </div>--}}
+{{--                    <div class="mt-2 xl:mt-0">--}}
+{{--                        <button id="tabulator-html-filter-go" type="submit"--}}
+{{--                            class="btn btn-primary w-full sm:w-16">Cari</button>--}}
+{{--                    </div>--}}
+{{--                </form>--}}
+{{--            </div>--}}
             <table id="table" class="table table-report yajra-datatable -mt-2">
                 <thead class="text-center">
                     <tr>
                         <th class="whitespace-nowrap">NO</th>
                         <th class="whitespace-nowrap">NAMA MATA PELAJARAN</th>
-                        <th class="whitespace-nowrap">KELAS</th>
                         <th class="whitespace-nowrap">AKSI</th>
                     </tr>
                 </thead>
@@ -48,7 +47,6 @@
                         <tr class="intro-x">
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $list->nama_mapel }}</td>
-                            <td>{{ $list->kelas->nama_kelas }}</td>
                             <td class="table-report__action w-56">
                                 <div class="flex justify-center items-center">
                                     <a class="flex items-center mr-3"

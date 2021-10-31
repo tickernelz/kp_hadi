@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
-@push('judul', 'Edit Mata Pelajaran')
-@push('breadcrumb', 'Edit Mata Pelajaran')
+@push('judul', 'Edit Kelompok Nilai')
+@push('breadcrumb', 'Edit Kelompok Nilai')
 
 @section('subcontent')
 
@@ -31,21 +31,37 @@
         <div class="intro-y col-span-12 lg:col-span-6">
             <!-- BEGIN: Form Layout -->
             <div class="intro-y box p-5">
-                <form name="mata_pelajaran" id="mata_pelajaran" method="post" action="javascript:void(0)">
+                <form name="edit" id="edit" method="post" action="javascript:void(0)">
                     @csrf
                     <div class="mt-3">
-                        <div>
-                            <div>
-                                <label for="nama_mapel" class="form-label">Nama Mata Pelajaran</label>
-                                <input id="nama_mapel" name="nama_mapel" value="{{ $data->nama_mapel }}" type="text"
-                                    class="form-control w-full mb-3">
-                            </div>
-                        </div>
+                        <label for="mata_pelajaran" class="form-label">Mata Pelajaran</label>
+                        <select data-placeholder="Pilih Mata Pelajaran" name="mata_pelajaran"
+                                class="tom-select w-full mb-3" id="mata_pelajaran">
+                            @foreach($data_mapel as $list)
+                                <option @if ($list->id == $data->mata_pelajaran_id)
+                                        selected="selected"
+                                        @endif value="{{ $list->id }}">{{ $list->nama_mapel }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="mt-3">
+                        <label for="kelas" class="form-label">Kelas</label>
+                        <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3" id="kelas">
+                            @foreach($data_kelas as $list)
+                                <option @if ($list->id == $data->kelas_id)
+                                        selected="selected"
+                                        @endif value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="mt-3">
+                        <label for="nama_kelompok" class="form-label">Nama Kelompok Penilaian</label>
+                        <input id="nama_kelompok" name="nama_kelompok" value="{{ $data->nama_kelompok }}" type="text" class="form-control w-full mb-3">
                     </div>
                     <div class="text-right mt-5">
                         <button type="button" class="btn btn-outline-secondary w-24 mr-1" onclick="
-                                window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.mata_pelajaran') }}'
-                                ">Kembali
+                                        window.location.href='{{ redirect()->getUrlGenerator()->route('kelola.kelompok_nilai') }}'
+                                        ">Kembali
                         </button>
                         <button type="submit" id="submit" class="btn btn-primary w-24">Simpan</button>
                     </div>
@@ -57,16 +73,17 @@
 @endsection
 @section('script')
     <script>
-        if ($("#mata_pelajaran").length > 0) {
-            $("#mata_pelajaran").validate({
+        if ($("#edit").length > 0) {
+            $("#edit").validate({
                 rules: {
-                    nama_mapel: {
+                    mata_pelajaran: {
                         required: true,
                     },
-                },
-                messages: {
-                    nama_mapel: {
-                        required: "Nama Mata Pelajaran wajib diisi",
+                    kelas: {
+                        required: true,
+                    },
+                    nama_kelompok: {
+                        required: true,
                     },
                 },
                 submitHandler: function(form) {
@@ -81,13 +98,15 @@
                             .svgLoader()
                         await helper.delay(1500)
                     });
+                    $("#submit").attr("disabled", true);
                     $.ajax({
                         url: "{{ Request::url() }}/post",
                         type: "POST",
-                        data: $('#mata_pelajaran').serialize(),
+                        data: $('#edit').serialize(),
                         success: cash(async function(response) {
+                            $('#submit').html('Submit');
+                            $("#submit").attr("disabled", false);
                             cash('#success-modal').modal('show')
-                            $('#submit').html('Simpan');
                             await helper.delay(3000)
                             location.reload();
                         })

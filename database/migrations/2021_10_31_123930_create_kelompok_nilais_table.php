@@ -1,10 +1,12 @@
 <?php
 
+use App\Models\Kelas;
+use App\Models\MataPelajaran;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMataPelajaransTable extends Migration
+class CreateKelompokNilaisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +15,11 @@ class CreateMataPelajaransTable extends Migration
      */
     public function up()
     {
-        Schema::create('mata_pelajarans', function (Blueprint $table) {
+        Schema::create('kelompok_nilais', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_mapel');
+            $table->foreignIdFor(MataPelajaran::class);
+            $table->foreignIdFor(Kelas::class);
+            $table->string('nama_kelompok');
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ class CreateMataPelajaransTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mata_pelajarans');
+        Schema::dropIfExists('kelompok_nilais');
     }
 }

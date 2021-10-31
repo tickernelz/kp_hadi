@@ -34,3 +34,4 @@ resources/views/pages/.DS_Store
 storage/.DS_Store
 storage/framework/.DS_Store
 tests/.DS_Store
+/.vscode/
