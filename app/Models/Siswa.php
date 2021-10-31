@@ -27,6 +27,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Siswa whereUserId($value)
  * @mixin \Eloquent
  * @property-read \App\Models\Kelas $kelas
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nilai[] $nilai
+ * @property-read int|null $nilai_count
  */
 class Siswa extends Model
 {
@@ -44,5 +46,10 @@ class Siswa extends Model
     public function kelas()
     {
         return $this->belongsTo(Kelas::class);
+    }
+
+    public function nilai()
+    {
+        return $this->hasMany(Nilai::class);
     }
 }
