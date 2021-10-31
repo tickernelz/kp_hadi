@@ -20,6 +20,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|TahunAjaran whereTahun($value)
  * @method static \Illuminate\Database\Eloquent\Builder|TahunAjaran whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nilai[] $nilai
+ * @property-read int|null $nilai_count
  */
 class TahunAjaran extends Model
 {
@@ -28,4 +30,9 @@ class TahunAjaran extends Model
     protected $guarded = [
         'id',
     ];
+
+    public function nilai()
+    {
+        return $this->hasMany(Nilai::class);
+    }
 }
