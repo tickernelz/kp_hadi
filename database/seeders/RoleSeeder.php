@@ -26,7 +26,7 @@ class RoleSeeder extends Seeder
         Permission::create(['name' => 'kelola mata pelajaran']);
         Permission::create(['name' => 'kelola kelas']);
         Permission::create(['name' => 'kelola wali kelas']);
-        Permission::create(['name' => 'kelola kategori nilai']);
+        Permission::create(['name' => 'kelola kelompok nilai']);
         Permission::create(['name' => 'kelola nilai']);
         Permission::create(['name' => 'melihat nilai']);
 
@@ -40,7 +40,7 @@ class RoleSeeder extends Seeder
         $role1->givePermissionTo('kelola mata pelajaran');
         $role1->givePermissionTo('kelola kelas');
         $role1->givePermissionTo('kelola wali kelas');
-        $role1->givePermissionTo('kelola kategori nilai');
+        $role1->givePermissionTo('kelola kelompok nilai');
         $role1->givePermissionTo('kelola nilai');
         $role1->givePermissionTo('melihat nilai');
 
@@ -53,7 +53,7 @@ class RoleSeeder extends Seeder
         $role2->givePermissionTo('kelola mata pelajaran');
         $role2->givePermissionTo('kelola kelas');
         $role2->givePermissionTo('kelola wali kelas');
-        $role2->givePermissionTo('kelola kategori nilai');
+        $role2->givePermissionTo('kelola kelompok nilai');
         $role2->givePermissionTo('kelola nilai');
         $role2->givePermissionTo('melihat nilai');
 
