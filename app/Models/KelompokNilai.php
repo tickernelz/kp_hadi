@@ -26,6 +26,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|KelompokNilai whereNamaKelompok($value)
  * @method static \Illuminate\Database\Eloquent\Builder|KelompokNilai whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nilai[] $nilai
+ * @property-read int|null $nilai_count
  */
 class KelompokNilai extends Model
 {
@@ -43,5 +45,10 @@ class KelompokNilai extends Model
     public function mata_pelajaran()
     {
         return $this->belongsTo(MataPelajaran::class);
+    }
+
+    public function nilai()
+    {
+        return $this->hasMany(Nilai::class);
     }
 }
