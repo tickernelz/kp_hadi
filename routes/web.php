@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\KelompokNilaiController;
 use App\Http\Controllers\MataPelajaranController;
+use App\Http\Controllers\NilaiController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\TahunAjaranController;
 use App\Http\Controllers\UserController;
@@ -101,5 +102,10 @@ Route::middleware('auth')->group(function () {
         Route::get('kelola-kelompok_nilai/edit/{id}', [KelompokNilaiController::class, 'indexedit'])->name('kelola.kelompok_nilai.edit');
         Route::post('kelola-kelompok_nilai/edit/{id}/post', [KelompokNilaiController::class, 'edit'])->name('kelola.kelompok_nilai.edit.post');
         Route::get('kelola-kelompok_nilai/hapus/{id}', [KelompokNilaiController::class, 'hapus'])->name('kelola.kelompok_nilai.hapus');
+    });
+    Route::middleware('can:kelola nilai')->group(function () {
+        Route::get('kelola-nilai', [NilaiController::class, 'index'])->name('kelola.nilai');
+        Route::get('kelola-nilai/cari', [NilaiController::class, 'indexcari'])->name('kelola.nilai.cari');
+        Route::post('kelola-nilai/tambah/post', [NilaiController::class, 'tambah'])->name('kelola.nilai.tambah.post');
     });
 });
