@@ -26,6 +26,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read int|null $mata_pelajaran_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\WaliKelas[] $wali_kelas
  * @property-read int|null $wali_kelas_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\KelompokNilai[] $kelompok_nilai
+ * @property-read int|null $kelompok_nilai_count
  */
 class Kelas extends Model
 {
@@ -43,5 +45,10 @@ class Kelas extends Model
     public function wali_kelas()
     {
         return $this->hasMany(WaliKelas::class);
+    }
+
+    public function kelompok_nilai()
+    {
+        return $this->hasMany(KelompokNilai::class);
     }
 }

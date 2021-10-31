@@ -23,6 +23,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|MataPelajaran whereNamaMapel($value)
  * @method static \Illuminate\Database\Eloquent\Builder|MataPelajaran whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\KelompokNilai[] $kelompok_nilai
+ * @property-read int|null $kelompok_nilai_count
  */
 class MataPelajaran extends Model
 {
@@ -32,8 +34,8 @@ class MataPelajaran extends Model
         'id',
     ];
 
-    public function kelas()
+    public function kelompok_nilai()
     {
-        return $this->belongsTo(Kelas::class);
+        return $this->hasMany(KelompokNilai::class);
     }
 }
