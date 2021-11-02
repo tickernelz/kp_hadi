@@ -59,16 +59,26 @@
                     <thead class="text-center">
                     <tr>
                         <th class="whitespace-nowrap">MATA PELAJARAN</th>
-                        @foreach($data_nilai as $list)
-                            <th class="whitespace-nowrap">{{ $list->kelompok_nilai->nama_kelompok }}</th>
+                        @foreach($data_kelompok as $list)
+                            <th class="whitespace-nowrap">{{ $list->nama_kelompok }}</th>
                         @endforeach
                     </tr>
                     </thead>
                     <tbody class="text-center whitespace-nowrap">
-                    @foreach ($data_nilai as $list1)
+                    @foreach ($data_mapel as $list1)
                         <tr class="intro-x">
-                            <td>{{ $list1->mata_pelajaran->nama_mapel }}</td>
-                            <td>{{ $list1->nilai }}</td>
+                            <td>{{ $list1->nama_mapel }}</td>
+                            @php
+                                $data_nilai = \App\Models\Nilai::with(['kelompok_nilai' => function ($query) {
+                                    $query->groupBy('nama_kelompok');
+                                        }], 'siswa', 'tahun_ajaran', 'mata_pelajaran')
+                                        ->whereIn('kelompok_nilai_id', $data_kelompok_array)
+                                        ->whereRaw("mata_pelajaran_id = '$list1->id' AND siswa_id = '$siswa->id' AND tahun_ajaran_id = '$tahun_ajaran' AND semester = '$semester'")
+                                        ->get();
+                            @endphp
+                            @foreach ($data_nilai as $list2)
+                                <td>{{ $list2->nilai }}</td>
+                            @endforeach
                         </tr>
                     @endforeach
                     </tbody>

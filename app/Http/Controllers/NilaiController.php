@@ -49,7 +49,7 @@ class NilaiController extends Controller
         $nama_siswa = Auth::user()->nama;
 
         // Nilai tetap
-        $judulcrud = 'Penilaian Hasil Belajar '.$nama_siswa.'';
+        $judulcrud = 'Penilaian Hasil Belajar ' . $nama_siswa . '';
         $cari = false;
 
         return view('siswa.index', [
@@ -65,7 +65,7 @@ class NilaiController extends Controller
         $nama_siswa = Auth::user()->nama;
 
         // Nilai tetap
-        $judulcrud = 'Penilaian Hasil Belajar '.$nama_siswa.'';
+        $judulcrud = 'Penilaian Hasil Belajar ' . $nama_siswa . '';
         $cari = true;
 
         // Get Request
@@ -87,16 +87,20 @@ class NilaiController extends Controller
         $data_kelompok_array = $data_kelompok->pluck('id')->toArray();
 
         if ($siswa) {
-            $data_nilai = Nilai::with('kelompok_nilai', 'siswa', 'tahun_ajaran', 'mata_pelajaran')
-                ->whereIn('kelompok_nilai_id', $data_kelompok_array)
-                ->whereRaw("siswa_id = '$siswa->id' AND tahun_ajaran_id = '$tahun_ajaran' AND semester = '$semester'")
-                ->get();
+            $data_mapel = MataPelajaran::whereHas('nilai', function ($q) use ($semester, $tahun_ajaran, $siswa, $data_kelompok_array) {
+                $q->whereIn('kelompok_nilai_id', $data_kelompok_array)
+                    ->whereRaw("siswa_id = '$siswa->id' AND tahun_ajaran_id = '$tahun_ajaran' AND semester = '$semester'");
+            })->get();
 
             return view('siswa.index', [
+                'data_kelompok_array' => $data_kelompok_array,
                 'data_kelas' => $data_kelas,
+                'siswa' => $siswa,
+                'tahun_ajaran' => $tahun_ajaran,
+                'semester' => $semester,
+                'data_mapel' => $data_mapel,
                 'data_tahun' => $data_tahun,
                 'data_kelompok' => $data_kelompok,
-                'data_nilai' => $data_nilai,
                 'judulcrud' => $judulcrud,
                 'cari' => $cari,
             ]);

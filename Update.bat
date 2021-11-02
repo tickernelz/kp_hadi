@@ -6,9 +6,9 @@ ECHO ## Sedang Memperbarui Project ##
 ECHO --------------------------------
 set BRANCH = "develop"
 git checkout %BRANCH%
-git stash --include-untracked
-git reset --hard
-git clean -fd
+git fetch origin develop
+git reset --hard FETCH_HEAD
+git clean -df
 git pull
 php artisan migrate:fresh --seed
 php artisan optimize:clear
