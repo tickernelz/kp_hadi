@@ -42,11 +42,6 @@ class KelompokNilai extends Model
         return $this->belongsTo(Kelas::class);
     }
 
-    public function mata_pelajaran()
-    {
-        return $this->belongsTo(MataPelajaran::class);
-    }
-
     public function nilai()
     {
         return $this->hasMany(Nilai::class);

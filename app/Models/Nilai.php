@@ -31,6 +31,9 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Nilai whereTahunAjaranId($value)
  * @property string $semester
  * @method static \Illuminate\Database\Eloquent\Builder|Nilai whereSemester($value)
+ * @property int $mata_pelajaran_id
+ * @property-read \App\Models\MataPelajaran $mata_pelajaran
+ * @method static \Illuminate\Database\Eloquent\Builder|Nilai whereMataPelajaranId($value)
  */
 class Nilai extends Model
 {
@@ -43,6 +46,11 @@ class Nilai extends Model
     public function siswa()
     {
         return $this->belongsTo(Siswa::class);
+    }
+
+    public function mata_pelajaran()
+    {
+        return $this->belongsTo(MataPelajaran::class);
     }
 
     public function kelompok_nilai()

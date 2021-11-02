@@ -15,8 +15,7 @@ class SideMenu
      */
     public static function menu()
     {
-        if (Auth::check())
-        {
+        if (Auth::check()) {
             if (Auth::user()->hasRole('admin')) {
                 return [
                     'dashboard' => [
@@ -200,6 +199,25 @@ class SideMenu
                                 'title' => 'Daftar Nilai',
                             ],
                         ],
+                    ],
+                ];
+            }
+            if (Auth::user()->hasRole('siswa')) {
+                return [
+                    'dashboard' => [
+                        'icon' => 'home',
+                        'route_name' => 'beranda',
+                        'params' => [
+                        ],
+                        'title' => 'Dashboard',
+                    ],
+                    'devider',
+                    'nilai' => [
+                        'icon' => 'edit-2',
+                        'route_name' => 'siswa.nilai',
+                        'params' => [
+                        ],
+                        'title' => 'Hasil Belajar',
                     ],
                 ];
             }

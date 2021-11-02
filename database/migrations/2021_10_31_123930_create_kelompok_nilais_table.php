@@ -1,7 +1,6 @@
 <?php
 
 use App\Models\Kelas;
-use App\Models\MataPelajaran;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -17,7 +16,6 @@ class CreateKelompokNilaisTable extends Migration
     {
         Schema::create('kelompok_nilais', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(MataPelajaran::class);
             $table->foreignIdFor(Kelas::class);
             $table->string('nama_kelompok');
             $table->timestamps();

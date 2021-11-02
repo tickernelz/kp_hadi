@@ -38,6 +38,73 @@ class NilaiController extends Controller
         ]);
     }
 
+    public function indexsiswa()
+    {
+        // Session
+        Session::get('error');
+
+        // Get Data
+        $data_kelas = Kelas::get();
+        $data_tahun = TahunAjaran::get();
+        $nama_siswa = Auth::user()->nama;
+
+        // Nilai tetap
+        $judulcrud = 'Penilaian Hasil Belajar '.$nama_siswa.'';
+        $cari = false;
+
+        return view('siswa.index', [
+            'data_tahun' => $data_tahun,
+            'data_kelas' => $data_kelas,
+            'judulcrud' => $judulcrud,
+            'cari' => $cari,
+        ]);
+    }
+
+    public function carisiswa(Request $request)
+    {
+        $nama_siswa = Auth::user()->nama;
+
+        // Nilai tetap
+        $judulcrud = 'Penilaian Hasil Belajar '.$nama_siswa.'';
+        $cari = true;
+
+        // Get Request
+        $kelas = $request->input('kelas');
+        $tahun_ajaran = $request->input('tahun_ajaran');
+        $semester = $request->input('semester');
+
+        // Get User Data
+        $user_id = Auth::user()->id;
+
+        // Get Data
+        $data_kelas = Kelas::get();
+        $data_tahun = TahunAjaran::get();
+        $siswa = Siswa::with('kelas', 'user')->where([
+            ['kelas_id', $kelas],
+            ['user_id', $user_id],
+        ])->first();
+        $data_kelompok = KelompokNilai::with('kelas')->whereRaw("kelas_id = '$kelas'")->get();
+        $data_kelompok_array = $data_kelompok->pluck('id')->toArray();
+
+        if ($siswa) {
+            $data_nilai = Nilai::with('kelompok_nilai', 'siswa', 'tahun_ajaran', 'mata_pelajaran')
+                ->whereIn('kelompok_nilai_id', $data_kelompok_array)
+                ->whereRaw("siswa_id = '$siswa->id' AND tahun_ajaran_id = '$tahun_ajaran' AND semester = '$semester'")
+                ->get();
+
+            return view('siswa.index', [
+                'data_kelas' => $data_kelas,
+                'data_tahun' => $data_tahun,
+                'data_kelompok' => $data_kelompok,
+                'data_nilai' => $data_nilai,
+                'judulcrud' => $judulcrud,
+                'cari' => $cari,
+            ]);
+        }
+        Session::flash('error', 'Data Tidak Ditemukan!');
+        return back();
+    }
+
     public function indexcari(Request $request)
     {
         // Nilai tetap
@@ -45,7 +112,6 @@ class NilaiController extends Controller
         $cari = true;
 
         // Get Request
-        $mata_pelajaran = $request->input('mata_pelajaran');
         $kelas = $request->input('kelas');
         $tahun_ajaran = $request->input('tahun_ajaran');
         $semester = $request->input('semester');
@@ -56,7 +122,7 @@ class NilaiController extends Controller
         $data_kelas = Kelas::get();
         $data_tahun = TahunAjaran::get();
         $data_siswa = Siswa::with('kelas', 'user')->where('kelas_id', $kelas)->get();
-        $data_kelompok = KelompokNilai::with('kelas', 'mata_pelajaran')->whereRaw("kelas_id = '$kelas' AND mata_pelajaran_id = '$mata_pelajaran'")->get();
+        $data_kelompok = KelompokNilai::with('kelas')->whereRaw("kelas_id = '$kelas'")->get();
         $data_kelompok_array = $data_kelompok->pluck('id')->toArray();
         $data_nilai = Nilai::with('kelompok_nilai', 'siswa', 'tahun_ajaran')->whereIn('kelompok_nilai_id', $data_kelompok_array)->whereRaw("tahun_ajaran_id = '$tahun_ajaran' AND semester = '$semester'")->get();
 
@@ -84,6 +150,7 @@ class NilaiController extends Controller
 
         // Get Request
         $tahun_ajaran = $request->input('tahun_ajaran');
+        $mata_pelajaran = $request->input('mata_pelajaran');
         $semester = $request->input('semester');
         $siswa_id = $request->get('siswa_id');
         $kelompok = $request->get('kelompok');
@@ -105,6 +172,7 @@ class NilaiController extends Controller
                 $cek_nilai = Nilai::where([
                     ['siswa_id', '=', $id_siswa_array],
                     ['kelompok_nilai_id', '=', $id_kelompok_array],
+                    ['mata_pelajaran_id', '=', $mata_pelajaran],
                     ['tahun_ajaran_id', '=', $tahun_ajaran],
                     ['semester', '=', $semester],
                     ['nilai', '=', $nilaiori_array],
@@ -119,6 +187,7 @@ class NilaiController extends Controller
                     Nilai::create([
                         'siswa_id' => $id_siswa_array,
                         'kelompok_nilai_id' => $id_kelompok_array,
+                        'mata_pelajaran_id' => $mata_pelajaran,
                         'tahun_ajaran_id' => $tahun_ajaran,
                         'semester' => $semester,
                         'nilai' => $nilai_array,

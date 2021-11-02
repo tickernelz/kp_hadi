@@ -25,6 +25,8 @@ use Illuminate\Database\Eloquent\Model;
  * @mixin \Eloquent
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\KelompokNilai[] $kelompok_nilai
  * @property-read int|null $kelompok_nilai_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Nilai[] $nilai
+ * @property-read int|null $nilai_count
  */
 class MataPelajaran extends Model
 {
@@ -34,8 +36,8 @@ class MataPelajaran extends Model
         'id',
     ];
 
-    public function kelompok_nilai()
+    public function nilai()
     {
-        return $this->hasMany(KelompokNilai::class);
+        return $this->hasMany(Nilai::class);
     }
 }

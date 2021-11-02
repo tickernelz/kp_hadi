@@ -130,6 +130,7 @@
                                                    value="{{ \App\Models\Nilai::where([
                                                             ['siswa_id', '=', $list1->id],
                                                             ['kelompok_nilai_id', '=', $list2->id],
+                                                            ['mata_pelajaran_id', '=', Request::get('mata_pelajaran')],
                                                             ['tahun_ajaran_id', '=', Request::get('tahun_ajaran')],
                                                             ['semester', '=', Request::get('semester')],
                                                         ])->value('nilai')}}"
@@ -138,6 +139,7 @@
                                                    value="{{ \App\Models\Nilai::where([
                                                             ['siswa_id', '=', $list1->id],
                                                             ['kelompok_nilai_id', '=', $list2->id],
+                                                            ['mata_pelajaran_id', '=', Request::get('mata_pelajaran')],
                                                             ['tahun_ajaran_id', '=', Request::get('tahun_ajaran')],
                                                             ['semester', '=', Request::get('semester')],
                                                         ])->value('nilai')}}"

@@ -23,14 +23,6 @@
             @endif
             <form action="{{ route('kelola.kelompok_nilai.cari') }}" method="get">
                 <div class="mt-3">
-                    <label for="mata_pelajaran" class="form-label">Mata Pelajaran</label>
-                    <select data-placeholder="Pilih Mata Pelajaran" name="mata_pelajaran" class="tom-select w-full mb-3" id="mata_pelajaran">
-                        @foreach($data_mapel as $list)
-                            <option value="{{ $list->id }}">{{ $list->nama_mapel }}</option>
-                        @endforeach
-                    </select>
-                </div>
-                <div class="mt-3">
                     <label for="kelas" class="form-label">Kelas</label>
                     <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3" id="kelas">
                         @foreach($data_kelas as $list)
@@ -48,7 +40,6 @@
         <thead class="text-center">
         <tr>
             <th class="whitespace-nowrap">NO</th>
-            <th class="whitespace-nowrap">MATA PELAJARAN</th>
             <th class="whitespace-nowrap">KELAS</th>
             <th class="whitespace-nowrap">NAMA PENILAIAN</th>
             <th class="whitespace-nowrap">AKSI</th>
@@ -58,7 +49,6 @@
         @foreach ($data_kelompok as $list)
             <tr class="intro-x">
                 <td>{{ $loop->iteration }}</td>
-                <td>{{ $list->mata_pelajaran->nama_mapel }}</td>
                 <td>{{ $list->kelas->nama_kelas }}</td>
                 <td>{{ $list->nama_kelompok }}</td>
                 <td class="table-report__action w-56">

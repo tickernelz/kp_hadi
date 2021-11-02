@@ -108,4 +108,8 @@ Route::middleware('auth')->group(function () {
         Route::get('kelola-nilai/cari', [NilaiController::class, 'indexcari'])->name('kelola.nilai.cari');
         Route::post('kelola-nilai/tambah/post', [NilaiController::class, 'tambah'])->name('kelola.nilai.tambah.post');
     });
+    Route::middleware('can:melihat nilai')->group(function () {
+        Route::get('nilai', [NilaiController::class, 'indexsiswa'])->name('siswa.nilai');
+        Route::get('nilai/cari', [NilaiController::class, 'carisiswa'])->name('siswa.nilai.cari');
+    });
 });

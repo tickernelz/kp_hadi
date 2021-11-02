@@ -34,17 +34,6 @@
                 <form name="edit" id="edit" method="post" action="javascript:void(0)">
                     @csrf
                     <div class="mt-3">
-                        <label for="mata_pelajaran" class="form-label">Mata Pelajaran</label>
-                        <select data-placeholder="Pilih Mata Pelajaran" name="mata_pelajaran"
-                                class="tom-select w-full mb-3" id="mata_pelajaran">
-                            @foreach($data_mapel as $list)
-                                <option @if ($list->id == $data->mata_pelajaran_id)
-                                        selected="selected"
-                                        @endif value="{{ $list->id }}">{{ $list->nama_mapel }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="mt-3">
                         <label for="kelas" class="form-label">Kelas</label>
                         <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3" id="kelas">
                             @foreach($data_kelas as $list)
@@ -76,9 +65,6 @@
         if ($("#edit").length > 0) {
             $("#edit").validate({
                 rules: {
-                    mata_pelajaran: {
-                        required: true,
-                    },
                     kelas: {
                         required: true,
                     },

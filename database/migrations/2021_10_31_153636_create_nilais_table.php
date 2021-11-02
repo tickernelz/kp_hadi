@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\KelompokNilai;
+use App\Models\MataPelajaran;
 use App\Models\Siswa;
 use App\Models\TahunAjaran;
 use Illuminate\Database\Migrations\Migration;
@@ -19,6 +20,7 @@ class CreateNilaisTable extends Migration
         Schema::create('nilais', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(Siswa::class);
+            $table->foreignIdFor(MataPelajaran::class);
             $table->foreignIdFor(KelompokNilai::class);
             $table->foreignIdFor(TahunAjaran::class);
             $table->enum('semester', ['ganjil', 'genap']);
