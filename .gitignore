@@ -34,3 +34,4 @@ storage/.DS_Store
 storage/framework/.DS_Store
 tests/.DS_Store
 /.vscode/
+/conf_heroku
