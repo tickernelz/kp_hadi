@@ -70,7 +70,7 @@
                             <td>{{ $list1->nama_mapel }}</td>
                             @php
                                 $data_nilai = \App\Models\Nilai::with(['kelompok_nilai' => function ($query) {
-                                    $query->groupBy('nama_kelompok');
+                                    $query->select('nama_kelompok')->groupBy('nama_kelompok');
                                         }], 'siswa', 'tahun_ajaran', 'mata_pelajaran')
                                         ->whereIn('kelompok_nilai_id', $data_kelompok_array)
                                         ->whereRaw("mata_pelajaran_id = '$list1->id' AND siswa_id = '$siswa->id' AND tahun_ajaran_id = '$tahun_ajaran' AND semester = '$semester'")
