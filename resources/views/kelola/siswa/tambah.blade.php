@@ -120,12 +120,14 @@
                 messages: {
                     nis: {
                         required: "NIS wajib diisi",
+                        remote: "NIS Sudah Terdaftar"
                     },
                     nama: {
                         required: "Nama wajib diisi",
                     },
                     username: {
                         required: "Username wajib diisi",
+                        remote: "Username Sudah Terdaftar"
                     },
                     kelas: {
                         required: "Kelas wajib diisi",

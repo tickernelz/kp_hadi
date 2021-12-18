@@ -182,6 +182,12 @@ class NilaiController extends Controller
                     ['nilai', '=', $nilaiori_array],
                 ])->first();
 
+                // Cek Nilai 0-100
+                if ($nilai_array < 0 || $nilai_array > 100) {
+                    Session::flash('error', 'Nilai tidak boleh lebih dari 100 atau kurang dari 0!');
+                    return redirect()->back();
+                }
+
                 if (!is_null($cek_nilai)) {
                     $cek_nilai->update([
                         'nilai' => $nilai_array,

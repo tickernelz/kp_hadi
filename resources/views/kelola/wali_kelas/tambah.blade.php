@@ -120,12 +120,14 @@
                 messages: {
                     nip: {
                         required: "NIP wajib diisi",
+                        remote: "NIP Sudah Terdaftar"
                     },
                     nama: {
                         required: "Nama wajib diisi",
                     },
                     username: {
                         required: "Username wajib diisi",
+                        remote: "Username Sudah Terdaftar"
                     },
                     kelas: {
                         required: "Kelas wajib diisi",

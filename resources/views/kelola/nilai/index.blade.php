@@ -38,34 +38,69 @@
                     <label for="mata_pelajaran" class="form-label">Mata Pelajaran</label>
                     <select data-placeholder="Pilih Mata Pelajaran" name="mata_pelajaran" class="tom-select w-full mb-3"
                             id="mata_pelajaran">
-                        @foreach($data_mapel as $list)
-                            <option value="{{ $list->id }}">{{ $list->nama_mapel }}</option>
-                        @endforeach
+                        @if($cari === true)
+                            @foreach($data_mapel as $list)
+                                <option @if (Request::get('mata_pelajaran') == $list->id)
+                                        selected="selected"
+                                        @endif value="{{ $list->id }}">{{ $list->nama_mapel }}</option>
+                            @endforeach
+                        @else
+                            @foreach($data_mapel as $list)
+                                <option value="{{ $list->id }}">{{ $list->nama_mapel }}</option>
+                            @endforeach
+                        @endif
                     </select>
                 </div>
                 <div class="mt-3">
                     <label for="kelas" class="form-label">Kelas</label>
                     <select data-placeholder="Pilih Kelas" name="kelas" class="tom-select w-full mb-3" id="kelas">
-                        @foreach($data_kelas as $list)
-                            <option value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
-                        @endforeach
+                        @if($cari === true)
+                            @foreach($data_kelas as $list)
+                                <option @if (Request::get('kelas') == $list->id)
+                                        selected="selected"
+                                        @endif value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
+                            @endforeach
+                        @else
+                            @foreach($data_kelas as $list)
+                                <option value="{{ $list->id }}">{{ $list->nama_kelas }}</option>
+                            @endforeach
+                        @endif
                     </select>
                 </div>
                 <div class="mt-3">
                     <label for="tahun_ajaran" class="form-label">Tahun Ajaran</label>
                     <select data-placeholder="Pilih Tahun Ajaran" name="tahun_ajaran" class="tom-select w-full mb-3"
                             id="tahun_ajaran">
-                        @foreach($data_tahun as $list)
-                            <option value="{{ $list->id }}">{{ $list->tahun }}</option>
-                        @endforeach
+                        @if($cari === true)
+                            @foreach($data_tahun as $list)
+                                <option @if (Request::get('tahun_ajaran') == $list->id)
+                                        selected="selected"
+                                        @endif value="{{ $list->id }}">{{ $list->tahun }}</option>
+                            @endforeach
+                        @else
+                            @foreach($data_tahun as $list)
+                                <option value="{{ $list->id }}">{{ $list->tahun }}</option>
+                            @endforeach
+                        @endif
                     </select>
                 </div>
                 <div class="mt-3">
                     <label for="semester" class="form-label">Semester</label>
                     <select data-placeholder="Pilih Semester" name="semester" class="tom-select w-full mb-3"
                             id="semester">
-                        <option value="ganjil">Ganjil</option>
-                        <option value="genap">Genap</option>
+                        @if($cari === true)
+                            <option @if (Request::get('semester') == 'ganjil')
+                                    selected="selected"
+                                    @endif value="ganjil">Ganjil
+                            </option>
+                            <option @if (Request::get('semester') == 'genap')
+                                    selected="selected"
+                                    @endif value="genap">Genap
+                            </option>
+                        @else
+                            <option value="ganjil">Ganjil</option>
+                            <option value="genap">Genap</option>
+                        @endif
                     </select>
                 </div>
                 <div class="mt-3">

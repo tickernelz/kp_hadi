@@ -113,6 +113,7 @@
                     },
                     username: {
                         required: "Username wajib diisi",
+                        remote: "Username Sudah Terdaftar"
                     },
                     level: {
                         required: "Level wajib diisi",
